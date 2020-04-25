@@ -1,0 +1,11 @@
+---
+name: "Mod Chorus Echo"
+path: "/effects/mod-chorus-echo"
+brand: "Line 6"
+model: "Original"
+url: ""
+image: "../../images/line6-logo.jpg"
+type: ["Delay"]
+channel: ["Mono", "Stereo"]
+update: ["1.0"]
+---
