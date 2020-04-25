@@ -16,10 +16,15 @@ const Header = ({ siteTitle }) => (
       </div>
       <div className="navbar-menu">
         <div className="navbar-end">
-          <Link to="/amps" className="navbar-item">Amps</Link>
-          <Link to="/cabs" className="navbar-item">Cabs</Link>
-          <Link to="/effects" className="navbar-item">Effects</Link>
-          <Link to="/mics" className="navbar-item">Mics</Link>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <p className="navbar-link">Models</p>
+            <div className="navbar-dropdown">
+              <Link to="/amps" className="navbar-item">Amps</Link>
+              <Link to="/cabs" className="navbar-item">Cabs</Link>
+              <Link to="/effects" className="navbar-item">Effects</Link>
+              <Link to="/mics" className="navbar-item">Mics</Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
