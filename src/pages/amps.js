@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Section from "../components/section"
 import Heading from "../components/heading"
+import Disclaimer from "../components/disclaimer"
 
 export default ({data}) => {
     return (
@@ -36,6 +37,7 @@ export default ({data}) => {
                     </div>
                 </div>
             </Section>
+            <Disclaimer/>
         </Layout>
     )
 }

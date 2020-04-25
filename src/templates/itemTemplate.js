@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Section from "../components/section"
 import Heading from "../components/heading"
+import Disclaimer from "../components/disclaimer"
 import Img from "gatsby-image"
 
 export default function Template({
@@ -72,6 +73,7 @@ export default function Template({
                     </div>
                 </div>
             </Section>
+            <Disclaimer/>
         </Layout>
         )
     }
