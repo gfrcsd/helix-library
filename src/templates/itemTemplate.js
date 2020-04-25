@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Section from "../components/section"
 import Heading from "../components/heading"
 import Disclaimer from "../components/disclaimer"
+import SEO from "../components/seo"
 import Img from "gatsby-image"
 
 export default function Template({
@@ -13,6 +14,7 @@ export default function Template({
     const { frontmatter, html, fields } = markdownRemark
     return (
         <Layout>
+            <SEO title={frontmatter.name} />
             <Heading title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} />
             <Section>
                 <div className="columns is-centered">

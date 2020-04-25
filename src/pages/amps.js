@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Section from "../components/section"
 import Heading from "../components/heading"
 import Disclaimer from "../components/disclaimer"
@@ -8,6 +9,7 @@ import Disclaimer from "../components/disclaimer"
 export default ({data}) => {
     return (
         <Layout>
+            <SEO title="Amps"/>
             <Heading title="Amps" subtitle={ data.allMarkdownRemark.totalCount + " available"} />
             <Section>
                 <div className="columns is-centered">
