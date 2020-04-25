@@ -18,28 +18,28 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `amps`,
-        path: `${__dirname}/src/markdown/amps`,
+        path: `${__dirname}/src/markdown/models/amps`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `cabs`,
-        path: `${__dirname}/src/markdown/cabs`,
+        path: `${__dirname}/src/markdown/models/cabs`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `effects`,
-        path: `${__dirname}/src/markdown/effects`,
+        path: `${__dirname}/src/markdown/models/effects`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `mics`,
-        path: `${__dirname}/src/markdown/mics`,
+        path: `${__dirname}/src/markdown/models/mics`,
       },
     },
     `gatsby-transformer-sharp`,

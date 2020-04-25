@@ -4,7 +4,7 @@ const Footer = () => {
     return(
         <footer className="footer">
             <div className="content has-text-centered">
-                <p>{new Date().getFullYear()}</p>
+                <p>&#169; {new Date().getFullYear()}</p>
             </div>
         </footer>
     )

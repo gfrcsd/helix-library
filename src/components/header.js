@@ -19,10 +19,10 @@ const Header = ({ siteTitle }) => (
           <div className="navbar-item has-dropdown is-hoverable">
             <p className="navbar-link">Models</p>
             <div className="navbar-dropdown">
-              <Link to="/amps" className="navbar-item">Amps</Link>
-              <Link to="/cabs" className="navbar-item">Cabs</Link>
-              <Link to="/effects" className="navbar-item">Effects</Link>
-              <Link to="/mics" className="navbar-item">Mics</Link>
+              <Link to="/models/amps" className="navbar-item">Amps</Link>
+              <Link to="/models/cabs" className="navbar-item">Cabs</Link>
+              <Link to="/models/effects" className="navbar-item">Effects</Link>
+              <Link to="/models/mics" className="navbar-item">Mics</Link>
             </div>
           </div>
         </div>
