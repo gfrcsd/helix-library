@@ -1,0 +1,84 @@
+---
+title: "1.12"
+path: "/release-notes/1.12"
+date: 2016-05-11 00:00:00
+target: ["Helix", "Helix Rack"]
+---
+Helix Editor 1.12 is a free update that includes new fixes, stability improvements, and optimizations.
+
+<div className="message is-danger">
+    <div className="message-header">
+        <p>IMPORTANT! READ BEFORE INSTALLING ANY NEW SOFTWARE!</p>
+    </div>
+    <div className="message-body">
+        <p className="is-italic is-bold has-text-weight-semibold">If you have already updated Helix or Helix Rack’s firmware to 1.12:</p>
+        <ol>
+            <li>Install the 1.12 Editor update, available at <a href="http://line6.com/software/">http://line6.com/software/</a>. Check the “Beta” box.</li>
+        </ol>
+        <p className="is-italic is-bold has-text-weight-semibold">If you have NOT already updated Helix/Helix Rack’s firmware to 1.12, please follow the instructions below:</p>
+        <ol>
+            <li>Shut down all Line 6 software as well as any software that streams audio, including, but not limited to: iTunes, Spotify, DAWs, etc.</li>
+            <li>Use your CURRENT EXISTING Helix application to back up all of your presets and IRs. If you’re running Helix FW 1.06 or 1.06.5, your current Helix application version should be 1.04. If you’re running Helix FW 1.10, your current Helix application version should be 1.11.</li>
+            <li>Quit the CURRENT EXISTING Helix application and download and install the NEW Helix editor (1.12), available here: <a href="http://line6.com/software/">http://line6.com/software/</a> This also installs the newest version of Line 6 Updater (1.09).</li>
+            <li>If you’re using Helix Rack with Helix Control, turn off Helix Control.</li>
+            <li>Using the new Line 6 Updater (1.09), update Helix (or Helix Rack) to the newest firmware (1.12.0). If you’re using Helix Rack with Helix Control, after Helix Rack has been updated, connect and power on Helix Control, and it will update automatically.</li>
+            <li>Using the latest Helix editor (1.12), restore all user presets and IRs.</li>
+        </ol>
+    </div>
+</div>
+
+
+# NEW FEATURES
+
+- Scribble strips and footswitch LED colors can now be customized from the Footswitch Assign, Controller Assign, and Command Center screens for any items assigned to a footswitch
+- Processing blocks can be copied and pasted. Control-click (Win: Right-click) a block and select “Copy Block.” Control/right-click the destination location or block you want to overwrite and select “Paste Block.”
+- Additional keyboard shortcuts:
+    - H - Selects the Home tab
+    - F - Selects the Footswitch Assign tab
+    - C - Selects the Controller Assign tab
+    - M - Selects the Command Center tab
+    - G - Selects the Global EQ screen
+    - P - Selects the Preset list
+    - I - Selects the Impulse Responses list
+    - A - Selects and cycles through Amp+Cab, Amp, and/or Preamp tonestacks
+    - T - Tap Tempo
+    - Space Bar - Toggles the currently selected block on and off
+    - Tab - Toggles focus between the librarian and editor windows
+    - Arrow Up/Down/Left/Right (Editor) - Selects the current block
+    - Arrow Up/Down/Left/Right (Model List) - Navigates the model list
+    - Arrow Up/Down (Librarian) - Navigates the preset or IR list
+    - Enter/Return (Librarian) - Loads the selected preset
+    - [,][.], [-][+] - Manually adjusts the most recently clicked slider
+    - Shift-[,][.], Shift-[-][+] - Manually adjusts the most recently clicked slider faster
+    - Command-C (Win: Control-C) - Copies the current block
+    - Command-V (Win: Control-V) - Pastes the block
+    - Command-S (Win: Control-S) - Saves the preset
+    - Control-click (Win: Right-click) a slider - Allows for manually entering a value
+    - Command-click (Win: Control-click) a slider - Resets to default value
+
+# OTHER IMPROVEMENTS
+- Input > Multi and Input > Variax now displays a Variax Volume slider
+- A light blue box surrounds either the librarian or editor panel, telling you which one is in focus; press Tab to toggle between them
+- Block selection is now synchronized between Helix and the Helix editor
+- A confirmation dialog now appears when attempting to clear all controllers
+- Added graphics for Input > USB 3/4, USB 5/6, and USB 7/8
+- Manually entering delay Time values is now accomplished in milliseconds, not seconds
+- The Helix firmware indicator in the upper left corner now reads “Firmware”
+
+# BUG FIXES
+- A USB port driver issue within OS X El Capitan precluded certain computers (namely MacBook Pros and iMacs from mid-2012) from allowing communication between Helix and the Helix Editor. Note: You must update OS X to El Capitan 10.11.4 - FIXED
+- Quickly moving an expression pedal assigned to many parameters can sometimes cause disconnection with Helix on Windows 7 - FIXED
+- Note sync was not assignable to a controller - FIXED
+- Importing a bundle while streaming audio could cause the Helix editor to disconnect - FIXED
+- Removing the last block on parallel path B would display a floating “None” block until a different block was selected - FIXED
+- Certain menu sliders could behave erratically when a footswitch had eight items assigned - FIXED
+- Moving blocks could automatically select EXP 2 if one of the blocks’ parameters defaulted to EXP 1 - FIXED
+- Hardware and software could lose sync if a controller-assigned block was moved from Path 1A to 1B and back - FIXED
+- The Looper block’s Footswitch Assign page displayed a momentary/latching slider - FIXED
+- A couple effects parameters were incorrect or missing - FIXED
+- Certain stereo delay models could display an incorrect Time parameter value - FIXED
+- Helix editor would sometimes not open immediately after closing Line 6 Updater - FIXED
+- General stability improvements
+- Many other minor bug fixes and optimizations
+
+**Compatible OS:** *Windows 7, Windows 8, Windows 10* 

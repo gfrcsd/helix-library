@@ -1,0 +1,98 @@
+---
+title: "2.00"
+path: "/release-notes/2.00"
+date: 2016-07-06 00:00:00
+target: ["Helix", "Helix Rack"]
+---
+Helix v2.00 is a firmware update that includes new models, features, fixes, stability improvements, and optimizations. It is highly recommended that all Helix users perform this update!
+
+<div className="message is-danger">
+    <div className="message-header">
+        <p>IMPORTANT! YOU MUST FOLLOW THESE INSTRUCTIONS TO INSTALL 2.0!</p>
+    </div>
+    <div className="message-body">
+        <ol>
+            <li>Shut down all Line 6 software as well as any software that streams audio, including, but not limited to: iTunes, Spotify, DAWs, etc.</li>
+            <li>Use your CURRENT EXISTING Helix application to back up all of your presets and IRs (if you want to keep them). If you’re running Helix FW 1.12, your current Helix application version should be 1.12.</li>
+            <p style={{marginTop:'10px'}}><strong>NOTE:</strong> You may want to back up individual Setlists so you can restore them to empty setlists without affecting the new 2.0 factory presets.</p>
+            <li>Quit the CURRENT EXISTING Helix editor application and download and install the NEW Helix editor application (2.00), available here: http://line6.com/software/ This also installs the newest version of Line 6 Updater (1.09).</li>
+            <li>If you’re using Helix Rack with Helix Control, turn off Helix Control.</li>
+            <li>Using the latest Line 6 Updater (1.09), update Helix/Helix Rack to the newest firmware (2.00). At the end of the update process, Helix/Helix Rack will reboot automatically and begin rebuilding presets. Wait for this process to complete.</li>
+            <li>If you’re using Helix Control with Helix Rack, connect and power on Helix Control. The inspector will ask if you want to update its firmware. Press Knob 6 (OK). Wait for the update to finish.</li>
+            <li>Turn off Helix/Helix Rack.</li>
+            <p style={{marginTop:'10px'}}><strong>HELIX FLOOR:</strong> While holding footswitches 9 and 10 (middle two switches on the bottom row), turn on Helix.</p>
+            <p><strong>HELIX RACK:</strong> While holding knobs 5 and 6 below the screen, turn on Helix Rack. Wait for the message “Will reset Globals and restore stock Presets, Setlists and IRs…” to appear and let go. YOU MUST RESET GLOBALS AND RESTORE PRESETS, OTHERWISE HELIX 2.0 WILL NOT WORK PROPERLY.</p>
+            <li>Using the NEW Helix editor application (2.00), restore the user presets you backed up in step 2.</li>
+        </ol>
+    </div>
+</div>
+
+
+
+# New Amp Models
+- Cali IV Rhythm 1, based on* the Rhythm I channel of the MESA/Boogie® Mk IV
+- Cali IV Rhythm 2, based on* the Rhythm II channel of the MESA/Boogie® Mk IV
+- Cali IV Lead, based on* the Lead channel of the MESA/Boogie® Mk IV
+- Line 6 2204 Mod, Line 6 Original based on* a hot-rodded Marshall® JCM 800
+- Line 6 Fatality, Line 6 Original
+
+# New Effects Models
+- Distortion > Wringer Fuzz (Mono, Stereo), based on* Garbage’s special BOSS® FZ-2
+- EQ > Cali Q Graphic (Mono, Stereo), based on* the MESA/Boogie® Mk IV’s 5-band EQ
+- Modulation > Harmonic Tremolo (Mono, Stereo), Line 6 Original
+- Delay > Vintage Digital (Mono, Stereo), Line 6 Original
+
+* All product names used herein are trademarks of their respective owners, which are in no way associated or affiliated with Line 6.  These trademarks of other manufacturers are used solely to identify the products of those manufacturers whose tones and sounds were studied during Line 6's sound model development. Mesa/Boogie is a registered trademark of Mesa/Boogie, Ltd. Marshall and JCM are registered trademarks of Marshall Amplification Plc. BOSS is a registered trademark of Roland Corporation.*
+
+# New Features
+- Snapshots—Select one of eight snapshots to instantly recall all block on/off states, up to 64 parameter values, certain Command Center values, and tempo. Any Delay, Reverb, or FX Loop block with its Trails parameter turned on will spill across snapshots seamlessly. To select a snapshot, press BANK UP and BANK DOWN simultaneously and then one of the middle eight footswitches. For Helix Rack owners who haven’t yet snagged Helix Control (and you should), press PRESETS and turn Knob 5 (Select Snapshot). For more information, check out the new Helix 2.0 Owner’s Manual, available here: http://line6.com/support/manuals/#effects
+- Snapshot Parameter Assign—To adjust a parameter AND set it to automatically update per snapshot, press and turn the knob. To adjust a parameter WITHOUT it automatically updating per snapshot, just turn the knob like you normally would. If you accidentally press and turn and didn’t mean to, hold BYPASS and press the knob to instantly unassign snapshot control
+- Copy/Paste Snapshots—While touch-holding the footswitch for the snapshot you want to copy, briefly touch and release the footswitch for the snapshot you want to overwrite. For Helix Rack owners who haven’t yet snagged Helix Control (and again, you SHOULD), select the snapshot you want to copy, press PRESETS, and then ACTION. Press Knob 1 (Copy Snapshot). Select the snapshot you want to overwrite, press ACTION, and then Knob 2 (Paste Snapshot)
+- Swap Snapshots—Touch and hold two snapshot footswitches and a dialog appears, asking if you want to swap their location
+- Rename Snapshots—Press PRESETS and then Knob 6 (Rename Snapshot) to rename the snapshot to something meaningful, such as “VERSE 1”, “BIG SOLO” or “D. IGLOO.” Snapshot names are limited to 10 characters
+- Global Settings > Preferences > Snapshot Edits—Determines whether or not any edits made to a snapshot are remembered when returning to that snapshot. "Recall" automatically recalls any edits made to the snapshot; "Discard" forgets any edits made and returns the snapshot to its state when the preset was last saved. You must save the preset to store changes to snapshots regardless. The home screen’s camera icon turns red when set to “Discard.” Shortcut: Hold BYPASS and press SAVE to toggle this setting
+- Global Settings > MIDI/Tempo > Tempo Select—In addition to Global and Per Preset (still the default), Helix’s tempo can now be set per snapshot. Shortcut: Touch TAP to briefly view and set this parameter
+- Global Settings > Footswitches > Preset Mode Switches—You can now determine whether each row in Preset footswitch mode (upper or lower) selects Presets, Snapshots, or Stomps. The default setting remains the same, but is now called “8 Presets”
+- Global Settings > Footswitches > Snapshot Mode Footswitches—A new Global Settings > Footswitches parameter lets you set Snapshot mode footswitches as Auto Return (automatically returns to Preset or Stomp footswitch mode after selection) or Manual Return (stays in Snapshot footswitch mode until you press FS6 [CANCEL])
+- Global Settings > Footswitches > Up/Down Switches—FS1 and FS7 now have three options: Bank Up/Down, Preset Up/Down, and Snapshot Up/Down, available from the Global Settings > Footswitches menu. Shortcut: Press and hold FS1 and FS7 for one second to cycle through Bank Up/Down, Preset Up/Down, and Snapshot Up/Down
+- Global Settings > Ins/Outs > USB In 1/2 Trim—Added the ability to attenuate the level of incoming USB 1/2 signals, so Mac/PC/iOS applications with no (or difficult-to-access) app-level volume control can be more easily blended with Helix’s processing
+- Global Settings > Ins/Outs > Digital Out Level—Added the ability to adjust the digital (S/PDIF and AES/EBU) output level
+- Global Settings > EXP Pedals > EXP 1/2/3 Polarity—Added the ability to individually switch the polarity of EXP 1, 2, and 3, providing support for a wider variety of third-party expression pedals
+- Global Settings > EXP Pedals > EXP 1/2/3 Pedal Position—Global Settings > Footswitches > EXP Pedal Position has been split into separate parameters for each expression pedal. For example, EXP 1’s wah position can be recalled per preset, EXP 2’s volume position can act globally, and EXP 3’s reverb depth control can be recalled per snapshot
+- Controllers to Variax Parameters—Controllers (including Snapshots) can now control/recall Variax parameters, so you can do cool stuff like toggle between two guitar models with a footswitch, control Variax’s tone knob with an expression pedal, assign a momentary footswitch to drop D, recall completely different tunings with each snapshot, and more. There’s nothing special to do; just assign a controller to Variax parameters like you would any other parameter
+- Per Preset Guitar In Impedance—Global Settings > Ins/Outs > Guitar In Impedance has been moved to the Input > Multi and Input > Guitar In block and is now recalled per preset. It appears at Knob 4 as “Guitar In-Z.” Now that it’s on the Home page, you can assign a footswitch or snapshot to it and determine how your guitar’s pickups are loaded in real time. The default has been changed to “Auto.”
+- Enhanced Tuner Display—The tuner display now shows an additional –3-cent to +3-cent row of bars, providing more granularity when the note played is close to being in tune. Accuracy remains the same
+- MIDI Recall Indicator—Press PRESETS to open the Setlist menu. Dark text appears above Knob 2 and displays the necessary MIDI messages required to remotely recall the current setlist, preset, and snapshot so you don’t have to go digging through the manual
+
+# Other Improvements
+- Shortcut: Hold BYPASS and press a parameter knob to quickly remove any controller assignment (including the Snapshots controller). The value appears without brackets, indicating no controller is assigned to it
+- Shortcut: In Pedal Edit mode, press and hold FS10 (VALUE–) and FS11 (VALUE+) to quickly scroll through values. Now Helix Rack/Control users can quickly adjust parameters with their feet when no expression pedal is connected
+- Shortcut: In Pedal Edit mode, press and hold a Time (or Speed) parameter switch to toggle between ms (or Hz) and note values, just like pressing the knob
+- Helix’s pitch detect algorithms have been optimized and now track slightly faster
+- Parameters in the Global Settings menu have been reorganized to better reflect their category. For example, Tap Tempo Pitch has been moved to a new Preferences submenu and the Info submenu has been removed, as the current FW version now appears at the top of the Global Settings screen
+- On the Save, Name, and Customize screens, Knob 3 (Clear) has been replaced with Insert, which inserts a space and shifts all following characters to the right. You can still clear a character by pressing the joystick, which now cycles through A, a, 0, and [SPACE]
+- The Footswitch Assign page has been renamed “Bypass Assign” to better describe current and potential future functionality
+- Touch-hold any assigned stomp footswitch and the Customize button now also appears above Knob 5. The Customize button is grayed out if the footswitch has nothing yet assigned to it
+- On the Customize screens, Knob 4 now always displays a Remove button, regardless of whether a custom label has been assigned (solid button) or not (grayed out button)
+- When touching two stomp mode switches to swap their locations, the inspector text now tells you which two footswitches will be swapped
+- Recall snapshots remotely via an incoming MIDI CC message. A CC69 message with value 0 recalls Snapshot 1, value 1 recalls Snapshot 2, value 2 recalls Snapshot 3, and so forth
+- Footswitches in Looper mode now transmit corresponding MIDI CCs
+- Additions to and improvements made to the existing factory preset bundle
+- Re-leveled presets
+- The Helix Owner’s Manual has been updated to 2.0: http://line6.com/support/manuals/#effects
+
+# Bug Fixes
+- Parameters could respond sluggishly when receiving lots of fast incoming MIDI CC data - FIXED
+- Some MIDI keyboards (including those by Roland and M-Audio) send active sensing messages every 300ms, which could sometimes affect Helix’s MIDI input to the computer, causing intermittent dropouts - FIXED
+- Certain cab model defaults with 121 Ribbon mic could display as 421 Dynamic - FIXED
+- Rapidly moving EXP 1/2/3 while importing/exporting presets could result in data lockout - FIXED
+- Command Center > Copy/Paste All Commands would not copy customized labels - FIXED
+- Learn Controller would not work with FS1 or FS7 while in 10 Switches Stomp mode - FIXED
+- Helix wouldn’t remember tuner output routing across power cycles - FIXED
+- After a factory reset, Global Settings > Ins/Outs > XLR Out Level would be set to Mic level until toggled, regardless of its displayed value - FIXED
+- Certain delay models’ Time parameter could only go down to 20ms, even if the display reflected a lower value - FIXED
+- The TAP footswitch’s LED would reflect Global tempo instead of Per Preset tempo - FIXED
+- General stability improvements
+- Other minor bug fixes and optimizations
+ 
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra*

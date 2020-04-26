@@ -7,5 +7,5 @@ url: ""
 image: "../../../images/line6-logo.jpg"
 type: ["Delay"]
 channel: ["Mono", "Stereo"]
-update: ["2.0"]
+update: ["2.00"]
 ---

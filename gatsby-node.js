@@ -46,6 +46,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 }
             }
         }
+        allMdx(sort: {fields: frontmatter___path}) {
+            edges {
+                node {
+                    frontmatter {
+                        path
+                    }
+                }
+            }
+        }
     }
     `)
     // Handle errors
@@ -53,6 +62,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         reporter.panicOnBuild(`Error while running GraphQL query.`)
         return
     }
+
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
             path: node.frontmatter.path,
@@ -60,4 +70,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             context: {}, // additional data can be passed via context
         })
     })
+
+    result.data.allMdx.edges.forEach(({ node }) => {
+        createPage({
+            path: node.frontmatter.path,
+            component: require.resolve('./src/templates/releaseNoteTemplate.js'),
+            context: {
+                pathSlug: node.frontmatter.path,
+            },
+        });
+    });
 }

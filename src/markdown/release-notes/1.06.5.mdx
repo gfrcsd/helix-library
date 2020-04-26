@@ -1,0 +1,40 @@
+---
+title: "1.06.5"
+path: "/release-notes/1.06.5"
+date: 2016-02-16 00:00:00
+target: ["Helix"]
+---
+
+Helix v1.06.5 is a firmware update that includes new fixes and stability improvements, and optimizations. It is highly recommended that all Helix Rack users perform this update!
+
+It is also recommended that you back up your current presets by using the Helix application to create a preset bundle, allowing you to install new presets as part of the update process.
+
+The easiest way to perform the update process is by installing the latest version of Line 6 Updater. Once you've connected Helix to your computer via its USB port (hubs are not supported), Line 6 Updater will recognize the unit and take you through the update process. Both the Helix application and Line 6 Updater may be downloaded here: http://line6.com/software/
+
+# Bug Fixes
+
+- **In extremely rare cases, Helix can hang after a factory update. 1.06.5 adds a “safe boot mode” to allow for a subsequent firmware update. To enter safe boot mode, press and hold footswitches 6 and 12 (far right switches on both rows) while turning on Helix**
+- In some cases, changing a cab model within an Amp+Cab block after opening Pedal Edit mode may reset controller assignments — FIXED
+- Helix would not filter out MIDI program change messages with a channel different from its MIDI Base channel — FIXED
+- Headphone volume would be louder when Global Settings > Ins/Outs > Headphone monitor was set to “Multi” — FIXED
+- The Command Center > Action Panel’s “Copy All Commands” button would be grayed out unless a footswitch/instant command containing a message was first selected — FIXED
+- The US Double Nrm and US Double Vib model’s Sag parameter was biased too high — FIXED
+
+
+# Resetting Helix Globals / Loading the Newest Factory Presets
+<div className="notification is-danger is-light">
+    <p><strong>IMPORTANT!</strong> This procedure will completely overwrite all existing presets and setlists, as well as clear all user IRs and reset all global settings! Back up your presets and IRs before proceeding!</p>
+    <ol>
+        <li>Turn off Helix.</li>
+        <li>While holding footswitches 9 and 10 (middle two switches on the bottom row), turn on Helix.</li>
+        <li>Wait for the message “Will reset Globals and restore stock Presets, Setlists and IRs…” to appear and let go.</li>
+    </ol>
+</div>
+
+# Known Issues
+
+- Minor pops and clicks may be present when Helix is streaming audio from a Mac® running OS X 10.11 (El Capitan)
+- Minor pops and clicks may be present when Helix is streaming audio from an iOS® device running iOS 9.1 or 9.2 with Apple® Camera Kit
+- Importing a Helix bundle while streaming audio over USB may cause the Helix application to disconnect
+
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra*

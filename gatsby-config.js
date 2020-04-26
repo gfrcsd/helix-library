@@ -42,6 +42,25 @@ module.exports = {
         path: `${__dirname}/src/markdown/models/mics`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `releaseNotes`,
+        path: `${__dirname}/src/markdown/release-notes`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-remark-autolink-headers`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      option: {
+        defaultLayouts: {
+          releaseNotes: require.resolve('./src/templates/releaseNoteTemplate.js'),
+          default: require.resolve('./src/templates/releaseNoteTemplate.js'),
+          gatsbyRemarkPlugins: [`gatsby-remark-autolink-headers`]
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -56,7 +75,6 @@ module.exports = {
         icon: `src/images/helix-logo.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

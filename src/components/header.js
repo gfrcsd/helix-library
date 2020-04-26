@@ -25,6 +25,8 @@ const Header = ({ siteTitle }) => (
               <Link to="/models/mics" className="navbar-item">Mics</Link>
             </div>
           </div>
+          <Link to="/manuals" className="navbar-item">Manuals</Link>
+          <Link to="/release-notes" className="navbar-item">Release Notes</Link>
         </div>
       </div>
     </div>
