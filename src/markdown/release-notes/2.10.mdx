@@ -1,0 +1,80 @@
+---
+title: "2.10"
+path: "/release-notes/2.10"
+date: 2016-11-22 00:00:00
+target: ["Helix", "Helix Rack"]
+---
+ Helix v2.10.0 is a firmware update that includes new models, features, fixes, stability improvements, and optimizations. It is highly recommended that all Helix users perform this update!
+
+<div className="message is-danger">
+    <div className="message-header">
+        <p>IMPORTANT! YOU MUST FOLLOW THESE INSTRUCTIONS TO INSTALL 2.10!</p>
+    </div>
+    <div className="message-body">
+        <ol>
+            <li>Shut down all Line 6 software as well as any software that streams audio, including, but not limited to: iTunes, Spotify, DAWs, browsers, etc.</li>
+            <li>Use your CURRENT EXISTING Helix application to back up all of your presets and IRs (if you want to keep them). For example, if you’re running Helix FW 1.12, your current Helix application version should be 1.12.</li>
+            <p style={{marginTop:'10px'}}><strong>NOTE:</strong> You may want to back up individual Setlists so you can restore them to empty setlists without affecting the new 2.10 factory presets.</p>
+            <li>Quit the CURRENT EXISTING Helix editor application and download and install the NEW Helix editor application (2.10), available here: http://line6.com/software/ This also installs the newest version of Line 6 Updater (1.10).</li>
+            <li>If you’re using Helix Rack with Helix Control, turn off Helix Control.</li>
+            <li>Using the latest Line 6 Updater (1.10), update Helix/Helix Rack to the newest firmware (2.10). At the end of the update process, Helix/Helix Rack will reboot automatically and begin rebuilding presets. Wait for this process to complete.</li>
+            <li>If you’re using Helix Control with Helix Rack, connect and power on Helix Control. The inspector will ask if you want to update its firmware. Press Knob 6 (OK). Wait for the update to finish.</li>
+            <p style={{marginTop:'15px'}}><strong>YOU MUST RESET GLOBALS AND RESTORE PRESETS, OTHERWISE HELIX 2.10 WILL NOT WORK PROPERLY. DO IT. DO IT NOW:</strong></p>
+            <li>To reset globals and restore presets, turn off Helix/Helix Rack.</li>
+            <p style={{marginTop: '10px'}}><strong>HELIX FLOOR ONLY:</strong> While holding footswitches 9 and 10 (middle two switches on the bottom row), turn on Helix. Wait for the message “Will reset Globals and restore stock Presets, Setlists and IRs…” to appear and let go.</p>
+            <p><strong>HELIX RACK ONLY:</strong> While holding knobs 5 and 6 below the screen, turn on Helix Rack. Wait for the message “Will reset Globals and restore stock Presets, Setlists and IRs…” to appear and let go.</p>
+            <li>Using the NEW Helix editor application (2.10), restore the user presets you backed up in step 2.</li>
+        </ol>
+    </div>
+</div>
+
+# New Amp Models
+- **Archetype Clean**, based on* the clean channel of the Paul Reed Smith® Archon®
+- **Archetype Lead**, based on* the lead channel of the Paul Reed Smith® Archon®
+- **Line 6 Litigator**, new Line 6 Original inspired by boutique mid-gain amps
+
+# New Effects Models
+- Distortion > **Stupor OD** (Mono, Stereo), based on* the BOSS® SD-1 Overdrive
+- Delay > **Pitch Echo** (Mono, Stereo), Line 6 Original
+
+**Paul Reed Smith and Archon are registered trademarks of Paul Reed Smith Guitars, LP.*
+
+**BOSS is a registered trademark of Roland Corporation U.S.*
+
+
+# New Features
+- Auto Enable/Bypass blocks from EXP 1/2/3 and Variax Volume/Tone Knobs—Processing blocks (such as Wah, Pitch Wham, etc.) can now be enabled/bypassed by simply moving EXP 1, EXP 2, EXP 3, or Variax’s Volume or Tone knob. **Press MENU and then Knob 1 (Bypass Assign). Turn Knob 1 (Switch) to select the desired switch.** When selecting a continuous controller as a switch, Knob 2 (Position) and Knob 3 (Wait) appear.
+- Bypass Assign > Position—Position determines the location in the Exp Pedal or Variax knob’s travel where the block is engaged. For example, if set to 1%, the block will turn off as soon as the pedal is moved to the heel position. If set to 99%, the block will only turn on when the pedal is moved to the toe position. **To swap the on/off state regardless of position, press the BYPASS button.**
+- Bypass Assign > Wait—Wait determines how long it takes after the Exp Pedal or Variax Knob is moved below the Position location before the block turns off. For example, you may not want the Wah to turn off instantly every time you hit the heel position during your big funk solo. Also, does your song really need a big funk solo?
+- Block Bypass via MIDI—Individual processing blocks can now be enabled/bypassed via incoming MIDI CC messages. **Press MENU and then Knob 1 (Bypass Assign). Turn Knob 4 (MIDI In) to choose the desired MIDI CC.**     Incoming CC values 0-63 will turn the block off; values 64-127 will turn the block on. Note that some MIDI CCs are reserved for global functions and cannot be selected.
+- Learn Bypass Assign—As with Controller Assign, you can also now quickly learn a source for bypassing the selected block instead of assigning it manually. On the Bypass Assign screen, press Knob 6 (Learn) and then engage the desired footswitch, expression pedal, Variax knob, or MIDI CC. Helix will show the switch above Knob 1 (Switch) or if it’s a MIDI CC message, above Knob 4 (MIDI In).
+- Clear All Bypass Assignments—You can now clear all bypass assignments at once. **From the Bypass Assign screen, press ACTION and then Knob 1 (Clear All Assignments). Press Knob 6 (OK) to confirm.**
+- Snapshot footswitch LED color—You can now choose a color for each snapshot footswitch. Press the PRESETS knob and then Knob 6 (Rename Snapshot). Turn knob 5 (LED Color) to select the desired color. “Auto Color” is the default red. NOTE: There is currently no way to set snapshot footswitch color from the Helix application.
+- Split > Y Balance parameters—The old Split > Y block sends both left and right signals to Paths A and B equally. 2.10 adds individual balance (pan) control of the signals sent to Path A and B. By default, they’re set to “Center”, which behaves exactly like the old Split > Y block.
+- Support for MIDIpants
+
+# Improvements/Changes
+- Added a Headroom parameter to Delay > Vintage Digital
+- Snapshots now recall the currently active expression controller (EXP 1 or EXP 2) for the built-in treadle
+- Split > Y can now be bypassed; when bypassed, the block sends both left and right signals to both paths equally (like the old Split Y block)
+- Looper Mode switch LEDs now display a dim/lit state to better reflect their current states
+- Non-selected Pedal Edit Mode parameter switch LEDs now display a dim state
+- Added forward slash [/] to list of characters for naming presets, setlists, snapshots, and Stomp mode custom labels
+- Bypass Assign > Knob 1 (Footswitch) has been relabeled “Switch” to better reflect all values
+- Tap Tempo no longer affects a preset’s dirty state (“E” icon)
+- Minor updates to the Factory Preset bundle
+- If a user fails to read and follow the update instructions, Helix will cause their car radio to only play polka death metal every Thursday from 1-3pm PST
+
+# Bug Fixes
+- Errant graphics could appear when selecting an IR block from the Controller Assign page - FIXED
+- When assigning a command to EXP 3 on the Command Center page, the turquoise indicator could occasional fail to appear - FIXED
+- When sending/receiving Looper MIDI CC messages through external devices, MIDI feedback could occur - FIXED
+- General stability improvements
+- Other minor bug fixes and optimizations
+
+# Known Issues
+- In very rare cases, corrupted presets containing a Volume/Pan > Volume Pedal block can cause volume to drop to 0%. In such cases, completely clear the Volume Pedal block and add again. If the same preset exhibits this behavior again, please contact Line 6 Customer Service and be ready to email us the raw preset so we can analyze it
+- Bypass Assign > Wait defaults to 300ms from the hardware and 100ms when selected within the Helix edit application
+- Copying and pasting a block assigned to auto enable/bypass from the Helix editor may result in a “Cannot paste block” error message while the Helix hardware confirms the block was indeed pasted correctly. Workaround: Save the preset to re-sync the application.
+
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave *
