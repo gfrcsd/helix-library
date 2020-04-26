@@ -10,7 +10,7 @@ export default ({data}) => {
     return(
         <Layout>
             <SEO title="Release Notes"/>
-            <Heading title="Release Notes" subtitle={data.allMdx.totalCount + ' published to date'}/>
+            <Heading title="Release Notes" subtitle={data.allMdx.totalCount + ' published'}/>
             <Section>
                 {data.allMdx.edges.map(({ node }) => (
                     <div className="columns is-centered">
