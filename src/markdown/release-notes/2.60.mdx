@@ -1,0 +1,110 @@
+---
+title: "2.60"
+path: "/release-notes/2.60"
+date: 2018-07-02 00:00:00
+target: ["Helix", "Helix Rack", "Helix LT", "HX Effects", "HX Stomp"]
+---
+## "The Spring Cleaning Update"
+
+# New Amp Models (2 - Helix, Helix Rack/Control, Helix LT only)
+- **Cali Texas Ch1**, based on* the clean channel of the MESA/Boogie® Lonestar
+- **Placater Clean**, based on* the clean channel of the Friedman BE-100
+
+# New Effects Models (4)
+- Distortion > **Deranged Master** (Mono, Stereo), based on* the Dallas Rangemaster Treble Booster—WARNING! Like the real thing, this model can take your head off! Works best before a distorted amp
+- Distortion > **Deez One Vintage** (Mono, Stereo), based on* the BOSS© DS-1 distortion pedal (classic Made-in-Japan version)
+- Distortion > **Deez One Mod** (Mono, Stereo), based on* the BOSS© DS-1 distortion pedal (Keeley mod version)
+- Looper > **1 Switch Looper** (Mono, Stereo), Line 6 original (doesn't leave Stomp mode)
+
+* *All product names are trademarks of their respective owners, which are in no way associated or affiliated with Line 6.*
+
+<div className="message is-success">
+    <div className="message-header">
+        <p>Using the 1 Switch Looper</p>
+    </div>
+    <div className="message-body">
+        <p className="has-text-weight-semibold">Instructions:</p>
+        <ol>
+            <li><strong>Add a Looper > 1 Switch Looper block to your preset and assign it to a stomp footswitch.</strong> (Adding a 1 Switch Looper to HX Effects from Stomp view automatically assigns it to the selected footswitch.)</li>
+            <li><strong>Press the 1 Switch Looper switch.</strong> The LED lights red, indicating the loop is recording.</li>
+            <li><strong>Press the 1 Switch Looper switch again.</strong> The LED lights green, indicating the loop is playing back.</li>
+            <li><strong>Press the 1 Switch Looper switch again.</strong> The LED lights amber, indicating the loop is in overdub mode. Subsequent presses of the switch toggle between play and overdub mode.</li>
+            <li><strong>While the 1 Switch Looper is in play or overdub mode, press and hold the switch for 1 second.</strong> The most recent recording is undone. Holding the switch again will redo the recording. On Helix, Helix Rack/Control, and HX Effects, “UNDO” or “REDO” briefly appears on the scribble strip. On Helix LT, “UNDO” or “REDO” briefly appears in Performance view.</li>
+            <li><strong>Quickly double-press the 1 Switch Looper switch.</strong> Playback/recording stops and the LED lights white, indicating a loop is in memory.</li>
+            <li><strong>While Looper playback/recording is stopped, press and hold the switch.</strong> The recording is deleted and the LED lights dim white.</li>
+        </ol>
+    </div>
+</div>
+
+# Improvements/Changes
+- The most recent new HX Reverb models have been tweaked to sound notably wetter (see Known Issues below)
+- When changing the Time parameter, Legacy delay models now exhibit a more organic behavior (more like DL4 and Echo Pro)
+- The Looper block is now called “6 Switch Looper” (see Known Issues below)
+- Synchronizing to incoming MIDI clock has been improved
+- The Mix parameter defaults of both mono and stereo HX Reverbs are now consistent
+- When loading a preset, its default MIDI program change message would be transmitted after the preset is loaded and any Instant commands were sent. This PC message is now sent immediately when the preset is selected
+- Helix, Helix Rack/Control, Helix LT only: Shuriken Variax bank names now appear in the Input > Multi and Input > Variax block without requiring connection to Variax Workbench
+- HX Effects only: On the Signal Flow page, if the Split block is selected and bypassed, it now appears with a different icon than when it’s enabled
+- Many under-the-hood improvements
+
+# Bug Fixes
+- The Filter > Legacy > Obi Wah model is mono (should be stereo) — **FIXED**
+- Modulation > Legacy > Analog Chorus > Mode parameter was mislabeled “CH Vib” — **FIXED**
+- Pitch/Synth > Legacy > Smart Harmony > Key parameter was mislabeled “V1 Key” — **FIXED**
+- Helix, Helix Rack/Control, Helix LT only: After selecting a different preset, the Tempo > Preset BPM value display would not be updated — **FIXED**
+- Helix, Helix Rack/Control, Helix LT only: While the Looper (now 6 Switch Looper) is in playback mode, the LED on FS9 (Play/Stop) will go dim when exiting and then returning to Looper view — **FIXED**
+- Helix, Helix Rack/Control, Helix LT only: When the Tuner > Output routing is set to USB 5/6, the audio can instead be routed to USB 3/4 — **FIXED**
+- Helix, Helix Rack/Control, Helix LT only: If an Input block on Path 2A or 2B is set to “None,” its Input gate remains active if previously engaged — **FIXED**
+- Helix, Helix Rack/Control, Helix LT only: If Global Settings > EXP Pedals > EXP 1 Polarity is set to “Inverted,” EXP 2 Polarity could be affected — **FIXED**
+- Helix, Helix Rack/Control, Helix LT only: If a single Stomp mode footswitch is assigned to a block bypass and more than one parameter assignment, repeatedly touching the switch may not cycle through all assignments — **FIXED**
+- Helix, Helix Rack/Control, Helix LT only: Saving a preset with a Command Center Note On command can reset the note value to C-1 when quickly changing snapshots — **FIXED**
+- Helix, Helix Rack/Control, Helix LT only: In some cases, Command Center CC Toggle messages are not sent when selecting snapshots — **FIXED**
+- Helix Rack/Control only: In rare cases, if the current preset in Helix Rack is particularly DSP-intensive and an expression pedal is connected to Helix Control, recalling a different preset or snapshot can cause Helix Control to freeze — **FIXED** 
+- Helix Rack/Control only: In rare cases, while quickly navigating presets, the preset name displayed on Helix Rack can sometimes not match that on Helix Control — **FIXED**
+- HX Effects only: The Delay > Stereo > Multi Pass block in some factory presets appeared only with the left channel active — **FIXED**
+- HX Effects only: Looper (now 6 Switch Looper) playback/recording can sometimes stop when changing presets, even if the target preset has the same type of looper (mono or stereo) — **FIXED**
+- HX Effects only: In some cases, the Looper (now 6 Switch Looper) can continue to play when selecting an empty preset with no Looper block — **FIXED**
+- HX Effects only: Selecting the Distortion > Thrifter Fuzz model can result in a brief thump accompanied by a high whine — **FIXED**
+- HX Effects only: If a controller is assigned to a Modulation > Pattern Trem block parameter and the min value is greater than the max value, moving the controller can cause HX Effects to freeze — **FIXED**
+- HX Effects only: Under rare, specific circumstances, parameters assigned to Note values could sometimes reset when recalling snapshots — **FIXED**
+- HX Effects only: Loading certain presets can cause some model blocks to appear as None blocks — **FIXED**
+- HX Effects only: Copying and pasting a block with many controller assignments can delete all controller assignments (and cause subsequent errors) after saving and then recalling the preset — **FIXED**
+- HX Effects only: When Global Settings > Switches >  Stomp mode is set to “4 Switches,” the Looper (now 6 Switch Looper) could sometimes fail to display Record and Undo switches — **FIXED**
+- HX Effects only: After a factory reset, recording a loop and then saving the preset could result in the loop being cleared — **FIXED**
+- HX Effects only: The Split block’s bypass state could sometimes not be recalled via snapshots — **FIXED**
+- HX Effects only: Receiving MIDI CC69 messages to recall snapshots can sometimes result in unpredictable block bypass states — **FIXED**
+- HX Effects only: Attempting to assign a block to a footswitch that already has eight assignments can result in clearing one or more original assignments — **FIXED**
+- HX Effects only: In rare cases, assigning the same EXP pedal to the same parameter twice in a row via Learn Controller can cause a scribble strip’s contents to disappear — **FIXED**
+- HX Effects only: Adjusting a parameter with an expression pedal while holding TAP/TUNER can result in the block’s parameters appearing in Tuner view — **FIXED**
+- HX Effects only: When receiving an MIDI CC52, CC53, or CC54 message, HX Effects does not respond as expected — **FIXED**
+- HX Effects only: When a Send 1/2 Output block is selected, parameters in the Controller Assign are incorrect — **FIXED**
+- HX Effects only: After assigning a controller to the Pitch/Synth > Simple Pitch > Interval parameter, it appears as “-2147483” in parameter spill view — **FIXED**
+- HX Effects only: Certain parameters with both positive and negative values can sometimes cause the Controller Assign menu’s Min Value and Max Value parameter sliders to not reflect the correct value — **FIXED**
+- HX Effects only: After assigning a footswitch to parameter control via Controller Assign’s FS3 (Learn), relearning a MIDI CC message results in HX Effects automatically applying CC4, regardless of the CC# received — **FIXED**
+- HX Effects only: Looper (now 6 Switch Looper) Undo function would not undo the most recent overdub — **FIXED**
+- HX Effects only: While performing a Factory Reset, turning knobs 1-3 could cause Global Settings to appear above Footswitch 2 — **FIXED**
+- HX Effects only: If a Wah block is changed to a Looper block, the Looper’s Playback parameter is automatically assigned to EXP 2 — **FIXED**
+- HX Effects only: After clearing three or more Command Center assignments, all saved Command Center snapshot data can be inadvertently cleared — **FIXED**
+- HX Effects only: In rare cases, duplicate Command Center Instant commands can be transmitted when selecting snapshots — **FIXED**
+- HX Effects only: When Global Settings > Pedals > EXP 1 Position or EXP 2 Position is set to “Global”, expression position may not always affect parameters globally — **FIXED**
+- HX Effects only: After saving a preset, HX Effects would sometimes not display the most recently accessed block on a footswitch assigned to multiple blocks — **FIXED**
+- HX Effects only: When the Tuner output is set to Send 1/2, signal flow audio sent to Send 1/2 can be muted — **FIXED**
+- HX Effects only: In rare, specific circumstances, Command Center MIDI Bank/Prog and CC values can be inadvertently altered when changing snapshots — **FIXED**
+- HX Effects only: Assigning 11 (!) parameters to a single controller, copying/pasting the block, and then moving the controller can cause HX Effects to freeze — **FIXED**
+- HX Effects only: If the Mixer block is moved to Path B, moving the block would cause its parameters above Footswitch 3 to disappear — **FIXED**
+- HX Effects only: While in the Save Preset menu, touching the TAP/TUNER switch to open the Tempo Panel will reset any recent custom name or save destination — **FIXED**
+- HX Effects only: In some cases, manually setting a Wah, Volume, or Pitch Wham’s switch assignment can result in odd parameter slider behavior — **FIXED**
+- HX Effects only: In the Command Center, any Bank/Prog message’s CC00, CC32, and Prog parameters could not contain have a value of 0 — **FIXED**
+- HX Effects only: If a block has a dual-state parameter assigned to a different footswitch, copying and pasting the block to another switch can fail to display white controller nodes and sometimes may freeze the UI — **FIXED**
+- HX Effects only: Receiving a MIDI CC68 message does not open and close the Tuner view — **FIXED**
+- HX Effects only: In some cases, Send 1/2 & Main L/R Pan and Level parameter settings are reflected across preset changes — **FIXED**
+- HX Effects only: Snapshot names can sometimes fail to appear on the scribble strips — **FIXED**
+- HX Effects only: EXP 1 and 2 would behave as if it was set to “Per Preset”, even when set to “Global” — **FIXED**
+- Many other minor bug fixes and optimizations
+
+# Known Issues
+- As the new HX Reverb models have been tweaked to sound notably “wetter”, any existing user presets that use these models will sound different. Although Helix and HX hardware has the ability to compensate for changes made to models when rebuilding presets (and one of our goals is to rarely if ever cause audible changes to existing user presets), the improvements made to the reverb blocks unfortunately cannot be compensated for
+- Existing user presets containing Helix’s classic Looper block will continue to read “Looper” instead of “6 Switch-Looper” until the model is changed and the preset is re-saved. This is normal and does not affect operation
+- In rare cases, pitch artifacts may be heard on selected delay blocks when the Time parameter is set to Note Sync values higher than 1/2 Triplet
+
+**Compatible OS:** *Mac OS X, Windows 7, Windows 8, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave*
