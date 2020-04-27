@@ -1,0 +1,23 @@
+---
+title: "2.53"
+path: "/release-notes/2.53"
+date: 2018-03-01 00:00:00
+target: ["Helix", "Helix Rack", "Helix LT", "HX Effects"]
+---
+
+# Bug Fixes
+- In rare cases, updating from 2.21 firmware or older could result in unit freezing during UI MCU update - FIXED
+- External Amp commands could not be transmitted when changing snapshots - FIXED
+- In rare cases, Helix Rack could freeze when updating Helix Control - FIXED
+- In some cases, an External Amp command (Tip only) could change the internal expression pedal from EXP 1 to EXP 2 (or vice versa) on Helix LT - FIXED
+- In some cases, attempting to swap footswitch assignments when one switch was unassigned could cause Helix to freeze - FIXED
+- Other bug fixes and optimizations
+
+# Known Issues
+- In rare cases, a crash can occur when creating an Input or Output in HX Edit (moving split/join to B path) while having a None block selected
+- In rare cases, PC messages are sent after Instant Commands on preset load, resulting in perceived delayed response by the device receiving MIDI
+- Shuriken Variax bank names will not appear in firmware until Helix is connected to a Mac/PC and Workbench HD is launched
+- In rare cases, pitch artifacts may be heard on selected delay blocks when the Time parameter is set to Note Sync values higher than 1/2 Triplet
+
+
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave*
