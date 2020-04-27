@@ -1,0 +1,44 @@
+---
+title: "2.11"
+path: "/release-notes/2.11"
+date: 2016-12-15 00:00:00
+target: ["Helix", "Helix Rack"]
+---
+
+Helix v2.11.0 is a firmware update that includes fixes, stability improvements, and optimizations. It is highly recommended that all Helix users perform this update!
+
+<div className="message is-danger">
+    <div className="message-header">
+        <p>IMPORTANT! YOU MUST FOLLOW THESE INSTRUCTIONS TO INSTALL 2.11!</p>
+    </div>
+    <div className="message-body">
+        <ol>
+            <li>Shut down all Line 6 software as well as any software that streams audio, including, but not limited to: iTunes, Spotify, DAWs, browsers, etc.</li>
+            <li>Use your CURRENT EXISTING Helix application to back up all of your presets and IRs (if you want to keep them). For example, if you’re running Helix FW 1.12, your current Helix application version should be 1.12.</li>
+            <p style={{marginTop:'10px'}}><strong>NOTE:</strong> You may want to back up individual Setlists so you can restore them to empty setlists without affecting the new 2.11 factory presets.</p>
+            <li>Quit the CURRENT EXISTING Helix editor application and download and install the NEW Helix editor application (2.11), available here: http://line6.com/software/ This also installs the newest version of Line 6 Updater (1.10).</li>
+            <li>If you’re using Helix Rack with Helix Control, turn off Helix Control.</li>
+            <li>Using the latest Line 6 Updater (1.10), update Helix/Helix Rack to the newest firmware (2.11). At the end of the update process, Helix/Helix Rack will reboot automatically and begin rebuilding presets. Wait for this process to complete.</li>
+            <li>If you’re using Helix Control with Helix Rack, connect and power on Helix Control. The inspector will ask if you want to update its firmware. Press Knob 6 (OK). Wait for the update to finish.</li>
+            <p style={{marginTop:'15px'}}><strong>YOU MUST RESET GLOBALS AND RESTORE PRESETS, OTHERWISE HELIX 2.11 WILL NOT WORK PROPERLY. DO IT. DO IT NOW:</strong></p>
+            <li>To reset globals and restore presets, turn off Helix/Helix Rack.</li>
+            <p style={{marginTop: '10px'}}><strong>HELIX FLOOR ONLY:</strong> While holding footswitches 9 and 10 (middle two switches on the bottom row), turn on Helix. Wait for the message “Will reset Globals and restore stock Presets, Setlists and IRs…” to appear and let go.</p>
+            <p><strong>HELIX RACK ONLY:</strong> While holding knobs 5 and 6 below the screen, turn on Helix Rack. Wait for the message “Will reset Globals and restore stock Presets, Setlists and IRs…” to appear and let go.</p>
+            <li>Using the NEW Helix editor application (2.11), restore the user presets you backed up in step 2.</li>
+        </ol>
+    </div>
+</div>
+
+# Bug Fixes
+- After importing a pre-2.10 preset that contains snapshots, EXP 2 could disappear from the expression pedal’s scribble strip LCD - FIXED
+- After importing a pre-2.10 preset with IR 127 or 128 loaded, corruption could occur - FIXED
+- Bypass Assign > Wait defaults to 300ms from the hardware and 100ms when selected within the Helix edit application - FIXED
+- General stability improvements
+- Other minor bug fixes and optimizations
+
+# Known Issues
+- In very rare cases, corrupted presets containing a Volume/Pan > Volume Pedal block can cause volume to drop to 0%. In such cases, completely clear the Volume Pedal block and add again. If the same preset exhibits this behavior again, please contact Line 6 Customer Service and be ready to email us the raw preset so we can analyze it
+- Copying and pasting a block assigned to auto enable/bypass from the Helix editor may result in a “Cannot paste block” error message while the Helix hardware confirms the block was indeed pasted correctly. Workaround: Save the preset to re-sync the application.
+- EXP TOE cannot be bypass assigned using the LEARN option in Bypass Assign menu
+
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave *

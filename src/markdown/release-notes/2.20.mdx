@@ -1,0 +1,100 @@
+---
+title: "2.20"
+path: "/release-notes/2.20"
+date: 2017-03-30 00:00:05
+target: ["Helix", "Helix Rack", "Helix LT"]
+---
+Helix v2.20.0 is a firmware update that includes new amps, cabs, effects, features, fixes, stability improvements, and optimizations. It is highly recommended that all Helix users perform this update!
+
+<div className="message is-danger">
+    <div className="message-header">
+        <p>IMPORTANT! YOU MUST FOLLOW THESE INSTRUCTIONS TO INSTALL 2.20!</p>
+    </div>
+    <div className="message-body">
+        <ol>
+            <li>Shut down all Line 6 software as well as any software that streams audio, including, but not limited to: iTunes, Spotify, DAWs, browsers, etc.</li>
+            <li>Use your CURRENT EXISTING Helix application to back up all of your presets and IRs (if you want to keep them). For example, if you’re running Helix FW 1.12, your current Helix application version should be 1.12.</li>
+            <p style={{marginTop:'10px'}}><strong>NOTE:</strong> You may want to back up individual Setlists so you can restore them to empty setlists without affecting the new 2.20 factory presets.</p>
+            <li>Quit the CURRENT EXISTING Helix editor application and download and install the NEW Helix editor application (2.11), available here: http://line6.com/software/ This also installs the newest version of Line 6 Updater (1.11).</li>
+            <li>If you’re using Helix Rack with Helix Control, turn off Helix Control.</li>
+            <li>Using the latest Line 6 Updater (1.11), update Helix/Helix Rack to the newest firmware (2.20). At the end of the update process, Helix/Helix Rack will reboot automatically and begin rebuilding presets. Wait for this process to complete.</li>
+            <li>If you’re using Helix Control with Helix Rack, connect and power on Helix Control. The inspector will ask if you want to update its firmware. Press Knob 6 (OK). Wait for the update to finish.</li>
+            <p style={{marginTop:'15px'}}><strong>YOU MUST RESET GLOBALS AND RESTORE PRESETS, OTHERWISE HELIX 2.20 WILL NOT WORK PROPERLY. DO IT. DO IT NOW:</strong></p>
+            <li>To reset globals and restore presets, turn off Helix/Helix Rack.</li>
+            <p style={{marginTop: '10px'}}><strong>HELIX FLOOR ONLY:</strong> While holding footswitches 9 and 10 (middle two switches on the bottom row), turn on Helix. Wait for the message “Will reset Globals and restore stock Presets, Setlists and IRs…” to appear and let go.</p>
+            <p><strong>HELIX RACK ONLY:</strong> While holding knobs 5 and 6 below the screen, turn on Helix Rack. Wait for the message “Will reset Globals and restore stock Presets, Setlists and IRs…” to appear and let go.</p>
+            <li>Using the NEW Helix editor application (2.20), restore the user presets you backed up in step 2.</li>
+        </ol>
+    </div>
+</div>
+
+# New Amps (6)
+- **Line 6 Badonk**, all new Line 6 original inspired by the original high gain Big Bottom model
+- **Woody Blue**, based on* the Acoustic® 360 bass amp
+- **Del Sol 300**, based on* the Sunn® Coliseum 300 bass amp
+- **Busy One Ch1**, based on* channel 1 of the Pearce BC-1 bass preamp
+- **Busy One Ch2**, based on* channel 2 of the Pearce BC-1 bass preamp
+- **Busy One Jump**, based on* channel 1 and 2 (jumped) of the Pearce BC-1 bass preamp
+
+# New Hybrid Cabs (7)
+- **1x12 Cali IV**, based on* the MESA/Boogie® Mk IV 12” cab
+- **1x12 Cali EXT**, based on* the MESA/Boogie® 12” extension cab (EVM12L speaker)
+- **2x12 Match H30**, based on* the Matchless® DC-30 cab (12” G12H30 speaker)
+- **2x12 Match G25**, based on* the Matchless® DC-30 cab (12” Greenback 25 speaker)
+- **1x12 Del Sol**, based on* the Sunn® Coliseum 300 bass cab (12” speaker)
+- **1x18 Del Sol**, based on* the Sunn® Coliseum 300 bass cab (18” speaker)
+- **1x18 Woody Blue**, based on* the Acoustic® 360 18” bass cab
+
+
+# New Effects (9)
+- Distortion > **Obsidian 7000** (Mono, Stereo), based on* the Darkglass Electronics® Microtubes B7K Ultra bass preamp/overdrive/EQ
+- Distortion > **Clawthorn Drive** (Mono, Stereo), based on* the Wounded Paw Battering Ram bass overdrive
+- Dynamics > **3-Band Comp** (Mono, Stereo), Line 6 Original multiband compressor
+- Dynamics > **Autoswell** (Mono, Stereo), Line 6 Original
+- Modulation > **PlastiChorus** (Mono, Stereo), based on* the modded Arion SCH-Z chorus
+- Delay > **Vintage Swell** (Mono, Stereo), Line 6 Original
+- Delay > **Adriatic Swell** (Mono, Stereo), Line 6 Original
+- Pitch/Synth > **3 Note Generator** (Mono, Stereo), Line 6 Original
+- Pitch/Synth > **4 OSC Generator** (Mono, Stereo), Line 6 Original
+
+**NOTE:** As 3 Note Generator and 4 OSC Generator make sound without any instrument connected, their blocks are turned off by default. Press BYPASS to turn them on.
+
+**All product names are trademarks of their respective owners, which are in no way associated or affiliated with Line 6.*
+
+
+# New Features
+- Global Settings > MIDI/Tempo > Receive MIDI Clock—Helix can now synchronize its time-based effects (such as delay and modulation) to incoming MIDI clock from external DAW software, drum machines, keyboard workstations, or other modelers. **Select “Off” (Helix ignores MIDI clock), “MIDI” (Helix responds to clock received at its MIDI IN jack), “USB” (Helix responds to clock received via USB), or “Auto” (Helix uses its internal tempo generator until receiving clock from either MIDI or USB)**
+- Global Settings > MIDI/Tempo > Send MIDI Clock—Helix can now transmit MIDI clock to synchronize the tempo of external pedals, rack gear, and software. **Select “Off” (Helix does not transmit clock), “MIDI” (Helix transmits clock from only the MIDI OUT jack), “USB” (Helix transmits clock only via USB), or “MIDI+USB” (Helix transmits clock from both MIDI and USB)**
+- Variax Workbench HD Support—Variax can now communicate directly with Variax Workbench HD software (Mac/PC) through Helix via USB. IMPORTANT! Global Settings > MIDI/Tempo > MIDI over USB must be set to “On.” In addition, you MUST update Variax Workbench HD to version 2.13, available here: [URL] Windows users must also download the Helix USB driver, version 1.85, available here: https://line6.com/software/readeula.html?rid=7381
+
+**IMPORTANT!** Variax Workbench uses MIDI channel 16. When connecting to Variax Workbench via Helix’s USB port, do not assign Helix or any of Helix’s Command Center messages to MIDI channel 16 or Omni (which includes channel 16).
+
+- Global Settings > MIDI/Tempo > MIDI PC Send/Receive has been split into two separate parameters—MIDI PC Receive and MIDI PC Send—and moved to Page 2. In addition, you may choose whether Helix sends or receives MIDI PC (program change) messages to/from MIDI, USB, both, or neither
+- Clear Bypass Assignment—Individual blocks’ bypass assignments can now be cleared. **From the Bypass Assign screen, select the block whose bypass assignment(s) you wish to clear. Press ACTION and then Knob 1 (Clear Assignments).**
+- Line 6 Allure Pack IRs—Line 6 has created a pack of five user impulse responses for use with Helix or any other modeler or software that supports them. Download the free Allure Pack here: www.line6.com/allure
+
+
+# Improvements/Changes
+- Optimized GUI engine speeds up navigation and model selection
+- Receive MIDI Clock and Send MIDI Clock have also been added to the Tempo panel shortcut. **At any time, touch TAP to open the Tempo panel.**
+- When slaved to external MIDI clock, TAP’s scribble strip text grays out and its switch LED ring flashes blue
+- Reverb > Plate, Room, Chamber, Hall, Echo, Tile, Cave, Ducking, and Octo have all been optimized to be less DSP-intensive
+- Pitch > Pitch Wham, Twin Harmony, Simple Pitch, Dual Pitch, and 3 OSC Synth have all been optimized to be less DSP-intensive
+- Non-selected Pedal Edit parameter switches now reflect dim block color
+- Inactive Looper function switches now appear as dim white
+- Additions to and improvements made to the existing factory preset bundle
+
+# Bug Fixes
+- In very rare cases, corrupted presets containing a Volume/Pan > Volume Pedal block can cause volume to drop to 0% - FIXED
+- Certain Roland keyboards constantly spit out active sensing MIDI messages (with no way to disable them), which could affect Helix’s MIDI transmission - FIXED
+- The Channel Volume taper for the Archetype amp model was incorrect - FIXED
+- Many other minor bug fixes and optimizations
+
+# Known Issues
+- If a Variax guitar is connected to Helix, MIDI channel 16 should never be used, as channel 16 is how Variax Workbench communicates with the guitar. This is by design. On a related note, Variax Workbench should never be used while MIDI tracks are armed or playing back in your DAW
+- In rare cases, Helix may freeze when very rapidly changing presets while receiving MIDI clock
+- Helix’s blue TAP LED flashes but tempo is not actually synced unless an audio device is selected in Ableton Live
+- Subtle stepping may be heard when adjusting the main VOLUME knob while audio is present
+- If a user fails to read and follow the update instructions, Helix will engage Snapshot 2 in preset 8 Templates > 32D every day at 4:30 AM
+
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave*

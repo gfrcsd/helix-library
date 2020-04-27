@@ -1,0 +1,51 @@
+---
+title: "2.30"
+path: "/release-notes/2.30"
+date: 2017-11-21 00:00:00
+target: ["Helix", "Helix Rack","Helix LT"]
+---
+
+# New Amps (7)
+- **Voltage Queen**, based on* the Victoria® Electro King
+- **Derailed Ingrid**, based on* the Trainwreck Circuits® Express
+- **Brit Trem Nrm**, based on* the normal channel of the Marshall® Plexi Tremolo 50
+- **Brit Trem Brt**, based on* the bright channel of the Marshall® Plexi Tremolo 50
+- **Brit Trem Jump**, based on* the normal and bright channel (jumped) of the Marshall® Plexi Tremolo 50
+- **Cartographer**, based on* the Ben Adrian Cartographer
+- **Agua 51**, based on* the Aguilar® DB751 bass amp
+
+# New Effects (7)
+- Distortion > **Kinky Boost** (Mono, Stereo), based on* the Xotic® EP Booster
+- Distortion > **Thrifter Fuzz** (Mono, Stereo), Line 6 Original
+- Dynamics > **Kinky Comp** (Mono, Stereo), based on* the Xotic® SP Compressor
+- Modulation > **Bleat Chop Trem** (Mono, Stereo), based on* the Lightfoot Labs© Goatkeeper
+- Modulation > **Double Take** (Mono, Stereo), Line 6 Original doubler
+- Delay > **Cosmos Echo** (Mono, Stereo), based on* the Roland® RE-201 Space Echo
+- Volume/Pan > **Stereo Width** (Stereo), Line 6 Original utility to collapse stereo paths
+**All product names are trademarks of their respective owners, which are in no way associated or affiliated with Line 6.*
+
+# New Features
+- Support for HX Edit—Helix, Helix Rack/Control, and Helix LT now work with the new HX Edit application (Mac/PC)
+- Full State Backup and Restore—Helix supports the all-new HX Edit application’s ability to perform full-state backup and restore. <p className="has-text-danger">IMPORTANT! You MUST be running Helix firmware 2.20 or higher to use full state backup and restore!</p> **In HX Edit, from the File pulldown menu, select “Create Backup…” Click [Create Backup] to confirm. To restore from a backup, from the File pulldown menu, select “Restore From Backup…” From the Backup File pulldown, select the desired backup and click [Restore Backup].** You may choose to restore any combination of 8 setlists, IRs (including the index order), and/or Global Settings.
+- Global Settings > MIDI/Tempo > Duplicate PC Send—Before 2.30, Helix would purposely omit MIDI PC messages with an identical value as the previous PC message. You may now choose to send duplicate PC messages
+- LFO reset—Stepping on TAP once now resets any LFO-based effects, such as tremolos and rotary speakers
+- Support for Variax Shuriken banks—When a Variax Shuriken is connected, Helix’s Input > Multi and Input > Variax blocks will reflect the proper factory bank names. These bank names are retained until a James Tyler Variax or Variax Standard is connected
+
+# Improvements/Changes
+- The Distortion > Obsidian 7000 model has been tweaked to sound and feel even more like the original
+
+# Bug Fixes
+- Turning the Cali IV Rhythm 1 model’s Master knob down can occasionally cause an increase in output volume -FIXED
+- When UK 846 and Teardrop 310 wah models’ Level and Mix parameters are set to 0, ~3dB of gain can be added -FIXED
+- Pitch blocks’ Interval parameters may not be properly restored after exporting and then importing a preset -FIXED
+- MIDI clock could become unstable for a brief time after adjusting certain parameters on the Global Settings > MIDI/Tempo page - FIXED
+- In the Command Center, if an Ext Amp message is assigned to a footswitch, Ext Amp messages assigned to Instant commands may not restore properly -FIXED
+- General stability improvements
+- Other minor bug fixes and optimizations
+
+# Known Issues
+- In rare cases, MIDI note commands set to momentary can switch to “latching”
+- If its Mid and Bass parameters are set to 0.0, the Cali IV Lead Amp/Amp+Cab model sometimes exhibits a decrease in gain
+- If snapshot names have been cleared, preset names can sometimes appear blank when switching from Snapshot footswitch mode to Preset footswitch mode
+
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave*

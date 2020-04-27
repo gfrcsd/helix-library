@@ -1,0 +1,118 @@
+---
+title: "2.50"
+path: "/release-notes/2.50"
+date: 2018-02-07 00:00:00
+target: ["Helix", "Helix Rack", "Helix LT", "HX Effects"]
+---
+
+# New Amp Models (2)
+- **Cali Texas Ch2**, based on* the drive channel of the MESA/Boogie® Lonestar [Ch1 coming later this spring]
+- **Placater Dirty**, based on* the BE/HBE channel of the Friedman BE-100 [Clean channel coming later this spring] 
+
+# New HX Effects Models (6)
+- Delay > **Multi Pass** (Mono, Stereo), Line 6 Original bandpass-filtered multitap delay
+- Reverb > **Glitz** (Mono, Stereo), Line 6 Original
+- Reverb > **Ganymede** (Mono, Stereo), Line 6 Original
+- Reverb > **Searchlights** (Mono, Stereo), Line 6 Original
+- Reverb > **Plateaux** (Mono, Stereo), Line 6 Original
+- Reverb > **Double Tank** (Mono, Stereo), Line 6 Original
+
+# New Legacy Effects Models (77)
+Helix Floor, Rack/Control, and LT now include a library of effects from M13, M9, M5, DL4, DM4, FM4, and MM4. These appear in a new "Legacy" subcategory in the model list.
+- Distortion > **Tube Drive**
+- Distortion > **Screamer**
+- Distortion > **Overdrive**
+- Distortion > **Classic Dist**
+- Distortion > **Heavy Dist**
+- Distortion > **Colordrive**
+- Distortion > **Buzz Saw**
+- Distortion > **Facial Fuzz**
+- Distortion > **Jumbo Fuzz**
+- Distortion > **Fuzz Pi**
+- Distortion > **Jet Fuzz**
+- Distortion > **Line 6 Drive**
+- Distortion > **Line 6 Distortion**
+- Distortion > **Sub Oct Fuzz**
+- Distortion > **Octave Fuzz**
+- Dynamics > **Tube Comp**
+- Dynamics > **Red Comp**
+- Dynamics > **Blue Comp**
+- Dynamics > **Blue Comp Treb**
+- Dynamics > **Vetta Comp**
+- Dynamics > **Vetta Juice**
+- Dynamics > **Boost Comp**
+- Modulation > **Pattern Tremolo**
+- Modulation > **Panner**
+- Modulation > **Bias Tremolo**
+- Modulation > **Opto Tremolo**
+- Modulation > **Script Phase**
+- Modulation > **Panned Phaser**
+- Modulation > **Barberpole**
+- Modulation > **Dual Phaser**
+- Modulation > **U-Vibe**
+- Modulation > **Phaser**
+- Modulation > **Pitch Vibrato**
+- Modulation > **Dimension**
+- Modulation > **Analog Chorus**
+- Modulation > **Tri Chorus**
+- Modulation > **Analog Flanger**
+- Modulation > **Jet Flanger**
+- Modulation > **AC Flanger**
+- Modulation > **80A Flanger**
+- Modulation > **Frequency Shift**
+- Modulation > **Ring Modulator**
+- Modulation > **Rotary Drum**
+- Modulation > **Rotary Drm/Horn**
+- Delay > **Ping Pong**
+- Delay > **Dynamic**
+- Delay > **Stereo**
+- Delay > **Digital**
+- Delay > **Dig w/ Mod**
+- Delay > **Reverse**
+- Delay > **Lo Res**
+- Delay > **Tube Echo**
+- Delay > **Tape Echo**
+- Delay > **Sweep Echo**
+- Delay > **Echo Platter**
+- Delay > **Analog Echo**
+- Delay > **Analog w/ Mod**
+- Delay > **Auto-Volume Echo**
+- Delay > **Multi-Head**
+- Pitch/Synth > **Bass Octaver**
+- Pitch/Synth > **Smart Harmony**
+- Pitch/Synth > **Octi Synth**
+- Pitch/Synth > **Synth O Matic**
+- Pitch/Synth > **Attack Synth**
+- Pitch/Synth > **Synth String**
+- Pitch/Synth > **Growler**
+- Filter > **Voice Box**
+- Filter > **V Tron**
+- Filter > **Q Filter**
+- Filter > **Seeker**
+- Filter > **Obi Wah**
+- Filter > **Tron Up**
+- Filter > **Tron Down**
+- Filter > **Throbber**
+- Filter > **Slow Filter**
+- Filter > **Spin Cycle**
+- Filter > **Comet Trails**
+
+# Improvements/Changes
+- 12 of Helix’s 17 reverbs originally appeared in M-Class processors and Verbzilla. As such, they’ve been moved into the new “Legacy” subcategory within the Reverb category
+- Helix's tempo no longer responds to pressing TAP at tempi lower than 40.0 BPM (Beats Per Minute). This is to ensure that multiple fast tap entries are recognized properly, as previously, they could be seen as one really slow tap entry. You may still manually select a tempo all the way down to 20.0 BPM and your presets can still be saved with tempi down to 20.0 BPM—just touch TAP and turn Knob 6 (BPM)
+
+# Bug Fixes
+- In some cases, when Global Settings > MIDI/Tempo > Duplicate PC Send was set to "Off," duplicate PC messages could still be sent—FIXED
+- In rare cases, MIDI note commands set to momentary could switch to “latching”—FIXED
+- If its Mid and Bass parameters are set to 0.0, the Cali IV Lead Amp/Amp+Cab model could sometimes exhibit a decrease in gain—FIXED
+- If snapshot names have been cleared, preset names could sometimes appear blank when switching from Snapshot footswitch mode to Preset footswitch mode—FIXED
+- Helix LT: After restoring Global Settings from HX Edit, the EXP 1/2 LEDs could become responsive—FIXED
+- Quickly switching between snapshots could cause Command Center > CC Toggle messages to send incorrect MIDI CC data—FIXED
+- Other bug fixes and optimizations
+
+# Known Issues
+- Shuriken bank names only appear after connecting a Shuriken Variax guitar to Helix and opening Variax Workbench HD software
+- When using two 1024 IR's in a preset, moving the upper IR block before or after a pre/post split block can change the sonic character of the IR block
+- In rare cases, pitch artifacts may be heard on selected delay blocks when the Time parameter is set to Note Sync values higher than 1/2 Triplet
+
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave*
