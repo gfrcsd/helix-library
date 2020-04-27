@@ -1,0 +1,20 @@
+---
+title: "2.54"
+path: "/release-notes/2.54"
+date: 2018-03-22 00:00:00
+target: ["Helix", "Helix Rack", "Helix LT", "HX Effects"]
+---
+
+# Bug Fixes
+- Pop noise can occur when exiting Tuner in four cable method setup with FX loop block engaged and audio playing upon entering and exiting Tuner -**FIXED**
+- Once every 74 minutes or so, the AES/EBU or S/PDIF digital signal could drop out for several seconds -**FIXED**
+- Other bug fixes and improvements
+
+# Known Issues
+- No CC Toggle MIDI data is sent when changing between different Snapshots that feature CC Toggle command assignments in Lit state
+- In rare cases, a crash can occur when creating an Input or Output in HX Edit (moving split/join to B path) while having a None block selected
+- In rare cases, PC messages are sent after Instant Commands on preset load, resulting in perceived delayed response by the device receiving MIDI
+- Shuriken Variax bank names will not appear in firmware until Helix is connected to a Mac/PC and Workbench HD is launched
+- In rare cases, pitch artifacts may be heard on selected delay blocks when the Time parameter is set to Note Sync values higher than 1/2 Triplet
+
+**Compatible OS:** *Mac OS X, Mac OS Jaguar, Mac OS Panther, Mac OS Leopard, Windows 7, Mac OS Snow Leopard, Mac OS Lion, Mac OS Mountain Lion, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave*
