@@ -1,0 +1,59 @@
+---
+title: "2.70"
+path: "/release-notes/2.70"
+date: 2018-10-17 00:00:00
+target: ["Helix", "Helix Rack", "Helix LT", "HX Effects", "HX Stomp"]
+---
+
+## 2.70 "The Marketplace Update"
+
+# New Features (Firmware 2.70)
+- Marketplace support—Marketplace is a new online destination that lets users purchase presets and impulse responses created by select third-party content gurus. From the lower left-hand corner of HX Edit, click "My Account" and then choose "Get More Presets..." or "Get More IRs..."
+- Three New Tuner Types—From the Tuner page, turn the Type knob to choose between "Fine" (color-changing needle tuner with fine tuning bar), "Coarse" (color-changing needle tuner with no fine tuning bar), and "Strobe". **SEE IMPORTANT KNOWN ISSUE BELOW**
+
+# New Features (Helix Native 1.70)
+- Marketplace support—Marketplace is a new online destination that lets users purchase presets and impulse responses created by select third-party content gurus. From the lower left-hand corner Helix Native, click "My Account" and then choose "Get More Presets..." or "Get More IRs..."
+
+# New Features (HX Edit 2.70)
+- Adds support for HX Stomp
+- Marketplace support—Marketplace is a new online destination that lets users purchase presets and impulse responses created by select third-party content gurus. From the lower left-hand corner of HX Edit, click "My Account" and then choose "Get More Presets..." or "Get More IRs..."
+- Multi-device support—HX Edit now opens a new window when multiple Helix or HX boxes are connected. For example, if you have Helix Floor and your bass player has HX Stomp, you can now connect both and quickly and easily copy and paste individual blocks back and forth. Windows can also be manually opened and closed from the Devices pull-down menu
+
+# Improvements
+- The tuner now accurately tunes notes down to 21.83 Hz (low F) for 5-string basses
+- HX Stomp only—Shortcut: If HX Stomp is in Preset or Snapshot mode, or FS3 in Stomp and Scroll mode has been assigned to something other than TAP/TUNER, you can now press ACTION and PAGE> together to open the Tuner screen
+- HX Stomp only—Shortcut: Press ACTION andPreferences > Snapshot Edits value
+
+# Bug Fixes
+- Helix Floor, Rack, LT only—A couple of amp models (including Cali Texas Ch 2) have their polarity reversed. When combined with another amp in parallel, this could cause phase cancellation. NOTE: This may affect the sound of some presets, especially if you swapped the polarity of Path B in the mixer block — FIXED
+- Helix Floor, Rack, LT only—Amp > Cali Texas Ch 1 could gradually decrease in level when Mid and/or Bass parameters are set to 0.0 — FIXED
+- Helix Floor, Rack, LT only—Delay models with two Time parameters could sometimes reset note divisions when changing snapshots — FIXED
+- HX Effects only—Clearing or cutting a block on Path B from HX Edit could sometimes HX Effects to freeze when in stomp footswitch mode — FIXED
+- HX Effects only—Switching from a preset with a Split > Crossover block to a preset with a Split > A/B block could sometimes cause HX Effects to freeze — FIXED
+- HX Effects only—When EXP Position is set to Global, the expression pedal's position could not be recalled immediately after switching presets, which could cause undesired signals to pass through — FIXED
+- HX Effects only—In rare cases, exiting the Tuner could sometimes slightly adjust signal level and tone — FIXED
+- HX Effects only—When connecting both left and right inputs, exiting the tuner could sometimes cause the right side of certain effects blocks to not be heard
+- HX Effects only—In very rare cases, engaging a certain combination of footswitches while connected to HX Edit and then power cycling HX Effects could clear certain blocks — FIXED
+- HX Effects only—From HX Edit, copying and pasting an Output block over itself could sometimes paste Mixer parameters — FIXED
+- HX Effects only—Switching Global Settings > MIDI/Tempo > Tempo Select values while transmitting MIDI clock could sometimes result in sending incorrect tempi — FIXED
+- HX Effects only—After resetting Global Settings, Tap Tempo could become unresponsive while receiving MIDI Clock — FIXED
+- HX Effects only—HX Edit would not reflect the Looper > 1 Switch Looper's bypass status — FIXED
+- HX Effects only—Mixer parameter values could inadvertently be copied into new empty presets — FIXED
+- HX Effects only—Quickly changing snapshots from HX Edit could sometimes cause hardware and software to disconnect — FIXED
+- Helix Native only—Control/Command-click on parameter slider would not always snap to the hardware's default value — FIXED
+- Many other minor bug fixes and improvements
+
+# Known Issues
+- **IMPORTANT:** The three new tuner types only appear for those registered users who didn't complain incessantly about Helix's previous tuner on social media. For those who did complain (AND WE KNOW WHO YOU ARE), the new tuner will be unlocked once you perform ONE of the following:
+- Post a photo of yourself on the Helix Facebook Group with the "X" logo written on your forehead in black Sharpie (washable magic marker is acceptable). The admins have been given the authority to unlock units with flagged serial numbers; assuming business hours, please allow 1-2 hours for the new tuner page to be unlocked (NOTE: You may have to restart Helix/HX for the new tuner page to appear)
+- Post a meme of Arnold Schwarzenegger from Kindergarten Cop yelling "IT'S NOT A TUNAAHH!" on either the Line 6 Helix—or—The Gear Page > Digital and Modeling Gear forum. Be sure to use the proper Impact font. Memes will not be judged for their artistic merit, although the spelling must be correct. Again, admins have been given the authority to unlock units with flagged serial numbers
+- If you'd prefer to participate silently, you may instead manually rename 47 presets "Patience is Key" (NOTE: Will not work from HX Edit; nor can you just copy one "Patience is Key" preset into 46 additional locations. You must manually rename each one. Once all 47 presets have been named correctly, the inspector [or FS5 on HX Effects] will read "Tuners unlocked!")
+- HX Effects only—When Tuner Type is set to "Strobe" and your string is waaay out of tune, the graphic tuner nodes may appear a bit glitchy
+- HX Effects only—In rare cases, moving an Impulse Response block from Path A to Path B can cause a second IR block to reset its impulse selection
+- Importing bundles containing Marketplace assets can take notably longer
+- When manually engaging a rebuild presets command (holding FS1+2 or FS2+3), Helix can appear to freeze even though it doesn't. Wait 15-20 seconds for the rebuild to complete and all is well
+- Loading a Distortion > Kinky Boost block can sometimes result in an audible thump
+- HX Edit currently only supports one or two Helix or HX devices connected at the same time (true multi-device support is forthcoming)
+- Wait, are you serious about the sharpie forehead, Schwarzenegger meme, and renaming 47 presets thing? No. This is why you always read the entire release notes
+
+**Compatible OS:** *Mac OS X, Windows 7, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave*
