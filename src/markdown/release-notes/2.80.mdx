@@ -1,0 +1,577 @@
+---
+title: "2.80"
+path: "/release-notes/2.80"
+date: 2019-07-18 00:00:00
+target: ["Helix", "Helix Rack", "Helix LT", "HX Effects", "HX Stomp"]
+---
+
+<div className="message is-danger">
+    <div className="message-header">
+        <p>IMPORTANT!</p>
+    </div>
+    <div className="message-body">
+        2.80 is the first firmware to utilize the new Helix Core engine, which unifies all Helix and HX products into the same ecosystem. Because there are tons of changes under the hood, presets created in 2.80 will not be compatible with earlier firmware, which means if you want to return to 2.71 for whatever reason, and you didn’t back up before updating to 2.80, your presets will NO LONGER WORK. Therefore, we STRONGLY RECOMMEND everyone back up everything BEFORE updating.
+    </div>
+</div>
+
+Transitioning to Helix Core also forces us to reset your Global Settings. No way around that. Just back everything up, okay? Instructions for backing up begin… now.
+
+# Updating to 2.80 (READ ME!)
+
+## 1a. Backing Up Helix / HX Hardware
+
+1. Connect your Helix / HX processor to a Mac or PC via USB and turn it on. Do not use any sort of USB hub.
+2. Open YOUR CURRENT VERSION of HX Edit (NOT the new HX Edit 2.80).
+3. From the top File menu, select “Create Backup…”
+4. Click “Create Backup.” 
+
+*TIP: If you want to load the 2.80 factory presets and hotkey templates, it’s better to manually back up individual setlists, so you can later import them into empty setlists. To do this, from the preset library along the left side, select the setlist you want to back up and click “Export.” Choose a destination folder and click “Save.” Repeat for any other setlists you want to back up.*
+
+## 1b. Backing Up Helix Native.
+**If you don’t own Helix Native, skip to step 2.**
+
+1. Open any instance of YOUR CURRENT VERSION Helix Native (NOT the new Helix Native 1.80) within your DAW and click the gear icon in the lower left corner to open the Preferences window.
+2. From the Presets/IRs tab, click “Export Bundle.”
+3. Choose the destination folder and click “Save.” 
+
+*TIP: If you want to load the 2.80 factory presets, it’s better to manually back up individual setlists, so you can later import them into empty setlists. To do this, from the preset library along the left side, select the setlist you want to back up and click the small yellow “Export.” Choose a destination folder and click “Save.” Repeat for any other setlists you want to back up.*
+
+## 2. Updating HX Edit to 2.80
+
+**YOU MUST DO THIS BEFORE UPDATING YOUR HELIX / HX FIRMWARE!**
+
+1. Turn off or disconnect any connected Helix or HX hardware.
+2. Log onto line6.com and visit the downloads page.
+3. From the middle pull-down menu, select “HX Edit.” From the right pull-down menu, select your computer’s operating system.
+4. Click the Go button.
+5. Find HX Edit Version 2.80 and click “Get Download.”
+6. Read the Software License Agreement (hahaahaaa!) and click “Accept and Download.”
+7. Once the software has downloaded, double-click the installer and follow the prompts. 
+
+**NOTE:** Installing HX Edit 2.80 automatically installs the latest version of Line 6 Updater, which is required to update the firmware.
+
+## 3a. Updating Helix Floor / Rack / LT to 2.80
+
+**If you have HX Effects or HX Stomp, skip to step 3b instead.**
+
+1. If you have Helix Rack / Control, turn off Helix Control. Also, shut down all Line 6 software or any programs that use audio, like DAWs, iTunes, Spotify, video games, etc.
+2. Connect Helix to a Mac or PC via USB (do not use any sort of USB hub) and turn it on.
+3. Launch Line 6 Updater. The latest version was automatically installed when you installed HX Edit 2.80 in “STEP 2 Updating HX Edit to 2.80” above.
+4. Enter your Line 6 Username and Password and click “Sign In.” A big green box appears with a picture of your Helix product. Click the big green box and then click “Update” next to Version: 2.80.
+5. Carefully read the instructions (HEY! DID YOU BACK UP FIRST?), click “Continue,” and then “Accept.” A warning dialog appears, telling you that Helix will be reset twice.
+6. Think “Hmm, maybe I should’ve backed up first? Nah, I insist on subverting the dominant paradigm,” and click “OK.” Helix begins updating. As wholly expected, because we warned you… because you always read the instructions… halfway through the update process, Line 6 Updater displays a second dialog and Helix’s LCD reads “Boot Failure. Entered Update Mode!” THIS IS NORMAL. Breathe deep, everything is fine. You’re almost there.
+7. Click “OK” again. When finished, Helix restarts automatically and begins rebuilding your presets. Let it finish.
+8. If you have Helix Rack/Control, turn on Helix Control. Helix Rack reads “Helix Control must be updated to work properly. Update now?” Press Knob 6 (OK) to update Helix Control.
+
+**NOTE:** Updating the firmware does not automatically load any new presets. See step 4, “Loading the 2.80 Factory Presets / Templates” below.
+
+## 3b. Updating HX Effects / HX Stomp to 2.80
+
+**If you have Helix Floor, Helix Rack / Control, or Helix LT, follow step 3a above instead.**
+
+1. Shut down all Line 6 software or any programs that use audio, like DAWs, iTunes, Spotify, video games, etc.
+2. Connect your HX processor to a Mac or PC via USB (do not use any sort of USB hub) and turn it on.
+3. Launch Line 6 Updater. The latest version was automatically installed when you installed HX Edit 2.80 in “STEP 2 Updating HX Edit to 2.80” above.
+4. Enter your Line 6 Username and Password and click “Sign In.” A big green box appears with a picture of your HX product. Click the big green box and then click “Update” next to Version: 2.80.
+5. Carefully read the instructions (HEY! DID YOU BACK UP FIRST?), click “Continue,” and then “Accept.” When finished, your HX device restarts automatically. 
+
+**NOTE:** Updating the firmware does not automatically load any new presets. See step 4, “Loading the 2.80 Factory Presets / Templates” below.
+
+## 4. Loading the 2.80 Factory Presets / Templates
+
+**IMPORTANT! The following procedure will COMPLETELY ERASE ALL OF YOUR CUSTOM PRESETS!** If you want to keep them, make sure you back them up First! (See “STEP 1a :Backing Up Helix /HX Hardware” above.)
+
+1. Turn off your Helix / HX processor.
+2. Depending on your type of Helix / HX product, follow the procedure below: 
+
+**Helix Floor / LT** - While holding footswitches 7 and 8 (two left-most switches on the bottom row), turn on Helix / Helix LT. Wait for “Will restore stock Presets and Setlists…” and let go
+
+**Helix Rack / Control** - While holding knobs 3 and 4 below the screen, turn on Helix Rack. Wait for “Will reset Presets…” and let go
+
+**HX Effects** - While holding footswitches 5 and 6 (middle two switches on the bottom row), turn on HX Effects. Wait for “Will reset Presets…” and let go
+
+**HX Stomp** - While holding footswitches 1 and 2, turn on HX Stomp. Wait for “Will reset Presets…” to appear on the screen and let go
+
+**Helix Native** - Click the gear icon in the lower left corner to open the Preferences window. From the Presets/IRs tab, click “Restore Factory Setlists”
+
+## 5a. Restoring Helix / HX Hardware from a Backup (Optional)
+
+1. Connect your Helix / HX processor to a Mac or PC via USB (do not use any sort of USB hub) and turn it on.
+2. Open the NEW VERSION OF HX Edit 2.80 you installed in step 2, “Updating HX Edit to 2.80” above.
+3. From the top File menu, select “Restore from Backup.”
+4. Browse to the backup file and click “Open.” 
+
+*TIP: If you instead exported individual setlists and loaded the 2.80 factory presets / templates (and want to keep them), from the preset list along the left side, select an empty User setlist and then drag the saved setlist file (from the tip in STEP 1) into the preset list*
+
+**IMPORTANT!** You may notice that after restoring from a backup (or loading in previously stored setlists or individual presets) that preset switching times are slower than normal. Restart Helix / HX, and you’ll see the display read “Rebuilding preset [XXX]”. Wait for it to rebuild your presets, and they will load faster.
+
+## 5b. Restoring Helix Native from a Backup
+
+If you don’t own Helix Native, skip this step.
+
+1. Open any instance of Helix Native within your DAW and click the gear icon in the lower left corner to open the Preferences window.
+2. From the Presets/IRs tab, click “Import Bundle.”
+3. Browse to the location chosen in STEP 2 above and click “Open.” 
+
+Whew! That wasn’t too terrible, now was it? What’s that… it was? Sorry. Now that Helix Core is finished, hopefully future update procedures will be less… involved.
+
+# New Amp Models in 2.80
+
+Helix Floor, Helix Rack, Helix LT, Helix Native, HX Stomp
+
+- **Fullerton Nrm**, based on* the classic 1958 Fender® 5C3 Tweed Deluxe (normal channel)
+- **Fullerton Brt**, based on* the classic 1958 Fender® 5C3 Tweed Deluxe (bright channel)
+- **Fullerton Jump**, based on* the classic 1958 Fender® 5C3 Tweed Deluxe (jumped channels)
+- **Grammatico Nrm**, based on* the modern 2016 Grammatico LaGrange (normal channel)
+- **Grammatico Brt**, based on* the modern 2016 Grammatico LaGrange (bright channel)
+- **Grammatico Jump**, based on* the modern 2016 Grammatico LaGrange (jumped channels)
+- **Revv Gen Red**, based on* the red (gain 2) channel of the Revv® Generator 120
+- **Ampeg SVT-4 PRO**, based on* the Ampeg® SVT-4 PRO 
+
+**NOTE:** All product names used in this document are trademarks of their respective owners and neither Yamaha Guitar Group nor Line 6 are associated or affiliated with them. These trademarks appear solely to identify products whose tones and sounds were studied by Line 6 during sound model development. That said, the teams at Revv and Grammatico are super cool (and patient!) and you should buy their awesome amps.
+
+# New Effects Models in 2.80
+
+Helix Floor, Helix Rack, Helix LT, Helix Native, HX Effects, HX Stomp
+
+- Distortion > **Dhyana Drive** (Mono, Stereo), based on* the Hermida Zendrive
+- Distortion > **Heir Apparent** (Mono, Stereo), based on* the Analogman Prince of Tone (basically half a King of Tone)
+- Distortion > **Tone Sovereign** (Mono, Stereo), based on* the Analogman King of Tone V4 (basically two Prince of Tones in one)
+- Distortion > **ZeroAmp Bass DI** (Mono, Stereo), based on* the Tech 21® SansAmp Bass Driver DI V1
+- Distortion > **Ampeg Scrambler** (Mono, Stereo), based on* the Ampeg® Scrambler Bass Overdrive
+- Filter > **Asheville Pattrn** (Mono, Stereo), based on* the Moog® Moogerfooger® MF-105M MIDI MuRF Filter (with both MuRF and Bass MuRF voicings)
+- EQ > **Low/High Shelf** (Mono, Stereo), Line 6 Original
+- EQ > **Tilt** (Mono, Stereo), Line 6 Original. Tilt is a subtle 6dB EQ that boosts high frequencies while simultaneously attenuating low frequencies (or vice versa). Great for quickly making tones a bit brighter or darker. The Center Freq parameter sets the frequency around which the boost and cut pivot 
+
+**NOTE:** All product names used in this document are trademarks of their respective owners and neither Yamaha Guitar Group nor Line 6 are associated or affiliated with them. These trademarks appear solely to identify products whose tones and sounds were studied by Line 6 during sound model development.
+
+# New Features in 2.80
+
+**NOTE:** For additional information on Helix Native 1.80 or HX Edit 2.80, check out the latest Helix Native and HX Edit Pilot’s Guides, which are automatically installed with the new 1.80 / 2.80 software.
+
+## Hotkeys
+
+Helix Floor, Helix Rack / Control, Helix LT, HX Effects
+
+**IMPORTANT!** The first time you update Helix/HX to 2.80, your Mac or PC may ask what kind of keyboard you have connected. Just ignore this and close the window.
+
+The Command Center can now send QWERTY hotkeys (keyboard shortcuts with or without modifiers such as Shift, Control, Option/Alt, and Command) to your Mac, PC, or iOS device via USB. You can now control virtually any software ever made, including DAWs, looping software, DJ software, media players, lighting software, video software, browsers, or video games… with your feet… or when assigned to an Instant command, from any preset or snapshot recall.
+
+1. From the Command Center menu, select a footswitch or Instant command and turn Knob 1 (Command) to select Hotkey.
+2. Turn knobs 2-5 to select the desired keystroke. If the keystroke doesnt have modiFers, leave knobs 2, 3, and 4 set to None.” 
+
+*TIP: It’s much faster and easier to program keystrokes from HX Edit 2.80. Open the Command Center window, select a footswitch or Instant command, and from the Command pull-down menu, select “Hotkey.” Click the small keypad icon and simply enter the keystroke from your computer keyboard. Don’t forget to customize the switch label!*
+
+**NOTE:** Just like a normal computer keyboard, hotkeys won’t work unless the software or app you want to control is in focus.
+
+## Hotkey Templates
+
+Helix Floor, Helix Rack/Control, Helix LT, HX Effects
+
+To get you started with hotkeys, we’ve provided the following template presets in 2.80:
+
+- Cubase
+- Pro Tools (Mac)
+- Pro Tools (PC) Logic/GarageBand
+- Ableton Live (Mac)
+- Ableton Live (PC)
+- Reaper (Mac)
+- Reaper (PC)
+- StudioOne
+- Cakewalk
+- MainStage
+- QLab
+- YouTube
+- iTunes
+- Spotify (Mac)
+- Spotify (PC)
+- Apple Keynote
+- First-person shooter video games 
+
+Most software has dozens if not hundreds of available hotkeys; feel free to swap ours out with the ones you use the most. With clever choices and a bit of finesse, you may be able to run a recording session (or elaborate live show with lighting and video cues) without ever touching a mouse or keyboard.
+
+Depending on your type of Helix/HX product, follow the procedure below:
+
+**Helix Floor / Rack / LT:**
+
+Press the PRESET knob, move the joystick left to select the Setlist column, select 8 TEMPLATES, and press the joystick. Hotkey templates begin at 06A
+
+**HX Effects:**
+
+Press MODE to to select Preset mode and turn the Big Knob. Hotkey templates begin at 16A
+
+**NOTE:** Updating the firmware does not automatically load any new presets or the hotkey templates; you must manually load them. See step 5, “Loading the 2.80 Factory Presets Templates”/ above.
+
+## Variax String Level
+
+Helix Floor, Helix Rack/Control, Helix LT
+
+Helix can now remotely adjust the level of individual guitar strings on a connected Shuriken Variax, JTV, or Variax Standard.
+
+*TIP: Just like with any amp, cab, or effect parameter, Variax String Level can be quickly assigned to footswitches or Snapshots. “Wait. You mean I can turn off the top three strings for the verse (Snapshot 1) and bring them back in for the chorus (Snapshot 2)? And if the high E is too shrill I can back its volume down to 85%?” Yes. “That’s pretty nuts.” Yes it is.*
+
+1. Select the Input > Multi or Input > Variax block and press PAGE > three times.
+2. Turn Knobs 1-6 to adjust each strings level.
+3. If you want to set a particular string’s level separately for each snapshot, press and turn the string’s knob. The value will turn white and appear in brackets.
+
+**NOTE:** Assigning a continuous controller (such as an expression pedal or slider on your MIDI controller) is not recommended, as it may result in minor pops and clicks; this is due to limitations in Variax DSP, not Helix.
+
+## Powercab Plus Remote
+
+Helix Floor, Helix Rack/Control, Helix LT
+
+**IMPORTANT!** You must also update Powercab Plus! It must be running firmware 2.0 or higher.
+
+Helix can now remotely adjust parameters in one or two L6 LINK-connected Powercab Plus modeling speaker cabs. When one Powercab Plus is connected via L6 LINK (110-ohm AES/EBU cable), it receives a mono signal from Helix; when two Powercab Plus amps are daisy-chained via L6 LINK, the first cab in the chain receives the left signal and the second cab receives the right signal.
+
+*TIP: Just like with any amp, cab, or effect parameter, Powercab Plus parameters can be quickly assigned to footswitches or Snapshots.*
+
+1. Select the Output > Multi or Output > Digital block and press PAGE > once.
+2. Turn Knob 1 (Powercab Remote) to select “Per Preset” or “Global.” If you don’t plan on changing Powercab parameters along with Helix presets, choose “Global.”
+3. Turn Knob 2 (Powercab Mode) to select the desired type of Powercab mode: Flat, Speaker, or IR. Note that certain parameters will gray out depending on the mode chosen.
+4. Turn Knob 4 (Speaker Select) to specify which Powercab you want to control Powercab 1, Powercab 2, or both Powercabs simultaneously (“1+2 Link”). Normally, you should leave this set to “1+2 Link,” which edits both Powercabs simultaneously, to maintain phase coherence. 
+
+- Flat Voicing when Powercab Mode is set to “Flat,” determines the type of speaker voicing
+- Speaker Type when Powercab Mode is set to “Speaker,” determines the current speaker model
+- Speaker DI Mic when Powercab Mode is set to “Speaker,” determines the mic model used on Powercab’s XLR output(s)
+- Speaker Mic Dist when Powercab Mode is set to “Speaker,” determines the mic distance used on Powercab’s XLR output(s)
+- Speaker User IR when Powercab Mode is set to “User IR,” selects the impulse response used
+- Speaker Low Cut applies a Low Cut filter to Powercab Plus for minimizing low end rumble
+- Speaker Hi Cut applies a High Cut filter to Powercab Plus for minimizing high end harshness
+- Speaker Level applies a level trim
+- Speaker Color lets you choose the LED ring color on any connected Powercab(s) 
+
+**NOTE:** For more information on Powercab Plus, see the Powercab Plus Pilot’s Guide.
+
+## DT50/DT25 Remote
+
+Helix Floor, Helix Rack/Control, Helix LT, HX Edit
+
+Helix can now remotely adjust the real tube topology settings and other parameters in one or two L6 LINK-connected DT25 or DT50 amplifiers. When one DT25 or DT50 is connected via L6 LINK (110-ohm AES/EBU cable), it receives a mono signal from Helix; when two DT250 or DT50 amplifiers are daisy-chained via L6 LINK, the first cab in the chain receives the left signal and the second cab receives the right signal.
+
+*TIP: Just like with any amp, cab, or effect parameter, DT parameters can be quickly assigned to footswitches or Snapshots.*
+
+1. From the Output > Multi or Output > Digital block, press PAGE > three times.
+2. Turn Knob 1 (DT 25/50 Remote) to select “Per Preset” or “Global.” If you don’t plan on changing DT topology settings along with Helix presets, choose “Global.”
+3. Turn Knob 2 (DT Select) to specify which DT amp you want to controlDT 1, DT 2, or both DT amps 
+
+simultaneously (“1+2 Link”). Normally, you should leave this set to “1+2 Link,” which edits both DT amps simultaneously, to maintain phase coherence.
+
+**DT Channel**:
+
+When set to Channel A, the DT switches to Channel A and its preamp is bypassed for when using a preamp model in Helix. When set to Channel B, the DT switches to Channel B and its preamp is activated
+
+*TIP: Assign a stomp footswitch (or snapshots) to simultaneously bypass a Helix preamp block AND switch a connected DT amp to Channel B. This gives you a wider variety of tones in the same preset, without the DSP overhead required to run two simultaneous Preamp blocks.*
+
+**DT Topology**:
+
+Changes the DT amp’s negative feedback loop topology. Choose “I (Tight)” for behavior reminiscent of the great American Blackface amps of the 60s, choose “II (Loose)” for dialing in echoes of classic British amps, choose “III (ZNF)” for a very open or dynamic feeling amp, or choose “IV (Resonant)” to add low frequency resonance that pairs well with high gain tones.
+
+**DT Power Amp**:
+
+Sets the DT amp’s operating class, wattage, and bias type. Choose “Class A” for more dynamics with greater touch sensitivity; choose “Class AB” for greater headroom and power
+
+**DT Tube Config**:
+
+Changes the configuration of the DT’s power tubes. Chose “Pentode” for clear and commanding tone; choose “Triode” for quieter and rounder sounds with a more vintage feel.
+
+**DT Reverb**:
+
+Turns the DT amp’s built-in spring reverb on and off
+
+**DT Rev Mix**:
+
+Determines the amount of built-in spring reverb
+
+**DT 12AX7 Boost (DT50 only)**:
+
+When Low Volume Mode is off, applies a volume boost DT
+
+**Feedback Cap (DT50 only)**:
+
+Sets the DT amp’s feedback capacitor type
+
+**DT B+ Voltage (DT50 only)**:
+
+Sets the DT amp’s phase inverter B+ voltage
+
+**NOTE:** For more information on DT amps, see the DT25 Pilot’s Guide or the DT50 Pilot’s Guide.
+
+## Snapshot Bypass
+
+Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp, HX Edit
+
+There may be situations where you don’t want Helix’s snapshots to control a particular block’s bypass state; that is, you’d prefer to turn it on and off manually. For example, you may want manual control of a boost pedal at any time without worrying whether a particular snapshot might turn it on or off.
+
+Depending on your type of Helix/HX product, follow the procedure below:
+
+**Helix Floor / Rack / LT**:
+
+Select a processing block, press ACTION, and set Knob 5 (Snapshot Bypass) to “Off” to disable snapshot control of that block’s bypass state
+
+**HX Effects**:
+
+Select a processing block, press ACTION, and press the “Snapshot Bypass” switch to disable snapshot control of that block’s bypass state
+
+**HX Stomp**:
+
+From Edit view, select a processing block, press ACTION, press PAGE >, and set Knob 3 (Snapshot Bypass) to “Off” to disable snapshot control of that block’s bypass state
+
+**Helix Native / HX Edit**:
+
+Right-click (Mac: control-click) on a processing block and uncheck “Snapshot Bypass.” Alternatively, right-click (Mac: control-click) the Bypass button to uncheck “Snapshot Bypass.”
+
+## Hardware Compatibility Mode
+
+Helix Native
+
+Helix Native can now reflect the signal flow and model set of all Helix and HX hardware devices, so transferring presets to and from your DAW is even easier. In addition, Hardware Compatibility can be disabled entirely, so the simultaneous model count is now limited only by the speed of your computer.
+
+1. Open any instance of Helix Native within your DAW and click the gear icon in the lower left corner to open the Preferences window.
+2. Click the Hardware Compatibility tab.
+3. From the “Current Hardware Compatibility Mode” pull-down menu, select one of the following options: 
+
+**Off**:
+
+Disables Hardware Compatibility and lets you add as many blocks (of any type) as your computer’s horsepower will allow. Choose this setting if you don’t own any Helix or HX hardware
+
+**Helix Floor /LT / Rack (the default)**:
+
+Configures Helix Native such that any presets made can be easily loaded into Helix Floor, Helix Rack/Control, or Helix LT
+
+**HX Effects**:
+
+Configures Helix Native such that any presets made can be easily loaded into HX Effects. In this mode, no Amp or Cab models will be available
+
+**HX Stomp**:
+
+Configures Helix Native such that any presets made can be easily loaded into HX Stomp
+
+1. Click OK. Depending on the current Hardware Compatibility Mode, Helix Native may repopulate the preset list to reflect that of the selected hardware. For example, if you choose “HX Stomp,” HX Stomp’s factory presets will appear and the signal flow will be limited to six blocks
+2. Click “Set as Default” to ensure any new instances of Helix Native open in the selected mode. 
+
+**IMPORTANT!** Each Hardware Compatibility Mode incorporates its own, independent preset library. Therefore, you will see the Helix Native preset library automatically repopulate to reflect that of the selected hardware.
+
+## Helix / HX Preset Sharing
+
+Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp, HX Edit
+
+All Helix and HX hardware and software now live within the same ecosystem. Using multiple windows within HX Edit and/or multiple instances of the Helix Native plug-in, both blocks and entire presets can be freely dragged and dropped or copied and pasted between units. Aside from the obvious caveats below, all Helix and HX products can now share the same content.
+
+**IMPORTANT!** Due to the vast differences in how Helix/HX products manage controllers, snapshots, and Command Center messages, there is no guarantee that every single tiny detail of a preset will translate properly.
+
+**You can now drag / drop, copy / paste, or otherwise load:**
+
+HX Effects or HX Stomp presets into Helix Floor / Rack / LT and Helix Native. If an HX Effects preset has 9 blocks, the ninth block will be routed to Path 2
+
+Helix Floor / Rack / LT, Helix Native, or HX Stomp presets into HX Effects. However, there are caveats.
+
+To avoid an error message, the source preset must:
+
+Contain 9 or fewer blocks
+
+Not contain any Amp+Cab, Amp, Preamp, or Cab blocks
+
+Contain no more than one Split and Merge block
+
+Fit within one path worth of DSP processing
+
+Helix Floor / Rack/LT, Helix Native, or HX Effects presets into HX Stomp. However, there are caveats. To avoid an error message, the source preset must:
+
+Contain 6 or fewer blocks
+
+Contain no more than one Split and Merge block Fit within one path worth of DSP processing
+
+Helix Floor / Rack/LT, HX Effects, or HX Stomp presets into Helix Native
+
+**NOTE:** A dialog box will appear if the source preset cannot be accommodated by the current Hardware Compatibility Mode (see above). At this point, you may choose to switch the current Hardware Compatibility Mode to that of the source preset, or attempt to translate the preset into the current Hardware Compatibility Mode, given the caveats above. See the Helix Native Pilot’s Guide for more information. Click the question mark icon in the lower left corner of the plug-in.
+
+## Undo/Redo
+
+Helix Native, HX Edit
+
+Both the Helix Native plug-in and HX Edit now support multiple levels of undo/redo.
+
+1. Click the Undo button to undo the most recent edit.
+2. Click the Redo button to redo the most recent undo. 
+
+## MIDI Learn
+
+Helix Native (Helix Floor, Helix Rack, Helix LT, HX Effects, and HX Stomp already have this feature)
+
+Helix Native can now learn an incoming MIDI CC message and automatically assign it to a parameter.
+
+1. Right-click on a parameter and select Controller > MIDI Learn. A small brain icon flashes. If you change your mind, click the icon to cancel.
+2. Send Helix Native a MIDI CC message. The parameter is automatically assigned to it. 
+
+*TIP: In Helix Native, right-click (Mac: control-click) on a processing block to open a pull-down that lets you manually assign a MIDI CC to block bypass. Right-click (Mac: control-click) on a parameter slider to open a pull-down menu that lets you manually assign a MIDI CC to parameter control.*
+
+**NOTE:** Not all DAW software automatically routes incoming MIDI data through to any plug-in, especially those instantiated as an insert on an audio track. See your DAW’s documentation for more information. The new MIDI In indicator in the lower right corner flashes if Helix Native receives MIDI data.
+
+## Hands-free Pedal Edit for Input/Output Blocks
+
+Helix Floor, Helix Rack/Control, Helix LT
+
+In addition to Amp, Effect, Cab, IR, Split, and Mixer parameters, Input and Output Block parameters can also now be edited with your feet, including the new Variax String Level, Powercab Plus remote, and DT25/DT50 remote parameters.
+
+1. Press and hold MODE to enter Pedal Edit Mode. The switches flash.
+2. If necessary, press MORE one or more times to view additional blocks and press the Input 1A (or 1B, 2A, or 2B) or Output 1A (or 1B, 2A, or 2B) footswitch. If the block has more than one page of parameters, press FS8 (FS9 (PAGE>) until you find the parameter.
+3. Press the footswitch displaying the parameter you want to adjust and use an expression pedal to adjust the parameter. For fine adjustment, press FS10 (VALUE) and FS11 (VALUE+). Hold FS10 (VALUE) or FS11 (VALUE +) for faster adjustments.
+4. When finished, press FS12 (EXIT). If you want to save any changes made to the preset, hold FS12 (EXIT) for two seconds. 
+
+## Snapshot Reselect
+
+Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp
+
+Currently, pressing the currently active Snapshot switch will reload the stored state of that snapshot. With 2.80, you can now choose to instead toggle between it and the previously selected snapshot. For example, if you’re on Snapshot 2 and switch to Snapshot 8, pressing the Snapshot 8 footswitch will seamlessly toggle between Snapshot 8 and Snapshot 2.
+
+From the Global Settings > Preferences menu, turn Snapshot Reselect to choose “Reload” or “Toggle Prev.” “Reload” remains the default.
+
+## Stomp Select
+
+Helix Floor, Helix Rack/Control, Helix LT (parameter is already in HX Effects and HX Stomp)
+
+Currently, briefly touching a stomp footswitch jumps to select its assigned items’ parameters; it’s a super fast and simple way to navigate your various amps and effects. For those neanderthals of you who play barefoot, you can disable this functionality from Global Settings > Footswitches > Touch Select. With 2.80, this parameter has now changed to Stomp Select, and lets you choose whether touching a switch, pressing a switch, or both instantly jumps to display the assigned items’ parameters.
+
+Depending on your type of Helix/HX product, follow the procedure below:
+
+**Helix Floor / Rack / LT**:
+
+From the Global Settings > Footswitches menu, turn Knob 1 (Stomp Select) to choose “None,” “Touch,” “Press,” or “Touch+Press.” “Touch” remains the default
+
+**HX Effects / HX Stomp**:
+
+From the Global Settings > Footswitches menu, turn Knob 1 (Stomp Select) to choose “Touch,” “Press,” or “Both.” “Touch” remains the default
+
+## Swap Up/Down Switches
+
+Helix Floor, Helix Rack/Control, Helix LT, HX Effects
+
+Some users have requested the ability to press the DOWN switch to select the next bank, preset, or snapshot. With 2.80, Up and Down can be swapped:
+
+From the Global Settings > Footswitches menu, turn [Swap Up/Down] to choose “Off” (normal) or “On” (reversed).
+
+**SHORTCUT:** Touch (but don’t press) the Up and Down switches together for one second, and then press Knob 6 [FS6 on HX Effects] (OK). The up and down switches are now swapped.
+
+## Turn Joystick to Select Blocks
+
+Helix Floor, Helix Rack, Helix LT
+
+Currently, turning the joystick encoder scrolls through available models for the selected block. With 2.80, you can now choose to instead turn the joystick to quickly move across the signal flow.
+
+From the Global Settings > Preferences menu, turn Knob 5 (Joystick Encoder) to choose “Model” or “Selection.”
+
+“Model” remains the default.
+
+**SHORTCUT:** Pressing and turning the joystick will provide the opposite setting; that is, when set to “Model”, press and turn the joystick to quickly move across the signal qow. When set to “Selection,” press and turn the joystick to scroll through available models for the selected block.
+
+## Tempo Indicator
+
+Helix Floor, Helix Rack/Control
+
+Press TAP / TUNER two or more times to enter a new tempo. The TAP/TUNER scribble strip briefly displays the entered tempo.
+
+**SHORTCUT:** To fine-tune the tempo, briefly touch the TAP/TUNER switch. The Tempo panel opens. Turn Knob 6 (BPM) to manually set the tempo.
+
+## Pedal Position Indicator
+
+Helix Floor, Helix Rack/Control
+
+A new Global Settings > Displays > Pedal Position Display parameter lets you determine whether the scribble strip above the expression pedal temporarily displays the expression pedal position (“Temporary”) or remains visible (“Persistent”).
+
+Move the built-in expression pedal. The EXP scribble strip displays a position indicator (0 ~ 100%).
+
+## Helix Native Pricing
+
+It’s not technically a feature, but Helix Native is now $99.99 US for all registered owners of Helix Floor, Helix Rack, Helix LT, HX Effects, and HX Stomp ($300 off). Helix Native brings the amps, cabs, effects, and IR loading from Helix to your Mac or PC’s recording software without the need for time-consuming re-amping. Depending on your computer’s horsepower, you may be able to add an entire Helix’s worth of processing to multiple guitar, bass, synth, vocal, drum, bus, slide whistle, and nose flute tracks. Helix Native along with Helix hardware is also an immeasurably helpful tool when trying to rebuild studio tones for your tour, or tones built on the road for the next record. What used to take weeks (or hiring an expensive programmer) now takes seconds.
+
+## Other Changes and Improvements in 2.80
+
+The Global Settings > Preferences > Tap Tempo Pitch (Authentic, Transparent) setting now also affects tempo changes taking place across snapshot changes, not just when pressing the TAP switch (Helix Floor Rack LT, Helix Native, HX Effects, HX Stomp)
+
+On a Cab > Dual block, changing the first cab no longer changes the second cab (Helix Floor Rack LT, Helix Native, HX Edit [feature is already in HX Stomp])
+
+Page indication has changed from small colored dots to the right of the inspector to a scrolling inspector header line (similar to the one in HX Stomp). This allows Impulse Response blocks to display longer IR names. Oh yeah speaking of which… (Helix Floor Rack LT)
+
+Impulse Response blocks now display as many IR file name characters as will fit in the inspector header (Helix Floor Rack LT, Helix Native)
+
+In previous versions, only the last value would be recalled via Snapshots (example: In Program messages, only the PC value could change). With 2.80, all values are recalled via Snapshots (example: In Hotkey messages, all modifiers and the keystroke can change, so each snapshot could have different sets of key commands). (Helix Floor Rack LT, HX Effects)
+
+Additional values have been added to recall snapshots remotely via MIDI. CC69 Value 8 will select the next snapshot and Value 9 will select the previous snapshot (Helix Floor Rack LT, Helix Native, HX Effects [feature is already in HX Stomp])
+
+Command Center > CC Toggle, CV Toggle (Helix Floor only), and Amp Control messages have an additional Type parameter that lets one determine whether the footswitch is latching or momentary. Previously, you would have to assign a processing block (set to momentary) to the same footswitch to make the Command Center message momentary (Helix Floor Rack LT, HX Effects)
+
+An additional “None” value has been added to Command Center > Instant > Amp Control messages (Helix Floor Rack LT, HX Effects)
+
+The “Pac Man” shortcut where moving the joystick right from the Output block jumps to the Input block (and vice versa) now also works when moving the joystick up and down (Helix Floor Rack LT)
+
+On the Save Preset, Rename Preset, Rename Snapshot, Rename Setlist, and Customize screens, moving the joystick right from the last character jumps to the first (and vice versa) (Helix Floor Rack LT [feature is already in HX Stomp and HX Effects])
+
+The boot screen now displays a red progress bar (Helix Floor Rack LT [feature is already in HX Stomp])
+
+While in the Command Center menu, pressing SAVE twice to save a preset no longer exits you all the way to the Home screen (Helix Floor Rack LT, HX Effects)
+
+Pressing Up and Down together from Snapshot mode now exits to the previous mode (same as pressing EXIT) (Helix Floor Rack LT, HX Effects)
+
+Turning the PRESET knob past the last preset in each setlist now jumps back to the beginning of the setlist (and vice versa) (Helix Floor Rack LT [feature is already in HX Stomp and HX Effects])
+
+A small indicator in the lower right corner of the plug-in window flashes whenever a MIDI message is received (Helix Native)
+
+Automation and MIDI controller assignments can now be managed together from the Automation Controller Assign tab (Helix Native, HX Edit)
+
+Blocks assigned to controllers or automation now display their category name in brackets. Parameters assigned to controllers or automation display a small icon to the left of their parameter sliders. In addition, pop-up menus now display controller or automation assignments, if any (Helix Native, HX Edit)
+
+From the Controller Automation tab, right-click (Mac: control-click) an assignment to open a pull-down menu, letting you clear one or all assignments (Helix Native, HX Edit [feature is already in Helix Floor Rack/LT, HX Effects, and HX Stomp])
+
+The Preferences menu in HX Edit now lets you set FS3, FS4, and FS5 functions (HX Edit [feature is already in HX Stomp])
+
+A new “Restore Factory Settings” button has been added to the bottom of the Preferences window (Helix Native, HX
+
+Edit [feature is already in Helix Floor Rack LT, HX Effects, and HX Stomp])
+
+In HX Edit, snapshots can now be selected while the Command Center window is open
+
+In HX Edit, the parameter tab will now be in sync with the Helix display for Amp+Cab and Cab > Dual blocks
+
+When a Shuriken Variax is connected, HX Edit now displays its bank names properly
+
+Wow, you’re still reading this? Congratulations; you’re way cooler and better looking than other Helix/HX owners. Celebrate your superiority with some delicious tacos.
+
+As Ampeg is now Line 6’s sister company, all pre-2.80 Ampeg models have been renamed:
+
+- Amp > Bass > Tuck n’ Go is now called “ **Ampeg B-15NF** ”
+- Amp > Bass > SV Beast Nrm is now called “ **Ampeg SVT Nrm** ”
+- Amp > Bass > SV Beast Brt is now called “ **Ampeg SVT Brt** ”
+- Cab > 1x15 Tuck n’ Go is now called “ 1x15 **Ampeg B-15** ”
+- Cab > 4x10 Rhino is now called “ 4x10 **Ampeg HLF ”**
+- Cab > 8x10 SV Beast is now called “ 8x10 **Ampeg SVT E** ” 
+
+Numerous stability and performance improvements Lots of other little things
+
+# Bug Fixes in 2.80
+
+- On rare occasions, with dirty footswitches, a single press can generate two Command Center messages. We’ve added a small timeout to ensure this doesn’t happen, regardless of the condition of the footswitches.
+- Pressing the Cab > Mic parameter knob now returns the value to default.
+- While HX Edit is running, double-clicking a preset, setlist, or bundle file on the desktop or any finder window will load the file.
+- In HX Edit, background windows now properly reflect the connected state of the device.
+- In HX Edit, preset names are now preserved in setlist, bundle, or backup files if an empty preset was renamed.
+- Many other minor bug fixes. 
+
+# Known Issues in 2.80
+
+- Global settings are reset after upgrade to 2.80. BACKUP FIRST!
+- Downgrading to 2.71 or older will erase ALL preset data.
+- The first time you update Helix/HX to 2.80, your Mac or PC may ask what kind of keyboard you have connected. This is due to the new Hotkey feature. Just ignore this and close the window.
+- Assigning a Command Center > Hotkey message to a footswitch that already has a block assigned to it (set to latching, which is the default) will cause the keystroke to be repeatedly sent to your Mac/PC. To avoid this behavior, either assign the Hotkey message to an empty footswitch or set the footswitch’s mode to Momentary.
+- The first preset of each setlist is loaded during a restore.
+- The Helix icon may appear during the update and it could stop spinning. This is fine, the update will continue.
+- DT must be on firmware version 2.00 for L6 Link control to function.
+- Powercab 112 Plus must be on firmware version 2.00 or higher for L6 Link control to function.
+- You cannot rename the 1 Switch Looper scribble strip on Rack or Floor.
+- A preset may load blank after dragging a looper block across a split, merge and another block two times. Simply load the preset again and it will load as expected.
+- A brief volume increase can occur at preset load from Powercab while loading presets with different Powercab modes on a Helix device.
+- Undo/Redo does not work when switching between time and note divisions.
+- In HX EDIT, Undo/Redo removes block assignments in certain cases such as moving between paths.
+- Save to Library lists presets in “01A-32D” setlist format regardless of preferences.
+
+**Compatible OS:** *Mac OS X, Windows 7, Windows 8, Mac OS Mavericks, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave*
