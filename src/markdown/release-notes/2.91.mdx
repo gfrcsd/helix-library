@@ -1,0 +1,47 @@
+---
+title: "2.91"
+path: "/release-notes/2.91"
+date: 2020-04-24 00:00:00
+target: ["Helix", "Helix Rack", "Helix LT", "HX Effects", "HX Stomp"]
+---
+<div className="message is-danger is-light">
+    <div className="message-body">
+        <p className="has-text-weight-bold has-text-danger is-size-4">IMPORTANT!</p>
+        <p>Carefully read and follow the update instructions below. If you don’t — and then run to the forums asking why it’s not working—the interwebs will make fun of you.</p>
+    </div>
+</div>
+
+# Updating to 2.91
+
+## STEP 1 — Updating HX Edit to 2.90 (assuming you haven’t done this already)
+1. Log onto line6.com , download, and install HX Edit 2.90: 
+    - macOS: https://line6.com/software/readeula.html?rid=9678
+    - Windows 7/8/10: https://line6.com/software/readeula.html?rid=9677 
+
+## STEP 2 — Updating Helix/HX Firmware to 2.91
+1. If you have Helix Rack/Control, turn off Helix Control. Also, shut down all Line 6 software or any programs that use audio, like DAWs, iTunes, Spotify, video games, etc.
+2. Connect your Helix/HX device to a Mac or PC via USB (do not use any sort of USB hub, which may include the front USB ports on towers) and turn it on.
+3. Launch the new version of HX Edit 2.90 you installed in Step 1 above. If you’re not signed in, click “Check for Updates” in the lower right corner and sign in. If you’re already signed in, a dialog panel appears, indicating an update is available.
+4. Click “Update Now.” A window appears, asking you to back up your Helix / HX hardware. Click OK, optionally rename the backup and / or choose a different destination folder, and then click “Create Backup.” IMPORTANT! Note the location where you’ve saved the backup.
+5. Continue following the prompts. Once updated, the window reads “Update Complete” and your Helix / HX hardware begins rebuilding its presets; wait for this to complete and click “Back to HX Edit.”
+6. From the File pull-down menu, click “Restore from backup…” A dialog appears. Click “Restore Backup” and then “Yes.”
+7. Turn your Helix / HX product off and then on again.
+8. If you have Helix Control connected to Helix Rack, turn on Helix Control. Helix Rack reads “Helix Control must be updated to work properly.” Press Knob 6 (OK). 
+
+# Bug Fixes in 2.91
+- Resolves multiple unexpected behavior that can occur when adjusting the Volume knob, entering the Tuner, or other actions during the first 30 seconds after power up—**FIXED**
+- Engaging the Tap Tempo switch would calculate a different tempo than intended—**FIXED**
+- When routing Path 1 to Path 2, the Path 2A andor Path 2B input blocks could display clipping even when the signal was not—**FIXED**
+- For presets with parallel paths, the Mixer > Merge block boosts signals by 3dB—**FIXED** 
+
+# Known Issues in 2.91
+- A slight thump can be heard when loading a Distortion > Kinky Boost, Arbitrator Fuzz, or Tycoctavia Fuzz model
+- While backing up, the scribble strip on FS8 can sometimes flicker (Helix Floor, Helix RackControl)/
+- In very rare cases, leaving the unit on for many hours can sometimes cause reverb models to cease outputting audio
+- In a preset with two IRs blocks, moving one IR block to Path B can sometimes cause the other IR block to reset its Impulse Response to slot 1
+- In rare cases, after exporting and then importing presets using HX Edit, the Split block’s bypass state can sometimes change (Helix Floor, Helix RackControl, Helix LT)/
+- When using Blue Cat Audio’s PatchWork VST host software, resizing the Helix Native window may not scale smoothly (Helix Native)
+- The Looper block’s Overdub function does not currently respond to incoming MIDI (HX Stomp)
+- While connected to HX Edit, quickly changing models through the IR block can sometimes result in a unit freeze (HX Stomp) 
+
+**Compatible OS:** *Mac OS X, Windows 7, Windows 8, Mac OS Yosemite, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave, macOS Catalina*
