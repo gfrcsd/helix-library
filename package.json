@@ -15,7 +15,7 @@
     "@mdx-js/mdx": "^1.6.0",
     "@mdx-js/react": "^1.6.0",
     "gatsby": "^2.21.9",
-    "gatsby-cli": "^2.12.1",
+    "gatsby-cli": "^2.12.7",
     "gatsby-image": "^2.4.0",
     "gatsby-plugin-manifest": "^2.4.1",
     "gatsby-plugin-mdx": "^1.2.4",
@@ -27,15 +27,15 @@
     "gatsby-transformer-sharp": "^2.5.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "bulma": "^0.8.2",
     "gatsby-plugin-sass": "^2.3.0",
     "gatsby-plugin-sharp": "^2.6.0",
     "node-sass": "^4.14.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "react-helmet": "^5.2.1"
   },
   "keywords": [
     "gatsby"
