@@ -32,7 +32,7 @@ const ReleaseNotesTemplate = ({ data: { mdx: post } }) => {
                 <div className="columns is-centered">
                     <div className="column is-10 content">
                         <div className="tags has-addons">
-                            <span className="tag is-dark">For:</span>
+                            <span className="tag is-dark">Update for:</span>
                             {target.map((item) => {
                                 return (
                                     <span className="tag is-success">{item}</span>
