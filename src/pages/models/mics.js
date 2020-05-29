@@ -10,7 +10,7 @@ export default ({data}) => {
     return (
         <Layout>
             <SEO title="Mics"/>
-            <Heading title="Mics" subtitle={ data.allMarkdownRemark.totalCount + " available"} />
+            <Heading title="Mics" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
             <Section>
                 <div className="columns is-centered">
                     <div className="column is-10">

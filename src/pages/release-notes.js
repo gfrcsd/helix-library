@@ -10,7 +10,7 @@ export default ({data}) => {
     return(
         <Layout>
             <SEO title="Release Notes"/>
-            <Heading title="Release Notes" subtitle={data.allMdx.totalCount + ' published'}/>
+            <Heading title="Release Notes" subtitle={data.allMdx.totalCount + ' published'} color="light" size="normal"/>
             <Section>
                 <div className="release-note columns is-centered">
                     <div className="column is-2">

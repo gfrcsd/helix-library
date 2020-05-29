@@ -9,7 +9,7 @@ import "../sass/style.sass"
 const ManualsPage = () => (
   <Layout>
     <SEO title="Manuals" />
-    <Heading title="Manuals" subtitle="Download the official documentation"/>
+    <Heading title="Manuals" subtitle="Download the official documentation" color="light" size="normal"/>
     <Section>
 
     </Section>

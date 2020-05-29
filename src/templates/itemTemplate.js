@@ -15,7 +15,7 @@ export default function Template({
     return (
         <Layout>
             <SEO title={frontmatter.name} />
-            <Heading title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} />
+            <Heading title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} color="light" size="normal"/>
             <Section>
                 <div className="columns is-centered">
                     <div className="column is-5" style={{maxHeight: "450px"}}>

@@ -1,8 +1,8 @@
 import React from "react"
 
-const Heading = ({ title, subtitle }) =>{
+const Heading = ({ title, subtitle, color, size }) =>{
     return(
-    <div className="hero is-light is-bold">
+    <div className={title + '-hero model-hero hero is-' + size +' is-' + color + ' is-bold'}>
         <div className="hero-body">
             <div className="container">
                 <div className="columns is-centered">
