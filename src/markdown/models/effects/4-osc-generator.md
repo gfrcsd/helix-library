@@ -1,6 +1,6 @@
 ---
-name: ""
-path: "/models/effects/"
+name: "4 OSC Generator"
+path: "/models/effects/4-osc-generator"
 brand: "Line 6"
 model: "Original"
 url: ""

@@ -1,6 +1,6 @@
 ---
-name: ""
-path: "/models/effects/"
+name: "3 Note Generator"
+path: "/models/effects/3-note-generator"
 brand: "Line 6"
 model: "Original"
 url: ""
