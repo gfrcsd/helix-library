@@ -1,6 +1,6 @@
 ---
-name: ""
-path: "/models/effects/"
+name: "Dynamix Flanger"
+path: "/models/effects/dynamix-flanger"
 brand: "Line 6"
 model: "Original"
 url: ""

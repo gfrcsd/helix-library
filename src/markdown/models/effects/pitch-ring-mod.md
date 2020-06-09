@@ -1,11 +1,11 @@
 ---
-name: ""
-path: "/models/effects/"
+name: "Pitch Ring Mod"
+path: "/models/effects/pitch-ring-mod"
 brand: "Line 6"
 model: "Original"
 url: ""
 image: "../../../images/line6-logo.jpg"
 type: ["Modulation"]
-channel: ["Mono", "Stereo"]
-update: ["1.06"]
+channel: ["Stereo"]
+update: ["1.0"]
 ---
