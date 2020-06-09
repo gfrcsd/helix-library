@@ -45,6 +45,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `manuals`,
+        path: `${__dirname}/src/markdown/manuals`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `releaseNotes`,
         path: `${__dirname}/src/markdown/release-notes`,
       },

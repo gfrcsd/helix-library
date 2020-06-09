@@ -36,6 +36,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
         allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___path] }
+            filter: {fields: {collection: {nin: "manuals"}}
             limit: 1000
         ) {
             edges {

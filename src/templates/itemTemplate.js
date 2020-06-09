@@ -7,9 +7,7 @@ import Disclaimer from "../components/disclaimer"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
-export default function Template({
-    data, // this prop will be injected by the GraphQL query below.
-}) {
+export default function Template({data}) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html, fields } = markdownRemark
     return (

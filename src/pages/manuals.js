@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/section"
@@ -8,42 +9,47 @@ import "../sass/style.sass"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLink } from '@fortawesome/pro-duotone-svg-icons'
 
+export default ({data}) => {
+  return (
+    <Layout>
+      <SEO title="Manuals" />
+      <Heading title="Manuals" subtitle="Download the official documentation" color="light" size="normal"/>
+      <Section>
+        <div className="columns is-multiline">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div className="column is-4 has-text-centered">
+              <Img fluid={node.frontmatter.image.childImageSharp.fluid}/>
+              <h2 className="is-size-4">{node.frontmatter.name}</h2>
+              <a href={node.frontmatter.url}>Line 6 Official <FontAwesomeIcon icon={faExternalLink} fixedWidth /></a>
+            </div>
+          ))}
+        </div>
+      </Section>
+      <Disclaimer/>
+    </Layout>
+  )
+}
 
-const ManualsPage = () => (
-  <Layout>
-    <SEO title="Manuals" />
-    <Heading title="Manuals" subtitle="Download the official documentation" color="light" size="normal"/>
-    <Section>
-      <div className="columns is-multiline">
-        <div className="column is-one-third has-text-centered">
-          <h2 className="is-size-4">Helix</h2>
-          <a href="https://line6.com/support/manuals/helix/">Line 6 Official <FontAwesomeIcon icon={faExternalLink} fixedWidth /></a>
-        </div>
-        <div className="column is-one-third has-text-centered">
-          <h2 className="is-size-4">Helix Rack</h2>
-          <a href="https://line6.com/support/manuals/helix-rack/">Line 6 Official <FontAwesomeIcon icon={faExternalLink} fixedWidth /></a>
-        </div>
-        <div className="column is-one-third has-text-centered">
-          <h2 className="is-size-4">Helix Native</h2>
-          <a href="https://line6.com/support/manuals/helix-native/">Line 6 Official <FontAwesomeIcon icon={faExternalLink} fixedWidth /></a>
-        </div>
-        <div className="column is-one-third has-text-centered">
-          <h2 className="is-size-4">Helix LT</h2>
-          <a href="https://line6.com/support/manuals/helixlt/">Line 6 Official <FontAwesomeIcon icon={faExternalLink} fixedWidth /></a>
-        </div>
-        <div className="column is-one-third has-text-centered">
-          <h2 className="is-size-4">Helix Effects</h2>
-          <a href="https://line6.com/support/manuals/hxeffects/">Line 6 Official <FontAwesomeIcon icon={faExternalLink} fixedWidth /></a>
-        </div>
-        <div className="column is-one-third has-text-centered">
-          <h2 className="is-size-4">Helix Stomp</h2>
-          <a href="https://line6.com/support/manuals/hxstomp/">Line 6 Official <FontAwesomeIcon icon={faExternalLink} fixedWidth /></a>
-        </div>
-      </div>
-    </Section>
-    <Disclaimer/>
-  </Layout>
-)
 
-export default ManualsPage
-  
+
+export const query = graphql` {
+  allMarkdownRemark(filter: {fields: {collection: {eq: "manuals"}}}, sort: {fields: frontmatter___date, order: ASC}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          name
+          url
+          image {
+            childImageSharp {
+              fluid(maxHeight: 450) {
+              ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`
