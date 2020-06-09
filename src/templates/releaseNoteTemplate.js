@@ -27,7 +27,7 @@ const ReleaseNotesTemplate = ({ data: { mdx: post } }) => {
     return (
         <Layout>
             <SEO title={ title + ' Release'}/>
-            <Heading title={'Release Note ' + title} subtitle={date}/>
+            <Heading title={'Release Note ' + title} subtitle={date} color="light" size="normal"/>
             <Section>
                 <div className="columns is-centered">
                     <div className="column is-10 content">
