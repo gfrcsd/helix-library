@@ -34,13 +34,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const itemTemplate = path.resolve(`src/templates/itemTemplate.js`)
     const result = await graphql(`
     {
-        allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___path] }
-            filter: {fields: {collection: {nin: "manuals"}}
-            limit: 1000
-        ) {
+        allMarkdownRemark(filter: {fields: {collection: {nin: "manuals"}}}, sort: {fields: frontmatter___path, order: DESC}) {
             edges {
                 node {
+                    id
                     frontmatter {
                         path
                     }
