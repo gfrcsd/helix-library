@@ -1,8 +1,8 @@
 ---
-name: "Archetype Clean"
-path: "/models/amps/archetype-clean"
+name: "Archetype Lead"
+path: "/models/amps/archetype-lead"
 brand: "Paul Reed Smith"
-model: "Archon® (clean channel)"
+model: "Archon® (lead channel)"
 url: ""
 image: "../../../images/amps/archetype.png"
 instrument: ["Guitar"]
