@@ -21,7 +21,7 @@ export default function Template({data}) {
                     </div>
                     <div className="column is-5">
                         <p>Based on</p>
-                        <h2 className="title">{frontmatter.config != null && frontmatter.config} {frontmatter.brand}&#174; {frontmatter.model != null && frontmatter.model}</h2>
+                        <h2 className="title is-size-5-mobile">{frontmatter.config != null && frontmatter.config} {frontmatter.brand}&#174; {frontmatter.model != null && frontmatter.model}</h2>
                         <div class="field is-grouped is-grouped-multiline">
                             {frontmatter.instrument != null &&
                                 <div className="control">
