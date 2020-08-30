@@ -6,6 +6,8 @@ import Heading from "../components/heading"
 import Disclaimer from "../components/disclaimer"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLink } from '@fortawesome/pro-duotone-svg-icons'
 
 export default function Template({data}) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -59,7 +61,12 @@ export default function Template({data}) {
                             </div>
                         </div>
                         {frontmatter.url.length > 0 &&
-                            <a className="button item-url" href={frontmatter.url}>More Info</a>
+                            <a href={frontmatter.url} className="button item-url">
+                                <span>More Info</span>
+                                <span className="icon is-small">
+                                    <FontAwesomeIcon icon={faExternalLink} fixedWidth />
+                                </span>
+                            </a>
                         }
                     </div>
                 </div>
