@@ -4,6 +4,7 @@ path: "/models/amps/stone-age-185"
 brand: "Gibson"
 model: "EH-185"
 url: ""
+manual: ""
 image: "../../../images/amps/stone-age-185.png"
 instrument: ["Guitar"]
 update: ["1.0"]

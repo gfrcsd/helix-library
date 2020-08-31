@@ -4,6 +4,7 @@ path: "/models/amps/interstate-zed"
 brand: "Dr Z"
 model: "Route 66"
 url: "http://drzamps.com/product/route-66/"
+manual: ""
 image: "../../../images/amps/interstate-zed.png"
 instrument: ["Guitar"]
 update: ["1.0"]

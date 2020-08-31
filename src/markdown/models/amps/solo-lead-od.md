@@ -4,6 +4,7 @@ path: "/models/amps/solo-lead-od"
 brand: "Soldano"
 model: "SLO-100 (overdrive channel)"
 url: "https://www.soldano.com/products/classic/slo-100-classic/"
+manual: ""
 image: "../../../images/amps/solo-lead.png"
 instrument: ["Guitar"]
 update: ["1.0"]

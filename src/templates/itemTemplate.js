@@ -7,7 +7,7 @@ import Disclaimer from "../components/disclaimer"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLink } from '@fortawesome/pro-duotone-svg-icons'
+import { faExternalLink, faFileDownload } from '@fortawesome/pro-duotone-svg-icons'
 
 export default function Template({data}) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -60,6 +60,7 @@ export default function Template({data}) {
                                 </div>
                             </div>
                         </div>
+                        <div className="buttons">
                         {frontmatter.url.length > 0 &&
                             <a href={frontmatter.url} className="button item-url">
                                 <span>More Info</span>
@@ -68,6 +69,15 @@ export default function Template({data}) {
                                 </span>
                             </a>
                         }
+                        {frontmatter.manual.length > 0 &&
+                            <a href={frontmatter.manual} className="button item-url">
+                                <span>Manual</span>
+                                <span className="icon is-small">
+                                    <FontAwesomeIcon icon={faFileDownload} fixedWidth />
+                                </span>
+                            </a>
+                        }
+                        </div>
                     </div>
                 </div>
                 <div className="columns is-centered">
@@ -96,6 +106,7 @@ export default function Template({data}) {
                 path
                 model
                 url
+                manual
                 name
                 type
                 update

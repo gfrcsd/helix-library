@@ -4,6 +4,7 @@ path: "/models/amps/essex-a-30"
 brand: "Vox"
 model: "AC-30 with top boost"
 url: "https://en.wikipedia.org/wiki/Vox_AC30"
+manual: ""
 image: "../../../images/amps/essex-a.png"
 instrument: ["Guitar"]
 update: ["1.0"]

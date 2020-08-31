@@ -4,6 +4,7 @@ path: "/models/amps/divided-duo"
 brand: "÷13"
 model: "JRT 9/15"
 url: "http://www.dividedby13.com/jrt915.html"
+manual: ""
 image: "../../../images/amps/divided-duo.png"
 instrument: ["Guitar"]
 update: ["1.0"]

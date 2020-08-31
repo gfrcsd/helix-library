@@ -4,6 +4,7 @@ path: "/models/amps/us-deluxe-nrm"
 brand: "Fender"
 model: "Deluxe Reverb® (normal channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Deluxe_Reverb"
+manual: ""
 image: "../../../images/amps/us-deluxe.png"
 instrument: ["Guitar"]
 update: ["1.0"]

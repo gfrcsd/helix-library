@@ -4,6 +4,7 @@ path: "/models/amps/us-double-vib.md"
 brand: "Fender"
 model: "Twin Reverb® (vibrato channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Twin#Fender_Twin_Reverb"
+manual: ""
 image: "../../../images/amps/us-double.png"
 instrument: ["Guitar"]
 update: ["1.0"]

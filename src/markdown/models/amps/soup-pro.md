@@ -4,6 +4,7 @@ path: "/models/amps/soup-pro"
 brand: "Supro"
 model: "S6616"
 url: ""
+manual: ""
 image: "../../../images/amps/soup-pro.png"
 instrument: ["Guitar"]
 update: ["1.0"]

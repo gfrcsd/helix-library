@@ -4,6 +4,7 @@ path: "/models/amps/essex-a-15"
 brand: "Vox"
 model: "AC-15"
 url: "https://voxamps.com/product/the-vox-ac15-custom/"
+manual: ""
 image: "../../../images/amps/essex-a.png"
 instrument: ["Guitar"]
 update: ["1.0"]

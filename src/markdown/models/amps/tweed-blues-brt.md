@@ -4,6 +4,7 @@ path: "/models/amps/tweed-blues-brt"
 brand: "Fender"
 model: "Bassman® (bright channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Bassman"
+manual: ""
 image: "../../../images/amps/tweed-blues.png"
 instrument: ["Guitar"]
 update: ["1.0"]

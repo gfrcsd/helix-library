@@ -4,6 +4,7 @@ path: "/models/amps/cali-rectifire"
 brand: "MESA/Boogie"
 model: "Dual Rectifier®"
 url: "https://mesaboogie.com/amplifiers/electric/rectifier-series/dual-rectifier/index.html"
+manual: ""
 image: "../../../images/amps/cali-rectifire.png"
 instrument: ["Guitar"]
 update: ["1.0"]

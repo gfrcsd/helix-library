@@ -4,6 +4,7 @@ path: "/models/amps/jazz-rivet-120"
 brand: "Roland"
 model: "JC-120 Jazz Chorus"
 url: "https://www.roland.com/us/products/jc-120/"
+manual: ""
 image: "../../../images/amps/jazz-rivet-120.png"
 instrument: ["Guitar"]
 update: ["1.0"]

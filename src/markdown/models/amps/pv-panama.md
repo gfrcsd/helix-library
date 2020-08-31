@@ -4,6 +4,7 @@ path: "/models/amps/pv-panama"
 brand: "Peavey"
 model: "5150®"
 url: "https://en.wikipedia.org/wiki/Peavey_5150"
+manual: ""
 image: "../../../images/amps/pv-panama.png"
 instrument: ["Guitar"]
 update: ["1.0"]

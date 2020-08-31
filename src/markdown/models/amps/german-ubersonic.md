@@ -4,6 +4,7 @@ path: "/models/amps/german-ubersonic"
 brand: "Bogner"
 model: "Überschall®"
 url: "http://bogneramplification.com/uberschall"
+manual: ""
 image: "../../../images/amps/german-ubersonic.png"
 instrument: ["Guitar"]
 update: ["1.0"]

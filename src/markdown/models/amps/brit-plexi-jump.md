@@ -4,6 +4,7 @@ path: "/models/amps/brit-plexi-jump"
 brand: "Marshall"
 model: "Super Lead 100 (jumped)"
 url: "https://en.wikipedia.org/wiki/Marshall_1959"
+manual: ""
 image: "../../../images/amps/brit-plexi.png"
 instrument: ["Guitar"]
 update: ["1.0"]

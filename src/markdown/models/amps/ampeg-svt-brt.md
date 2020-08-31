@@ -4,6 +4,7 @@ path: "/models/amps/ampeg-svt-brt"
 brand: "Ampeg"
 model: "SVT (bright channel)"
 url: "https://en.wikipedia.org/wiki/Ampeg_SVT"
+manual: ""
 image: "../../../images/amps/ampeg-svt.png"
 instrument: ["Bass"]
 update: ["1.0"]

@@ -4,6 +4,7 @@ path: "/models/amps/brit-p-75-nrm"
 brand: "Park"
 model: "75 (normal channel)"
 url: "https://www.parkamplifiers.com/park-75-1"
+manual: ""
 image: "../../../images/amps/brit-p-75.png"
 instrument: ["Guitar"]
 update: ["1.0"]

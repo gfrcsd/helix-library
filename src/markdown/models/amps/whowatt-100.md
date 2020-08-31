@@ -4,6 +4,7 @@ path: "/models/amps/whowatt-100"
 brand: "Hiwatt"
 model: "DR-103 Brill"
 url: "http://www.hiwatt.co.uk/gear/50-100-watt/dr103-custom-100-head"
+manual: ""
 image: "../../../images/amps/whowatt-100.png"
 instrument: ["Guitar"]
 update: ["1.0"]

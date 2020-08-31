@@ -4,6 +4,7 @@ path: "/models/amps/ampeg-svt-nrm"
 brand: "Ampeg"
 model: "SVT (normal channel)"
 url: "https://en.wikipedia.org/wiki/Ampeg_SVT"
+manual: ""
 image: "../../../images/amps/ampeg-svt.png"
 instrument: ["Bass"]
 update: ["1.0"]

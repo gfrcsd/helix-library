@@ -4,6 +4,7 @@ path: "/models/amps/cali-400-ch2"
 brand: "MESA/Boogie"
 model: "Bass 400+ (channel 2)"
 url: "https://mesaboogie.com/support/out-of-production/bass-400.html"
+manual: ""
 image: "../../../images/amps/cali-400.png"
 instrument: ["Bass"]
 update: ["1.0"]

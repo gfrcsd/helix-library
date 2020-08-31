@@ -4,6 +4,7 @@ path: "/models/amps/tweed-blues-nrm"
 brand: "Fender"
 model: "Bassman® (normal channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Bassman"
+manual: ""
 image: "../../../images/amps/tweed-blues.png"
 instrument: ["Guitar"]
 update: ["1.0"]
