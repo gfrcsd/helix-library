@@ -2,9 +2,9 @@
 name: "G Cougar 800"
 path: "/models/amps/g-cougar-800"
 brand: "Gallien-Krueger"
-model: "GK 800RB"
-url: ""
-manual: ""
+model: "800RB"
+url: "https://en.wikipedia.org/wiki/Gallien-Krueger"
+manual: "https://www.manualslib.com/manual/253056/Gallien-Krueger-800rb.html#manual"
 image: "../../../images/amps/g-cougar-800.png"
 instrument: ["Bass"]
 update: ["1.0"]
