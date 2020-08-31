@@ -69,7 +69,7 @@ export default function Template({data}) {
                                 </span>
                             </a>
                         }
-                        {frontmatter.manual.length > 0 &&
+                        {frontmatter.manual != null && frontmatter.manual.length > 0 && 
                             <a href={frontmatter.manual} className="button item-url">
                                 <span>Manual</span>
                                 <span className="icon is-small">
