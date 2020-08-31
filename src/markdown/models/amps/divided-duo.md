@@ -6,6 +6,7 @@ model: "JRT 9/15"
 url: "http://www.dividedby13.com/jrt915.html"
 manual: ""
 image: "../../../images/amps/divided-duo.png"
+icon: "../../../images/icon-models/amps/divided-duo.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

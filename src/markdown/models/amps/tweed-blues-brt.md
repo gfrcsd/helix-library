@@ -6,6 +6,7 @@ model: "Bassman® (bright channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Bassman"
 manual: "https://www.fmicassets.com/Damroot/Original/10001/OM_leg_gtramp_59_Bassman.pdf"
 image: "../../../images/amps/tweed-blues.png"
+icon: "../../../images/icon-models/amps/tweed-blues-brt.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

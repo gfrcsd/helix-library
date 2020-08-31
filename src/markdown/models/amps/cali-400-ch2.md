@@ -6,6 +6,7 @@ model: "Bass 400+ (channel 2)"
 url: "https://mesaboogie.com/support/out-of-production/bass-400.html"
 manual: "https://mesa-boogie.imgix.net/media/User%20Manuals/Bass%20400%20Plus.pdf"
 image: "../../../images/amps/cali-400.png"
+icon: "../../../images/icon-models/amps/cali-400-ch2.png"
 instrument: ["Bass"]
 update: ["1.0"]
 ---

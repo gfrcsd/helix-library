@@ -6,6 +6,7 @@ model: "Dual Rectifier®"
 url: "https://mesaboogie.com/amplifiers/electric/rectifier-series/dual-rectifier/index.html"
 manual: "https://www.mesaboogie.com/media/User%20Manuals/2chRecto.pdf"
 image: "../../../images/amps/cali-rectifire.png"
+icon: "../../../images/icon-models/amps/cali-rectifire.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

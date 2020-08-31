@@ -6,6 +6,7 @@ model: "Route 66"
 url: "http://drzamps.com/product/route-66/"
 manual: "http://drzamps.com/wp-content/uploads/2015/06/66.pdf"
 image: "../../../images/amps/interstate-zed.png"
+icon: "../../../images/icon-models/amps/interstate-zed.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

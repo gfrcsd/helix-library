@@ -6,6 +6,7 @@ model: "DC30 (channel 1 & 2 jumped)"
 url: "https://www.matchlessamplifiers.com/amplifiers-and-cabinets/c-30"
 manual: "https://www.manualslib.com/manual/809040/Matchless-Amplifier-C-30-Series.html"
 image: "../../../images/amps/matchstick.png"
+icon: "../../../images/icon-models/amps/matchstick-jump.png"
 instrument: ["Guitar"]
 update: ["1.06"]
 ---

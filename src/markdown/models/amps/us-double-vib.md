@@ -6,6 +6,7 @@ model: "Twin Reverb® (vibrato channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Twin#Fender_Twin_Reverb"
 manual: "https://www.fmicassets.com/Damroot/Original/10001/OM_leg_gtramp_Twin_Reverb_1981.pdf"
 image: "../../../images/amps/us-double.png"
+icon: "../../../images/icon-models/amps/us-double-vib.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

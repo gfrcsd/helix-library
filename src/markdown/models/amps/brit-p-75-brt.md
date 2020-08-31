@@ -6,6 +6,7 @@ model: "75 (normal bright)"
 url: "https://www.parkamplifiers.com/park-75-1"
 manual: "https://www.parkamplifiers.com/manuals/"
 image: "../../../images/amps/brit-p-75.png"
+icon: "../../../images/icon-models/amps/brit-p-75-brt.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

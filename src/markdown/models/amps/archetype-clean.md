@@ -6,6 +6,7 @@ model: "Archon® (clean channel)"
 url: "https://www.prsguitars.com/index.php/amplifiers/model/archon_100_2020"
 manual: "https://www.prsguitars.com/documents/archon_ownersmanual.pdf"
 image: "../../../images/amps/archetype.png"
+icon: "../../../images/icon-models/amps/archetype-clean.png"
 instrument: ["Guitar"]
 update: ["2.10"]
 ---

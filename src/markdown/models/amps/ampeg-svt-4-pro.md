@@ -6,6 +6,7 @@ model: "SVT-4 PRO"
 url: "https://ampeg.com/products/pro/svt4pro/"
 manual: "https://ampeg.com/data/6/0a020a4141205f43de83aa81f/application/pdf/Owner%E2%80%99s%20Manual%20-%20English%20.pdf"
 image: "../../../images/amps/ampeg-svt-4-pro.png"
+icon: "../../../images/icon-models/amps/ampeg-svt-4-pro.png"
 instrument: ["Bass"]
 update: ["2.80"]
 ---

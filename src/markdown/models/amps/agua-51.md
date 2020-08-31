@@ -6,6 +6,7 @@ model: "DB® 751"
 url: "https://www.aguilaramp.com/bass-amps/db-751/"
 manual: "https://www.aguilaramp.com/wp-content/uploads/db-751-manual-international.pdf"
 image: "../../../images/amps/agua-51.png"
+icon: "../../../images/icon-models/amps/agua-51.png"
 instrument: ["Bass"]
 update: ["2.30"]
 ---

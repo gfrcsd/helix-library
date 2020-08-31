@@ -6,6 +6,7 @@ model: "SLO-100 (crunch channel)"
 url: "https://www.soldano.com/products/classic/slo-100-classic/"
 manual: "https://www.zikinf.com/manuels/soldano-slo100-manuel-utilisateur-en-36158.pdf"
 image: "../../../images/amps/solo-lead.png"
+icon: "../../../images/icon-models/amps/solo-lead-crunch.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

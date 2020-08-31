@@ -6,6 +6,7 @@ model: "S6616"
 url: ""
 manual: ""
 image: "../../../images/amps/soup-pro.png"
+icon: "../../../images/icon-models/amps/soup-pro.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

@@ -6,6 +6,7 @@ model: "DC30 (channel 2)"
 url: "https://www.matchlessamplifiers.com/amplifiers-and-cabinets/c-30"
 manual: "https://www.manualslib.com/manual/809040/Matchless-Amplifier-C-30-Series.html"
 image: "../../../images/amps/matchstick.png"
+icon: "../../../images/icon-models/amps/matchstick-ch2.png"
 instrument: ["Guitar"]
 update: ["1.06"]
 ---

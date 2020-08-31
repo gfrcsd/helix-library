@@ -6,6 +6,7 @@ model: "Überschall®"
 url: "http://bogneramplification.com/uberschall"
 manual: "http://www.bogneramplification.com/manuals/UBERSCHALL%20TWIN%20JET%20MANUAL%202012.pdf"
 image: "../../../images/amps/german-ubersonic.png"
+icon: "../../../images/icon-models/amps/german-ubersonic.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

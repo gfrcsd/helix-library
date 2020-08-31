@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import Img from "gatsby-image"
 import Section from "../../components/section"
 import Heading from "../../components/heading"
 import Disclaimer from "../../components/disclaimer"
@@ -16,6 +17,7 @@ export default ({data}) => {
                 <Table>
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Name</th>
                             <th>Based on</th>
                             <th>Instrument</th>
@@ -26,6 +28,7 @@ export default ({data}) => {
                     <tfoot>
                     {data.allMarkdownRemark.edges.map(({ node }) => (
                         <tr>
+                            <td><Img fixed={node.frontmatter.icon.childImageSharp.fixed}/></td>
                             <td>{node.frontmatter.name}</td>
                             <td>{node.frontmatter.brand}&#174; {node.frontmatter.model}</td>
                             <td>{node.frontmatter.instrument}</td>
@@ -54,6 +57,13 @@ export const query = graphql` {
                     path
                     brand
                     model
+                    icon {
+                        childImageSharp {
+                            fixed(height: 25) {
+                            ...GatsbyImageSharpFixed_tracedSVG
+                            }
+                        }
+                    }
                     url
                     instrument
                     update

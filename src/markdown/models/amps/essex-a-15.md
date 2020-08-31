@@ -6,6 +6,7 @@ model: "AC-15"
 url: "https://voxamps.com/product/the-vox-ac15-custom/"
 manual: "http://www.voxshowroom.com/ct/manuals/AC30C2-AC15C1_Manual.pdf"
 image: "../../../images/amps/essex-a.png"
+icon: "../../../images/icon-models/amps/essex-a-15.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

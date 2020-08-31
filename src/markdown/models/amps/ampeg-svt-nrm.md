@@ -6,6 +6,7 @@ model: "SVT (normal channel)"
 url: "https://en.wikipedia.org/wiki/Ampeg_SVT"
 manual: "https://ampeg.com/data/6/0a020a3f12fd55e0b8fc78d976/application/pdf/Owner%E2%80%99s%20Manual%20-%20English%20.pdf"
 image: "../../../images/amps/ampeg-svt.png"
+icon: "../../../images/icon-models/amps/ampeg-svt-nrm.png"
 instrument: ["Bass"]
 update: ["1.0"]
 ---

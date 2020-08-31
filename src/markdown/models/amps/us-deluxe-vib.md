@@ -6,6 +6,7 @@ model: "Deluxe Reverb® (vibrato channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Deluxe_Reverb"
 manual: "https://www.fmicassets.com/Damroot/Original/10002/OM_leg_gtramp_Deluxe_Reverb_1978.pdf"
 image: "../../../images/amps/us-deluxe.png"
+icon: "../../../images/icon-models/amps/us-deluxe-vib.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

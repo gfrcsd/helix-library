@@ -6,6 +6,7 @@ model: "DR-103 Brill"
 url: "http://www.hiwatt.co.uk/gear/50-100-watt/dr103-custom-100-head"
 manual: "https://hiwatt.org/info/AB_DR103_man.pdf"
 image: "../../../images/amps/whowatt-100.png"
+icon: "../../../images/icon-models/amps/who-watt-100.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

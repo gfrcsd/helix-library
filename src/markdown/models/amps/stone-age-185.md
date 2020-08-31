@@ -6,6 +6,7 @@ model: "EH-185"
 url: "http://www.gibson-prewar.com/gibson-1940-eh-185-amplifier/"
 manual: "http://www.gibson-prewar.com/gibson-1940-eh-185-amplifier/"
 image: "../../../images/amps/stone-age-185.png"
+icon: "../../../images/icon-models/amps/stone-age-185.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---

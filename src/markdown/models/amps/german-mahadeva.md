@@ -6,6 +6,7 @@ model: "Shiva®"
 url: "http://bogneramplification.com/shiva"
 manual: "http://www.bogneramplification.com/manuals/SHIVA%20MANUAL%202012.pdf"
 image: "../../../images/amps/german-mahadeva.png"
+icon: "../../../images/icon-models/amps/german-mahadeva.png"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---
