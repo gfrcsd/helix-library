@@ -4,6 +4,7 @@ path: "/models/mics/20-dynamic"
 brand: "Electro-Voice"
 model: "RE20"
 url: "http://recordinghacks.com/microphones/Electro-Voice/RE20"
+manual: "https://products.electrovoice.com/binary/PL20%20and%20RE20%20Service.pdf"
 image: "../../../images/mics/20-dynamic.png"
 type: ["Dynamic"]
 update: ["1.0"]

@@ -4,6 +4,7 @@ path: "/models/mics/84-cond"
 brand: "Neumann"
 model: "KM84"
 url: "http://recordinghacks.com/microphones/Neumann/KM-84"
+manual: "https://en-de.neumann.com/product_files/7384/download"
 image: "../../../images/mics/84-cond.png"
 type: ["Condenser"]
 update: ["1.0"]

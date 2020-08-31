@@ -4,6 +4,7 @@ path: "/models/mics/30-dynamic"
 brand: "Heil Sound"
 model: "PR 30"
 url: "http://recordinghacks.com/microphones/Heil-Sound/PR-30"
+manual: "https://heilsound.com/wp-content/uploads/2016/12/Heil_PR_30_microphone-IB.pdf"
 image: "../../../images/mics/30-dynamic.png"
 type: ["Dynamic"]
 update: ["1.0"]

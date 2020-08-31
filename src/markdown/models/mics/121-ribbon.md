@@ -4,6 +4,7 @@ path: "/models/mics/121-ribbon"
 brand: "Royer"
 model: "R-121"
 url: "http://recordinghacks.com/microphones/Royer-Labs/R-121"
+manual: "https://royerlabs.com/pdf/manuals/R-121manual.pdf"
 image: "../../../images/mics/121-ribbon.png"
 type: ["Ribbon"]
 update: ["1.0"]

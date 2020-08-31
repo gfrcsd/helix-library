@@ -4,6 +4,7 @@ path: "/models/mics/112-dynamic"
 brand: "AKG"
 model: "D112"
 url: "http://recordinghacks.com/microphones/AKG-Acoustics/D-112"
+manual: "https://www.manualslib.com/manual/3755/Akg-D112.html"
 image: "../../../images/mics/112-dynamic.png"
 type: ["Dynamic"]
 update: ["1.0"]

@@ -4,6 +4,7 @@ path: "/models/mics/12-dynamic"
 brand: "AKG"
 model: "D12"
 url: "http://recordinghacks.com/microphones/AKG-Acoustics/D12VR"
+manual: "https://www.akg.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe1cf0ad8/pdfs/D12.pdf"
 image: "../../../images/mics/12-dynamic.png"
 type: ["Dynamic"]
 update: ["1.0"]

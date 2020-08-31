@@ -4,6 +4,7 @@ path: "/models/mics/57-dynamic"
 brand: "Shure"
 model: "SM57"
 url: "http://recordinghacks.com/microphones/Shure/SM57"
+manual: "https://pubs.shure.com/guide/SM57/en-US"
 image: "../../../images/mics/57-dynamic.png"
 type: ["Dynamic"]
 update: ["1.0"]

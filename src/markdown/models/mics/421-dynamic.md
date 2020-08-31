@@ -4,6 +4,7 @@ path: "/models/mics/421-dynamic"
 brand: "Sennheiser"
 model: "MD 421-U"
 url: "http://recordinghacks.com/microphones/Sennheiser/MD-421"
+manual: "https://www.manualslib.com/manual/345649/Sennheiser-Md-421.html#product-MD%20421-U"
 image: "../../../images/mics/421-dynamic.png"
 type: ["Dynamic"]
 update: ["1.0"]

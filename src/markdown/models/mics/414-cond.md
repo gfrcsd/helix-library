@@ -4,6 +4,7 @@ path: "/models/mics/414-cond"
 brand: "AKG"
 model: "C414 TLII"
 url: "http://recordinghacks.com/microphones/AKG-Acoustics/C-414-B-TL-II"
+manual: "https://www.akg.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw283c15fd/pdfs/C414b_tlII_cutsheet.pdf"
 image: "../../../images/mics/414-cond.png"
 type: ["Condenser"]
 update: ["1.0"]

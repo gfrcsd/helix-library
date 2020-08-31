@@ -4,6 +4,7 @@ path: "/models/mics/160-ribbon"
 brand: "Beyerdynamic"
 model: "160"
 url: "http://recordinghacks.com/microphones/beyerdynamic/M-160"
+manual: "https://global.beyerdynamic.com/amfile/file/download/file_id/5473/product_id/410/"
 image: "../../../images/mics/160-ribbon.png"
 type: ["Ribbon"]
 update: ["1.0"]

@@ -4,6 +4,7 @@ path: "/models/mics/47-cond"
 brand: "Neumann"
 model: "U47"
 url: "http://recordinghacks.com/microphones/Neumann/U-47"
+manual: "https://en-de.neumann.com/product_files/7398/download"
 image: "../../../images/mics/47-cond.png"
 type: ["Condenser"]
 update: ["1.0"]

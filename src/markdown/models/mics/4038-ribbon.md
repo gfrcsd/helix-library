@@ -4,6 +4,7 @@ path: "/models/mics/4038-ribbon"
 brand: "Coles"
 model: "4038"
 url: "http://recordinghacks.com/microphones/Coles/4038"
+manual: "http://coleselectroacoustics.com/images/pdfs/4038Spec.pdf"
 image: "../../../images/mics/4038-ribbon.png"
 type: ["Ribbon"]
 update: ["1.0"]
