@@ -8,3 +8,5 @@ image: "../../../images/line6-logo.jpg"
 instrument: ["Guitar"]
 update: ["1.0"]
 ---
+#### Description
+A metal-freindly beast that provides sustain for days at virtually any playing dynamic, giving up gobs of distortion with ease.
