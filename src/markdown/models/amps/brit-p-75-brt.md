@@ -4,7 +4,7 @@ path: "/models/amps/brit-p-75-brt"
 brand: "Park"
 model: "75 (normal bright)"
 url: "https://www.parkamplifiers.com/park-75-1"
-manual: ""
+manual: "https://www.parkamplifiers.com/manuals/"
 image: "../../../images/amps/brit-p-75.png"
 instrument: ["Guitar"]
 update: ["1.0"]

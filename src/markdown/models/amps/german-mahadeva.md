@@ -4,7 +4,7 @@ path: "/models/amps/german-mahadeva"
 brand: "Bogner"
 model: "Shiva®"
 url: "http://bogneramplification.com/shiva"
-manual: ""
+manual: "http://www.bogneramplification.com/manuals/SHIVA%20MANUAL%202012.pdf"
 image: "../../../images/amps/german-mahadeva.png"
 instrument: ["Guitar"]
 update: ["1.0"]

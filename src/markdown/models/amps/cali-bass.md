@@ -4,7 +4,7 @@ path: "/models/amps/cali-bass"
 brand: "MESA/Boogie"
 model: "M9 Carbine™"
 url: "https://mesaboogie.com/amplifiers/bass/carbine-series/m9-carbine/index.html"
-manual: ""
+manual: "https://mesa-boogie.imgix.net/media/User%20Manuals/m9Carbine_131120.pdf"
 image: "../../../images/amps/cali-bass.jpg"
 instrument: ["Bass"]
 update: ["1.0"]

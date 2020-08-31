@@ -4,7 +4,7 @@ path: "/models/amps/angl-meteor"
 brand: "ENGL"
 model: "Fireball 100"
 url: "https://www.engl-amps.com/fireball-100-e635"
-manual: ""
+manual: "https://www.engl-amps.com/assets/manuals/om_e635.pdf"
 image: "../../../images/amps/angl-meteor.png"
 instrument: ["Guitar"]
 update: ["1.0"]

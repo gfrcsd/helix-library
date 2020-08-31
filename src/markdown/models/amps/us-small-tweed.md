@@ -4,7 +4,7 @@ path: "/models/amps/us-small-tweed"
 brand: "Fender"
 model: "Champ"
 url: "https://www.fender.com/articles/gear/indispensable-undeniable-the-legacy-of-the-champ"
-manual: ""
+manual: "https://www.fmicassets.com/Damroot/Original/10001/OM_leg_gtramp_Champ.pdf"
 image: "../../../images/amps/us-small-tweed.png"
 instrument: ["Guitar"]
 update: ["1.0"]

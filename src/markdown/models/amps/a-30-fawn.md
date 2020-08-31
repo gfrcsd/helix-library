@@ -4,7 +4,7 @@ path: "/models/amps/a-30-fawn"
 brand: "Vox"
 model: "AC-30 Fawn (normal channel)"
 url: "https://en.wikipedia.org/wiki/Vox_AC30"
-manual: ""
+manual: "http://www.voxshowroom.com/ct/manuals/AC30C2-AC15C1_Manual.pdf"
 image: "../../../images/amps/a-30-fawn.png"
 instrument: ["Guitar"]
 update: ["1.0"]

@@ -4,7 +4,7 @@ path: "/models/amps/us-deluxe-nrm"
 brand: "Fender"
 model: "Deluxe Reverb® (normal channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Deluxe_Reverb"
-manual: ""
+manual: "https://www.fmicassets.com/Damroot/Original/10002/OM_leg_gtramp_Deluxe_Reverb_1978.pdf"
 image: "../../../images/amps/us-deluxe.png"
 instrument: ["Guitar"]
 update: ["1.0"]

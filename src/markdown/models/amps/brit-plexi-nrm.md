@@ -4,7 +4,7 @@ path: "/models/amps/brit-plexi-nrm"
 brand: "Marshall"
 model: "Super Lead 100 (normal channel)"
 url: "https://en.wikipedia.org/wiki/Marshall_1959"
-manual: ""
+manual: "https://www.manualslib.com/manual/99234/Marshall-Amplification-1959slp.html"
 image: "../../../images/amps/brit-plexi.png"
 instrument: ["Guitar"]
 update: ["1.0"]
