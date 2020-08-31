@@ -5,6 +5,7 @@ brand: "Roland"
 model: "JC-120"
 url: "https://www.roland.com/us/products/jc-120/"
 image: "../../../images/amps/jazz-rivet-120.png"
+icon: "../../../images/icon-models/cabs/2x12-jazz-rivet.png"
 instrument: ["Guitar"]
 config: "2×12″"
 update: ["1.0"]

@@ -5,6 +5,7 @@ brand: ""
 model: ""
 url: ""
 image: "../../../images/cabs/xxx.png"
+icon: "../../../images/icon-models/cabs/placeholder.png"
 instrument: ["Guitar"]
 config: "1×8″"
 update: ["1.0"]

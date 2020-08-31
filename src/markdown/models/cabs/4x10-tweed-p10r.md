@@ -5,6 +5,7 @@ brand: "Fender"
 model: "Bassman® P10R"
 url: "https://en.wikipedia.org/wiki/Fender_Bassman"
 image: "../../../images/amps/tweed-blues.png"
+icon: "../../../images/icon-models/cabs/4x10-tweed-p10r.png"
 instrument: ["Guitar"]
 config: "4×10″"
 update: ["1.0"]

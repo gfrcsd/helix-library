@@ -5,6 +5,7 @@ brand: "Fender"
 model: "Twin C12N"
 url: "https://en.wikipedia.org/wiki/Fender_Twin"
 image: "../../../images/amps/us-double.png"
+icon: "../../../images/icon-models/cabs/2x12-double-c12n.png"
 instrument: ["Guitar"]
 config: "2×12″"
 update: ["1.0"]

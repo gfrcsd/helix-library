@@ -5,6 +5,7 @@ brand: "Fender"
 model: "Champ"
 url: "https://www.fender.com/articles/gear/indispensable-undeniable-the-legacy-of-the-champ"
 image: "../../../images/amps/us-small-tweed.png"
+icon: "../../../images/icon-models/cabs/1x8-small-tweed.png"
 instrument: ["Guitar"]
 config: "1×8″"
 update: ["1.0"]
