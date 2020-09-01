@@ -14,7 +14,7 @@ export default ({data}) => {
             <SEO title="Amps"/>
             <Heading title="Amps" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
             <Section>
-                <Table>
+                <Table narrow="true">
                     <thead>
                         <tr>
                             <th></th>
@@ -59,7 +59,7 @@ export const query = graphql` {
                     model
                     icon {
                         childImageSharp {
-                            fixed(height: 25) {
+                            fixed(height: 45) {
                             ...GatsbyImageSharpFixed_tracedSVG
                             }
                         }
