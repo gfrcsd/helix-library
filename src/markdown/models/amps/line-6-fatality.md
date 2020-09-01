@@ -6,7 +6,7 @@ model: "Original"
 url: ""
 manual: ""
 image: "../../../images/line6-logo.jpg"
-icon: "../../../images/icon-models/amps/amp.png"
+icon: "../../../images/icon-models/amps/line-6-fatality.png"
 instrument: ["Guitar"]
 update: ["2.0"]
 ---
