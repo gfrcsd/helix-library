@@ -5,6 +5,7 @@ brand: "Tech 21"
 model: "SansAmp Bass Driver DI V1"
 url: "http://www.effectsdatabase.com/model/tech21/sansamp/bassdriverdi"
 image: "../../../images/effects/zero-amp-bass-di.png"
+icon: "../../../images/icon-models/effects/zero-amp-bass-di.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["2.80"]

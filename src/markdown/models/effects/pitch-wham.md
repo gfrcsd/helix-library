@@ -5,6 +5,7 @@ brand: "DigiTech"
 model: "Whammy®"
 url: "http://www.effectsdatabase.com/model/digitech/whammy/wh4"
 image: "../../../images/effects/pitch-wham.png"
+icon: "../../../images/icon-models/effects/pitch-wham.png"
 type: ["Pitch/Synth"]
 channel: ["Mono", "Stereo"]
 update: ["1.0"]

@@ -5,6 +5,7 @@ brand: "BOSS"
 model: "SD-1 Overdrive"
 url: "http://www.effectsdatabase.com/model/boss/compact/sd1"
 image: "../../../images/effects/stupor-od.png"
+icon: "../../../images/icon-models/effects/stupor-od.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["2.10"]

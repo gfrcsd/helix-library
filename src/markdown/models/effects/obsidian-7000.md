@@ -1,10 +1,11 @@
 ---
-name: "Obisdian 7000"
+name: "Obsidian 7000"
 path: "/models/effects/obsidian-7000"
 brand: "Darkglass Electronics"
 model: "Microtubes B7K Ultra bass preamp/overdrive/EQ"
 url: "http://www.effectsdatabase.com/model/darkglass/microtubes/b7k/ultra"
 image: "../../../images/effects/obsidian-7000.png"
+icon: "../../../images/icon-models/effects/obsidian-7000.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["2.20"]

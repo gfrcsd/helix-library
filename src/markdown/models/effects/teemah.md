@@ -5,6 +5,7 @@ brand: "Paul Cochrane"
 model: "Timmy® Overdrive"
 url: "http://www.effectsdatabase.com/model/cochrane/timmy"
 image: "../../../images/effects/teemah.png"
+icon: "../../../images/icon-models/effects/teemah.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.06"]

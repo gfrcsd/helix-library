@@ -5,6 +5,7 @@ brand: "Z.Vex"
 model: "Fuzz Factory"
 url: "http://www.effectsdatabase.com/model/zvex/fuzzfactory"
 image: "../../../images/effects/industrial-fuzz.png"
+icon: "../../../images/icon-models/effects/industrial-fuzz.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.0"]

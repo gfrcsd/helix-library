@@ -5,6 +5,7 @@ brand: "BOSS"
 model: "DS-1 distortion pedal (classic Made-in-Japan version)"
 url: "http://www.effectsdatabase.com/model/boss/compact/ds1"
 image: "../../../images/effects/deez-one-vintage.png"
+icon: "../../../images/icon-models/effects/deez-one-vintage.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["2.60"]

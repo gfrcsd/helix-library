@@ -5,6 +5,7 @@ brand: "Arbiter"
 model: "Fuzz Face®"
 url: "http://www.effectsdatabase.com/model/arbiter/fuzzface"
 image: "../../../images/effects/arbitrator-fuzz.png"
+icon: "../../../images/icon-models/effects/arbitrator-fuzz.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.0"]

@@ -5,6 +5,7 @@ brand: "Ibanez"
 model: "TS808 Tube Screamer®"
 url: "http://www.effectsdatabase.com/model/ibanez/808/ts808"
 image: "../../../images/effects/scream-808.png"
+icon: "../../../images/icon-models/effects/scream-808.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.0"]

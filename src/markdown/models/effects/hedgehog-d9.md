@@ -5,6 +5,7 @@ brand: "MAXON"
 model: "SD9 Sonic Distortion"
 url: "http://www.effectsdatabase.com/model/maxon/9/sd9"
 image: "../../../images/effects/hedgehog-d9.png"
+icon: "../../../images/icon-models/effects/hedgehog-d9.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.0"]

@@ -5,6 +5,7 @@ brand: "Benadrian"
 model: "Kowloon Walled Bunny Distortion"
 url: "http://www.effectsdatabase.com/model/benadrian/kwb"
 image: "../../../images/effects/kwb.png"
+icon: "../../../images/icon-models/effects/kwb.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.06"]

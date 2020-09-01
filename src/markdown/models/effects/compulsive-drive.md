@@ -5,6 +5,7 @@ brand: "Fulltone"
 model: "OCD"
 url: "http://www.effectsdatabase.com/model/fulltone/ocd"
 image: "../../../images/effects/compulsive-drive.png"
+icon: "../../../images/icon-models/effects/compulsive-drive.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.0"]

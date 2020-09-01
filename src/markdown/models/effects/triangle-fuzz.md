@@ -5,6 +5,7 @@ brand: "Electro-Harmonix"
 model: "Big Muff Pi®"
 url: "http://www.effectsdatabase.com/model/eh/bigmuffpi"
 image: "../../../images/effects/triangle-fuzz.png"
+icon: "../../../images/icon-models/effects/triangle-fuzz.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.0"]

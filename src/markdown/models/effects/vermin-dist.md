@@ -5,6 +5,7 @@ brand: "Pro Co"
 model: "RAT"
 url: "http://www.effectsdatabase.com/model/proco/rat"
 image: "../../../images/effects/vermin-dist.png"
+icon: "../../../images/icon-models/effects/vermin-dist.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["1.0"]

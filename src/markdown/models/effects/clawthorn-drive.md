@@ -5,6 +5,7 @@ brand: "Wounded Paw"
 model: "Battering Ram bass overdrive"
 url: "http://www.effectsdatabase.com/model/woundedpaw/batteringram"
 image: "../../../images/effects/clawthorn-drive.png"
+icon: "../../../images/icon-models/effects/clawthorn-drive.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["2.20"]

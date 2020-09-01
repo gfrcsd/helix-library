@@ -5,6 +5,7 @@ brand: "Dallas"
 model: "Rangemaster Treble Booster"
 url: "http://www.effectsdatabase.com/model/dallas/rangemaster"
 image: "../../../images/effects/deranged-master.png"
+icon: "../../../images/icon-models/effects/deranged-master.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["2.60"]

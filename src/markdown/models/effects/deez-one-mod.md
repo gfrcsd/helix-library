@@ -5,6 +5,7 @@ brand: "BOSS"
 model: "DS-1 distortion pedal (Keeley mod version)"
 url: "http://www.effectsdatabase.com/model/boss/compact/ds1"
 image: "../../../images/effects/deez-one-mod.png"
+icon: "../../../images/icon-models/effects/deez-one-mod.png"
 type: ["Distortion"]
 channel: ["Mono", "Stereo"]
 update: ["2.60"]
