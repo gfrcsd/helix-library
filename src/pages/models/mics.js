@@ -30,7 +30,7 @@ export default ({data}) => {
                             <td>{node.frontmatter.brand}&#174; {node.frontmatter.model}</td>
                             <td>{node.frontmatter.type}</td>
                             <td>{node.frontmatter.update}</td>
-                            <td><Link to={node.frontmatter.path}>Details</Link></td>
+                            <td><Link className="button" to={node.frontmatter.path}>Details</Link></td>
                         </tr>
                     ))}
                     </tfoot>

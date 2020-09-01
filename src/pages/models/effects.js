@@ -35,7 +35,7 @@ export default ({data}) => {
                             <td>{node.frontmatter.type}</td>
                             <td>{node.frontmatter.channel.join(", ")}</td>
                             <td>{node.frontmatter.update}</td>
-                            <td><Link to={node.frontmatter.path}>Details</Link></td>
+                            <td><Link className="button" to={node.frontmatter.path}>Details</Link></td>
                         </tr>
                     ))}
                     </tfoot>
