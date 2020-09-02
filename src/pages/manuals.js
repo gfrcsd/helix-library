@@ -12,7 +12,7 @@ import { faExternalLink } from '@fortawesome/pro-duotone-svg-icons'
 export default ({data}) => {
   return (
     <Layout>
-      <SEO title="Manuals" />
+      <SEO title="Manuals" description="Links to all the official documentation for your favourite Helix product"/>
       <Heading title="Manuals" subtitle="Download the official documentation" color="light" size="normal"/>
       <Section>
         <div className="columns is-centered is-multiline">
