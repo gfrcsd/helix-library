@@ -34,6 +34,14 @@ body
     a 
         filter: invert(1)
 
+.navbar-menu
+    @media(max-width: 1023px)
+        background: #131313
+        a, .navbar-link
+            filter: invert(1)
+            &::after
+                border-color: #4a4a4a
+
 .table tfoot tr td
     vertical-align: middle
 
