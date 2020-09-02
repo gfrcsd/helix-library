@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLink, faFile } from '@fortawesome/pro-duotone-svg-icons'
 
 export default function Template({data}) {
-    const { markdownRemark } = data // data.markdownRemark holds your post data
+    const { markdownRemark } = data
     const { frontmatter, html, fields } = markdownRemark
     return (
         <Layout>
@@ -18,7 +18,7 @@ export default function Template({data}) {
             <Heading title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} color="light" size="normal"/>
             <Section>
                 <div className="columns is-centered">
-                    <div className="column is-5" style={{maxHeight: "450px"}}>
+                    <div className="column is-5 model-image-container">
                         <Img style={{ maxHeight: "100%" }} imgStyle={{ objectFit: "contain" }} fluid={frontmatter.image.childImageSharp.fluid}/>
                     </div>
                     <div className="column is-5">
@@ -92,9 +92,9 @@ export default function Template({data}) {
             </Section>
             <Disclaimer/>
         </Layout>
-        )
-    }
-    export const pageQuery = graphql`
+    )
+}
+export const pageQuery = graphql`
     query($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
@@ -123,4 +123,4 @@ export default function Template({data}) {
             }
         }
     }
-    `
+`
