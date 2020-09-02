@@ -9,7 +9,7 @@ import Heading from "../components/heading"
 export default ({data}) => {
     return(
         <Layout>
-            <SEO title="Release Notes"/>
+            <SEO title="Release Notes" description="Release notes for all the updates available for the family of Helix products"/>
             <Heading title="Release Notes" subtitle={data.allMdx.totalCount + ' published'} color="light" size="normal"/>
             <Section>
                 <div className="release-note columns is-centered">
