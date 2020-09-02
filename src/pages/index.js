@@ -14,8 +14,8 @@ const IndexPage = () => (
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-10">
-              <h1 className="title">Welcome to Helix library</h1>
-              <h2 className="subtitle">A trove of informations about the Helix product line by Line 6®</h2>
+              <h1 className="title is-size-4-mobile">Welcome to Helix library</h1>
+              <h2 className="subtitle is-size-5-mobile">A trove of informations about the Helix product line by Line 6®</h2>
             </div>
           </div>
         </div>
