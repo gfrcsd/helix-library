@@ -17,16 +17,17 @@ export const query = graphql`
                 target
             }
             body
+            excerpt(truncate: true, pruneLength: 158)
         }
     }
 `;
 
 const ReleaseNotesTemplate = ({ data: { mdx: post } }) => {
     const { title, date, target } = post.frontmatter;
-    const { body } = post;
+    const { body, excerpt } = post;
     return (
         <Layout>
-            <SEO title={ title + ' Release'}/>
+            <SEO title={ title + ' Release Note' } description={excerpt}/>
             <Heading title={'Release Note ' + title} subtitle={date} color="light" size="normal"/>
             <Section>
                 <div className="columns is-centered">
