@@ -11,7 +11,7 @@ import Table from "../../components/table"
 export default ({data}) => {
     return (
         <Layout>
-            <SEO title="Amps"/>
+            <SEO title="Amps" description="Find all the informations you need about the amps available in the Helix products by Line 6&#174;"/>
             <Heading title="Amps" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
             <Section>
                 <Table narrow="true">

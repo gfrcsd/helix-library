@@ -10,7 +10,7 @@ import Table from "../../components/table"
 export default ({data}) => {
     return (
         <Layout>
-            <SEO title="Mics"/>
+            <SEO title="Mics" description="Find all the informations you need about the mics available in the Helix products by Line 6&#174;"/>
             <Heading title="Mics" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
             <Section>
                 <Table>

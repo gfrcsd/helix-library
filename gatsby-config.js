@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Helix Library`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `A trove of informations about the Helix product line by Line 6®`,
+    author: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
