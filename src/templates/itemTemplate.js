@@ -11,10 +11,10 @@ import { faExternalLink, faFile } from '@fortawesome/pro-duotone-svg-icons'
 
 export default function Template({data}) {
     const { markdownRemark } = data
-    const { frontmatter, html, fields } = markdownRemark
+    const { frontmatter, html, excerpt, fields } = markdownRemark
     return (
         <Layout>
-            <SEO title={frontmatter.name} />
+            <SEO title={frontmatter.name} description={excerpt}/>
             <Heading title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} color="light" size="normal"/>
             <Section>
                 <div className="columns is-centered">
@@ -98,6 +98,7 @@ export const pageQuery = graphql`
     query($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
+            excerpt(pruneLength: 158, truncate: true, format: PLAIN)
             frontmatter {
                 brand
                 instrument
