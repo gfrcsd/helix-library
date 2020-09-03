@@ -9,7 +9,7 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLink, faFile } from '@fortawesome/pro-duotone-svg-icons'
 
-export default function Template({data}) {
+export default function ModelTemplate({data}) {
     const { markdownRemark } = data
     const { frontmatter, html, excerpt, fields } = markdownRemark
     return (

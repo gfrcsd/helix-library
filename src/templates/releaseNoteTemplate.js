@@ -22,7 +22,7 @@ export const query = graphql`
     }
 `;
 
-const ReleaseNotesTemplate = ({ data: { mdx: post } }) => {
+const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
     const { title, date, target } = post.frontmatter;
     const { body, excerpt } = post;
     return (
@@ -49,4 +49,4 @@ const ReleaseNotesTemplate = ({ data: { mdx: post } }) => {
     )
 }
 
-export default ReleaseNotesTemplate
+export default ReleaseNoteTemplate

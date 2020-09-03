@@ -31,7 +31,7 @@ const path = require(`path`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
-    const itemTemplate = path.resolve(`src/templates/itemTemplate.js`)
+    const modelTemplate = path.resolve(`src/templates/modelTemplate.js`)
     const result = await graphql(`
     {
         allMarkdownRemark(filter: {fields: {collection: {nin: "manuals"}}}, sort: {fields: frontmatter___path, order: DESC}) {
@@ -64,7 +64,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
             path: node.frontmatter.path,
-            component: itemTemplate,
+            component: modelTemplate,
             context: {}, // additional data can be passed via context
         })
     })
