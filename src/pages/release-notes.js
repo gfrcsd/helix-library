@@ -29,7 +29,7 @@ export default ({data}) => {
                     {data.allMdx.edges.map(({ node }) => (
                         <div className="columns is-centered">
                             <div id={node.frontmatter.title} className="column is-10 content headings">
-                                <h3 class="title is-size-4">Version {node.frontmatter.title}</h3>
+                                <h3 class="title is-size-4 is-size-5-mobile">Version {node.frontmatter.title}</h3>
                                 <h4 class="subtitle is-size-6 has-text-weight-normal">released on {node.frontmatter.date}</h4>
                                 <ul className="is-hidden-mobile">
                                 {node.headings.map(({ value }) => (
@@ -37,7 +37,7 @@ export default ({data}) => {
                                 ))}
                                 </ul>
                                 <p className="is-hidden-mobile">{node.excerpt}</p>
-                                <Link style={{selfAlign:'right'}} className="button is-info" to={node.frontmatter.path}>Read more</Link>
+                                <Link className="button is-info is-outlined" to={node.frontmatter.path}>Read more</Link>
                                 <hr/>
                             </div>
                         </div>
