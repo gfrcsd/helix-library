@@ -9,7 +9,6 @@ import Section from "../components/section"
 import Heading from "../components/heading"
 
 export default ({data}) => {
-    const [isActive, setisActive] = React.useState(false)
     return(
         <Layout>
             <SEO title="Release Notes" description="Release notes for all the updates available for the family of Helix products"/>
