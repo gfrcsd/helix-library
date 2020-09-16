@@ -23,6 +23,6 @@ export default ({toggleItem, buttonName}) => {
     }
     
     return (
-        <buttons onClick={toggle} className="button is-small">{buttonName}</buttons>
+        <buttons onClick={toggle} className="button is-small is-light">{buttonName}</buttons>
     )
 }
