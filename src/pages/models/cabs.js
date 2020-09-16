@@ -7,6 +7,7 @@ import Section from "../../components/section"
 import Heading from "../../components/heading"
 import Disclaimer from "../../components/disclaimer"
 import Table from "../../components/table"
+import FilterButtonContainer from "../../components/filterButtonContainer"
 import FilterButton from "../../components/filterButton"
 
 export default ({data}) => {
@@ -15,18 +16,11 @@ export default ({data}) => {
             <SEO title="Cabs" description="Find all the informations you need about the cabs available in the Helix products by Line 6&#174;"/>
             <Heading title="Cabs" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
             <Section>
-                <div className="columns">
-                    <div className="column is-narrow is-offset-1">
-                        <div className="buttons">
-                            <p className="filter-tag">Instrument:</p>
-                            <div className="buttons has-addons" id="instrumentButtons">
-                                <FilterButton toggleItem={"table-row"} buttonName={"All"} />
-                                <FilterButton toggleItem={"guitar"} buttonName={"Guitar"} />
-                                <FilterButton toggleItem={"bass"} buttonName={"Bass"} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FilterButtonContainer filterName="Instrument">
+                    <FilterButton toggleItem={"table-row"} buttonName={"All"} />
+                    <FilterButton toggleItem={"guitar"} buttonName={"Guitar"} />
+                    <FilterButton toggleItem={"bass"} buttonName={"Bass"} />
+                </FilterButtonContainer>
                 <Table narrow="true">
                     <thead>
                         <tr>

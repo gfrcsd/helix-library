@@ -7,6 +7,7 @@ import Section from "../../components/section"
 import Heading from "../../components/heading"
 import Disclaimer from "../../components/disclaimer"
 import Table from "../../components/table"
+import FilterButtonContainer from "../../components/filterButtonContainer"
 import FilterButton from "../../components/filterButton"
 
 export default ({data}) => {
@@ -15,28 +16,21 @@ export default ({data}) => {
             <SEO title="Effects" description="Find all the informations you need about the effects available in the Helix products by Line 6&#174;"/>
             <Heading title="Effects" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
             <Section>
-                <div className="columns">
-                    <div className="column is-narrow is-offset-1">
-                        <div className="buttons">
-                            <p className="filter-tag">Type:</p>
-                            <div className="buttons has-addons" id="instrumentButtons">
-                                <FilterButton toggleItem={"table-row"} buttonName={"All"} />
-                                <FilterButton toggleItem={"delay"} buttonName={"Delay"} />
-                                <FilterButton toggleItem={"distortion"} buttonName={"Distortion"} />
-                                <FilterButton toggleItem={"dynamics"} buttonName={"Dynamics"} />
-                                <FilterButton toggleItem={"eq"} buttonName={"EQ"} />
-                                <FilterButton toggleItem={"filter"} buttonName={"Filter"} />
-                                <FilterButton toggleItem={"looper"} buttonName={"Looper"} />
-                                <FilterButton toggleItem={"modulation"} buttonName={"Modulation"} />
-                                <FilterButton toggleItem={"pitch/synth"} buttonName={"Pitch/Synth"} />
-                                <FilterButton toggleItem={"reverb"} buttonName={"Reverb"} />
-                                <FilterButton toggleItem={"split"} buttonName={"Split"} />
-                                <FilterButton toggleItem={"volume/pan"} buttonName={"Volume/Pan"} />
-                                <FilterButton toggleItem={"wah"} buttonName={"Wah"} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FilterButtonContainer filterName="Type">
+                    <FilterButton toggleItem={"table-row"} buttonName={"All"} />
+                    <FilterButton toggleItem={"delay"} buttonName={"Delay"} />
+                    <FilterButton toggleItem={"distortion"} buttonName={"Distortion"} />
+                    <FilterButton toggleItem={"dynamics"} buttonName={"Dynamics"} />
+                    <FilterButton toggleItem={"eq"} buttonName={"EQ"} />
+                    <FilterButton toggleItem={"filter"} buttonName={"Filter"} />
+                    <FilterButton toggleItem={"looper"} buttonName={"Looper"} />
+                    <FilterButton toggleItem={"modulation"} buttonName={"Modulation"} />
+                    <FilterButton toggleItem={"pitch/synth"} buttonName={"Pitch/Synth"} />
+                    <FilterButton toggleItem={"reverb"} buttonName={"Reverb"} />
+                    <FilterButton toggleItem={"split"} buttonName={"Split"} />
+                    <FilterButton toggleItem={"volume/pan"} buttonName={"Volume/Pan"} />
+                    <FilterButton toggleItem={"wah"} buttonName={"Wah"} />
+                </FilterButtonContainer>
                 <Table narrow="true">
                     <thead>
                         <tr>
