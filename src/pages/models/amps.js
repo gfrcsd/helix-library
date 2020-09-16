@@ -7,30 +7,9 @@ import Section from "../../components/section"
 import Heading from "../../components/heading"
 import Disclaimer from "../../components/disclaimer"
 import Table from "../../components/table"
+import FilterButton from "../../components/filterButton"
 
-export default ({data}) => {
-
-    var all = document.getElementsByClassName('table-row');
-    var guitar = document.getElementsByClassName('guitar');
-    var bass = document.getElementsByClassName('bass');
-
-    function hide(row){
-        for (var i = 0; i < row.length; i ++) {
-            row[i].style.display = 'none';
-        }
-    }
-
-    function show(row){
-        for (var i = 0; i < row.length; i ++) {
-            row[i].style.display = 'table-row';
-        }
-    }
-
-    function toggle(item){
-        hide(all);
-        show(item);
-    }
-    
+export default ({data}) => {    
     return (
         <Layout>
             <SEO title="Amps" description="Find all the informations you need about the amps available in the Helix products by Line 6&#174;"/>
@@ -41,9 +20,9 @@ export default ({data}) => {
                         <div className="buttons">
                             <p className="filter-tag">Instrument:</p>
                             <div className="buttons has-addons" id="instrumentButtons">
-                                <buttons onClick={() => toggle(all)} className="button is-small is-active">All</buttons>
-                                <buttons onClick={() => toggle(guitar)} className="button is-small">Guitar</buttons>
-                                <buttons onClick={() => toggle(bass)} className="button is-small">Bass</buttons>
+                                <FilterButton toggleItem={"table-row"} buttonName={"All"} />
+                                <FilterButton toggleItem={"guitar"} buttonName={"Guitar"} />
+                                <FilterButton toggleItem={"bass"} buttonName={"Bass"} />
                             </div>
                         </div>
                     </div>
