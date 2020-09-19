@@ -2,7 +2,7 @@
 name: "Brit Plexi Jump"
 path: "/models/amps/brit-plexi-jump"
 brand: "Marshall"
-model: "Super Lead 100 (jumped)"
+model: "Super Lead 100 (channel 1 & 2 jumped)"
 url: "https://en.wikipedia.org/wiki/Marshall_1959"
 manual: "https://www.manualslib.com/manual/99234/Marshall-Amplification-1959slp.html"
 image: "../../../images/amps/brit-plexi.png"

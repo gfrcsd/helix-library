@@ -1,5 +1,5 @@
 ---
-name: "Busy One Jumped"
+name: "Busy One Jump"
 path: "/models/amps/busy-one-jumped"
 brand: "Pearce"
 model: "BC-1 bass preamp (channel 1 & 2 jumped)"
