@@ -15,7 +15,7 @@ export default function ModelTemplate({data}) {
     return (
         <Layout>
             <SEO title={frontmatter.name} description={excerpt}/>
-            <Heading title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} color="light" size="normal"/>
+            <Heading title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} color="none" size="normal" bckColor={frontmatter.image.colors.lightMuted}/>
             <Section>
                 <div className="columns is-centered">
                     <div className="column is-5 model-image-container">
@@ -112,6 +112,14 @@ export const pageQuery = graphql`
                 type
                 update
                 image {
+                    colors {
+                        darkMuted
+                        darkVibrant
+                        lightMuted
+                        muted
+                        lightVibrant
+                        vibrant
+                    }
                     childImageSharp {
                         fluid(maxHeight: 450) {
                         ...GatsbyImageSharpFluid_tracedSVG
