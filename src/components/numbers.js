@@ -1,5 +1,7 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAmpGuitar, faSpeaker, faMicrophoneStand, faWaveformPath } from '@fortawesome/pro-duotone-svg-icons'
 
 export default function Header() {
     const data = useStaticQuery(graphql`
@@ -21,28 +23,32 @@ export default function Header() {
     return (
         <div className="level">
             <div className="level-item has-text-centered">
-                <div>
-                    <h3 className="title">{data.ampsCount.totalCount}</h3>
-                    <h4 className="heading is-size-5">Amps</h4>
-                </div>
+                <Link to="/models/amps" className="has-text-dark">
+                    <FontAwesomeIcon className="mb-3" icon={faAmpGuitar} size="4x" />
+                    <p className="title">{data.ampsCount.totalCount}</p>
+                    <p className="heading is-size-6">Amps</p>
+                </Link>
             </div>
             <div className="level-item has-text-centered">
-                <div>
-                    <h3 className="title">{data.cabsCount.totalCount}</h3>
-                    <h4 className="heading is-size-5">Cabs</h4>
-                </div>
+                <Link to="/models/cabs" className="has-text-dark">
+                    <FontAwesomeIcon icon={faSpeaker} className="mb-3" rotation={90} size="4x" />
+                    <p className="title">{data.cabsCount.totalCount}</p>
+                    <p className="heading is-size-6">Cabs</p>
+                </Link>
             </div>
             <div className="level-item has-text-centered">
-                <div>
-                    <h3 className="title">{data.effectsCount.totalCount}</h3>
-                    <h4 className="heading is-size-5">Effects</h4>
-                </div>
+                <Link to="/models/effects" className="has-text-dark">
+                    <FontAwesomeIcon className="mb-3" icon={faWaveformPath} size="4x" />
+                    <p className="title">{data.effectsCount.totalCount}</p>
+                    <p className="heading is-size-6">Effects</p>
+                </Link>
             </div>
             <div className="level-item has-text-centered">
-                <div>
-                    <h3 className="title">{data.micsCount.totalCount}</h3>
-                    <h4 className="heading is-size-5">Mics</h4>
-                </div>
+                <Link to="/models/mics" className="has-text-dark">
+                    <FontAwesomeIcon className="mb-3" icon={faMicrophoneStand} size="4x" />
+                    <p className="title">{data.micsCount.totalCount}</p>
+                    <p className="heading is-size-6">Mics</p>
+                </Link>
             </div>
         </div>
     )
