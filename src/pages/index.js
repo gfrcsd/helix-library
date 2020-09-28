@@ -15,7 +15,7 @@ const IndexPage = () => (
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-10 has-text-centered">
-              <h1 className="title is-size-4-mobile">Welcome to Helix library</h1>
+              <h1 className="title has-text-weight-normal is-size-4-mobile">Welcome to Helix library</h1>
               <h2 className="subtitle has-text-weight-light is-size-5-mobile">A trove of informations about the Helix product line by Line 6®</h2>
             </div>
           </div>
