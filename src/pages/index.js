@@ -9,7 +9,6 @@ import "../sass/style.sass"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Disclaimer/>
     <div className="hero is-medium is-light is-bold">
       <div className="hero-body">
         <div className="container">
@@ -27,6 +26,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <Disclaimer/>
   </Layout>
 )
 
