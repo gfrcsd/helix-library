@@ -1,8 +1,8 @@
 import React from "react"
 
-const Heading = ({ title, subtitle, color, size, bckColor }) =>{
+const Heading = ({ title, subtitle, color, size }) =>{
     return(
-    <div className={title + '-hero model-hero hero is-' + size +' is-' + color + ' is-bold'} style={{ backgroundImage: 'linear-gradient(141deg, ' + bckColor + ' 0%, whitesmoke 81%, white 100%)'}}>
+    <div className={title + '-hero model-hero hero is-' + size +' is-' + color + ' is-bold'}>
         <div className="hero-body">
             <div className="container">
                 <div className="columns is-centered">
