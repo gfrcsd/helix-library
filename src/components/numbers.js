@@ -3,9 +3,9 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAmpGuitar, faSpeaker, faMicrophoneStand, faWaveformPath } from '@fortawesome/pro-duotone-svg-icons'
 
-export default function Header() {
+export default function Number() {
     const data = useStaticQuery(graphql`
-        query HeaderQuery {
+        query numberQuery {
             ampsCount: allMarkdownRemark(filter: {fields: {collection: {eq: "amps"}}}) {
                 totalCount
             }
