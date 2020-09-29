@@ -21,33 +21,33 @@ export default function Number() {
         }
     `)
     return (
-        <div className="level">
+        <div className="level is-mobile">
             <div className="level-item has-text-centered">
-                <Link to="/models/amps" className="has-text-dark">
+                <Link to="/models/amps" className="number-link has-text-dark">
                     <FontAwesomeIcon className="mb-3" icon={faAmpGuitar} size="4x" />
-                    <p className="title has-text-weight-normal">{data.ampsCount.totalCount}</p>
-                    <p className="heading is-size-6">Amps</p>
+                    <p className="title is-size-4-mobile has-text-weight-normal">{data.ampsCount.totalCount}</p>
+                    <p className="heading is-size-6 is-size-7-mobile">Amps</p>
                 </Link>
             </div>
             <div className="level-item has-text-centered">
-                <Link to="/models/cabs" className="has-text-dark">
+                <Link to="/models/cabs" className="number-link has-text-dark">
                     <FontAwesomeIcon icon={faSpeaker} className="mb-3" rotation={90} size="4x" />
-                    <p className="title has-text-weight-normal">{data.cabsCount.totalCount}</p>
-                    <p className="heading is-size-6">Cabs</p>
+                    <p className="title is-size-4-mobile has-text-weight-normal">{data.cabsCount.totalCount}</p>
+                    <p className="heading is-size-6 is-size-7-mobile">Cabs</p>
                 </Link>
             </div>
             <div className="level-item has-text-centered">
-                <Link to="/models/effects" className="has-text-dark">
+                <Link to="/models/effects" className="number-link has-text-dark">
                     <FontAwesomeIcon className="mb-3" icon={faWaveformPath} size="4x" />
-                    <p className="title has-text-weight-normal">{data.effectsCount.totalCount}</p>
-                    <p className="heading is-size-6">Effects</p>
+                    <p className="title is-size-4-mobile has-text-weight-normal">{data.effectsCount.totalCount}</p>
+                    <p className="heading is-size-6 is-size-7-mobile">Effects</p>
                 </Link>
             </div>
             <div className="level-item has-text-centered">
-                <Link to="/models/mics" className="has-text-dark">
+                <Link to="/models/mics" className="number-link has-text-dark">
                     <FontAwesomeIcon className="mb-3" icon={faMicrophoneStand} size="4x" />
-                    <p className="title has-text-weight-normal">{data.micsCount.totalCount}</p>
-                    <p className="heading is-size-6">Mics</p>
+                    <p className="title is-size-4-mobile has-text-weight-normal">{data.micsCount.totalCount}</p>
+                    <p className="heading is-size-6 is-size-7-mobile">Mics</p>
                 </Link>
             </div>
         </div>
