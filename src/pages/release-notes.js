@@ -29,8 +29,8 @@ export default ({data}) => {
                     {data.allMdx.edges.map(({ node }) => (
                         <div className="columns is-centered">
                             <div id={node.frontmatter.title} className="column is-10 content headings">
-                                <h3 class="title is-size-4 is-size-5-mobile">Version {node.frontmatter.title}</h3>
-                                <h4 class="subtitle is-size-6 has-text-weight-normal">released on {node.frontmatter.date}</h4>
+                                <h3 className="title is-size-4 is-size-5-mobile">Version {node.frontmatter.title}</h3>
+                                <h4 className="subtitle is-size-6 has-text-weight-normal">released on {node.frontmatter.date}</h4>
                                 <ul className="is-hidden-mobile">
                                 {node.headings.map(({ value }) => (
                                     <li>{value}</li>

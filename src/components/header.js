@@ -13,7 +13,7 @@ export default function Header({ siteTitle }) {
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">{siteTitle}</Link>
 
-          <span onClick={() => {setisActive(!isActive)}} role="button" class={`navbar-burger burger ${isActive ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span onClick={() => {setisActive(!isActive)}} role="button" className={`navbar-burger burger ${isActive ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>

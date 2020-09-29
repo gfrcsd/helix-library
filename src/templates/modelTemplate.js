@@ -22,12 +22,12 @@ export default function ModelTemplate({data}) {
                         <Img style={{ maxHeight: "100%" }} imgStyle={{ objectFit: "contain" }} fluid={frontmatter.image.childImageSharp.fluid}/>
                     </div>
                     <div className="column is-5">
-                        <p class="has-text-weight-light">Based on</p>
+                        <p className="has-text-weight-light">Based on</p>
                         <h2 className="title is-size-5-mobile has-text-weight-normal">{frontmatter.config != null && frontmatter.config} {frontmatter.brand}&#174; {frontmatter.model != null && frontmatter.model}</h2>
-                        <div class="field is-grouped is-grouped-multiline">
+                        <div className="field is-grouped is-grouped-multiline">
                             {frontmatter.instrument != null &&
                                 <div className="control">
-                                    <div class="tags has-addons">
+                                    <div className="tags has-addons">
                                         <span className="tag is-dark">Instrument</span>
                                         <span className="tag is-info">{frontmatter.instrument}</span>
                                     </div>
@@ -35,7 +35,7 @@ export default function ModelTemplate({data}) {
                             }
                             {frontmatter.type != null &&
                                 <div className="control">
-                                    <div class="tags has-addons">
+                                    <div className="tags has-addons">
                                         <span className="tag is-dark">Type</span>
                                         <span className="tag is-info">{frontmatter.type}</span>
                                     </div>
@@ -54,7 +54,7 @@ export default function ModelTemplate({data}) {
                             </div>
                             }
                             <div className="control">
-                                <div class="tags has-addons">
+                                <div className="tags has-addons">
                                     <span className="tag is-dark">Available since</span>
                                     <span className="tag is-success">{frontmatter.update}</span>
                                 </div>
@@ -83,7 +83,7 @@ export default function ModelTemplate({data}) {
                 <div className="columns is-centered">
                     <div className="column is-10">
                     {html != null &&
-                        <div class="content">
+                        <div className="content">
                             <div dangerouslySetInnerHTML={{ __html: html }}></div>
                         </div>
                     }
