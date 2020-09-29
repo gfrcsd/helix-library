@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Section from "../components/section"
-import Heading from "../components/heading"
+import Hero from "../components/hero"
 import Disclaimer from "../components/disclaimer"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
@@ -15,7 +15,7 @@ export default function ModelTemplate({data}) {
     return (
         <Layout>
             <SEO title={frontmatter.name} description={excerpt}/>
-            <Heading title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} color="light" size="normal"/>
+            <Hero title={frontmatter.name} subtitle={fields.collection.charAt(0).toUpperCase() + fields.collection.slice(1, -1)} color="light" size="normal"/>
             <Section>
                 <div className="columns is-centered">
                     <div className="column is-5 model-image-container">

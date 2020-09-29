@@ -4,13 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Disclaimer from "../components/disclaimer"
 import Section from "../components/section"
-import Heading from "../components/heading"
+import Hero from "../components/hero"
 
 export default ({data}) => {
     return(
         <Layout>
             <SEO title="Release Notes" description="Release notes for all the updates available for the family of Helix products"/>
-            <Heading title="Release Notes" subtitle={data.allMdx.totalCount + ' published'} color="light" size="normal"/>
+            <Hero title="Release Notes" subtitle={data.allMdx.totalCount + ' published'} color="light" size="normal"/>
             <Section>
                 <div className="release-note columns is-centered">
                     <div className="column is-2 is-hidden-mobile">

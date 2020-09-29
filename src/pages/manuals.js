@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/section"
-import Heading from "../components/heading"
+import Hero from "../components/hero"
 import Disclaimer from "../components/disclaimer"
 import "../sass/style.sass"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,7 +14,7 @@ export default ({data}) => {
   return (
     <Layout>
       <SEO title="Manuals" description="Links to all the official documentation for your favourite Helix product"/>
-      <Heading title="Manuals" subtitle="Download the official documentation" color="light" size="normal"/>
+      <Hero title="Manuals" subtitle="Download the official documentation" color="light" size="normal"/>
       <Section>
         <div className="columns is-centered is-multiline">
           <div className="column is-10">

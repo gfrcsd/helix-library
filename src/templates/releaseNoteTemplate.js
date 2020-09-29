@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Heading from "../components/heading"
+import Hero from "../components/hero"
 import Section from "../components/section"
 
 export const query = graphql`
@@ -28,7 +28,7 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
     return (
         <Layout>
             <SEO title={ title + ' Release Note' } description={excerpt}/>
-            <Heading title={'Release Note ' + title} subtitle={date} color="light" size="normal"/>
+            <Hero title={'Release Note ' + title} subtitle={date} color="light" size="normal"/>
             <Section>
                 <div className="columns is-centered">
                     <div className="column is-10 content">

@@ -4,7 +4,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Img from "gatsby-image"
 import Section from "../../components/section"
-import Heading from "../../components/heading"
+import ModelHero from "../../components/modelHero"
 import Disclaimer from "../../components/disclaimer"
 import Table from "../../components/table"
 import FilterButtonContainer from "../../components/filterButtonContainer"
@@ -14,7 +14,7 @@ export default ({data}) => {
     return (
         <Layout>
             <SEO title="Cabs" description="Find all the informations you need about the cabs available in the Helix products by Line 6&#174;"/>
-            <Heading title="Cabs" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
+            <ModelHero title="Cabs" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
             <Section>
                 <FilterButtonContainer filterName="Instrument">
                     <FilterButton toggleItem={"table-row"} buttonName={"All"} />
