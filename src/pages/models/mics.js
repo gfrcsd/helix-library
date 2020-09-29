@@ -31,7 +31,7 @@ export default ({data}) => {
                             <th></th>
                         </tr>
                     </thead>
-                    <tfoot>
+                    <tbody>
                     {data.allMarkdownRemark.edges.map(({ node }) => (
                         <tr className={'table-row ' + node.frontmatter.type.toString().toLowerCase()}>
                             <td>{node.frontmatter.name}</td>
@@ -41,7 +41,7 @@ export default ({data}) => {
                             <td><Link className="button" to={node.frontmatter.path}>Details</Link></td>
                         </tr>
                     ))}
-                    </tfoot>
+                    </tbody>
                 </Table>
             </Section>
             <Disclaimer/>

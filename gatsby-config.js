@@ -67,7 +67,6 @@ module.exports = {
         }
       }
     },
-    'gatsby-plugin-extract-image-colors',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
