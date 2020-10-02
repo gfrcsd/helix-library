@@ -26,10 +26,10 @@ export default function Footer() {
                         <p>Source code licensed <a href="https://opensource.org/licenses/gpl-3.0.html">GPL-3.0 <FontAwesomeIcon size="sm" icon={faExternalLink} fixedWidth /></a></p>
                     </div>
                     <div className="column is-1">
-                        <Link className="has-text-dark is-size-5" to="/">Home</Link>
+                        <Link className="has-text-dark" to="/">Home</Link>
                     </div>
                     <div className="column">
-                        <p className="has-text-dark is-size-5">Models</p>
+                        <p className="has-text-dark">Models</p>
                         <ul className="footer-list">
                             <li><Link to="/models/amps">Amps</Link></li>
                             <li><Link to="/models/cabs">Cabs</Link></li>
@@ -38,7 +38,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="column">
-                        <p className="has-text-dark is-size-5">Manuals</p>
+                        <p className="has-text-dark">Manuals</p>
                         <ul className="footer-list">
                             <li><Link to="/manuals">Helix</Link></li>
                             <li><Link to="/manuals">Helix Rack</Link></li>
@@ -49,7 +49,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="column">
-                        <p className="has-text-dark is-size-5" to="/release-notes">Release Notes</p>
+                        <p className="has-text-dark" to="/release-notes">Release Notes</p>
                         <ul className="footer-list">
                         {data.allMdx.nodes.map(({ frontmatter }) => (
                             <li><Link to={frontmatter.path}>{'Version ' + frontmatter.title}</Link></li>
