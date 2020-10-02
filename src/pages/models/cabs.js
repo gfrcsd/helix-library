@@ -38,7 +38,7 @@ export default ({data}) => {
                         <tr className={'table-row ' + node.frontmatter.instrument.toString().toLowerCase()}>
                             <td><Img fixed={node.frontmatter.icon.childImageSharp.fixed}/></td>
                             <td>{node.frontmatter.name}</td>
-                            <td>{node.frontmatter.brand}&#174; {node.frontmatter.model}</td>
+                            <td>{node.frontmatter.brand}&#174; <span className="has-text-weight-light">{node.frontmatter.model}</span></td>
                             <td>{node.frontmatter.instrument}</td>
                             <td>{node.frontmatter.config}</td>
                             <td>{node.frontmatter.update}</td>
