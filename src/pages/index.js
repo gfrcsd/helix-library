@@ -9,7 +9,7 @@ import "../sass/style.sass"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="hero is-medium is-light is-bold">
+    <div className="hero is-medium">
       <div className="hero-body">
         <div className="container">
           <div className="columns is-centered">
