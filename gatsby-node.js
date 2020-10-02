@@ -1,24 +1,12 @@
-/**
-* Implement Gatsby's Node APIs in this file.
-*
-* See: https://www.gatsbyjs.org/docs/node-apis/
-*/
-
-// You can delete this file if you're not using it
-
 const _ = require("lodash")
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions;
     
     if (_.get(node, "internal.type") === `MarkdownRemark`) {
-        // Get the parent node
+        
         const parent = getNode(_.get(node, "parent"));
         
-        // Create a field on this node for the "collection" of the parent
-        // NOTE: This is necessary so we can filter `allMarkdownRemark` by
-        // `collection` otherwise there is no way to filter for only markdown
-        // documents of type `post`.
         createNodeField({
             node,
             name: "collection",
@@ -34,12 +22,130 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const modelTemplate = path.resolve(`src/templates/modelTemplate.js`)
     const result = await graphql(`
     {
-        allMarkdownRemark(filter: {fields: {collection: {nin: "manuals"}}}, sort: {fields: frontmatter___path, order: DESC}) {
+        ampsPages: allMarkdownRemark(filter: {fields: {collection: {eq: "amps"}}}, sort: {fields: frontmatter___name}) {
             edges {
                 node {
                     id
                     frontmatter {
                         path
+                    }
+                }
+                next {
+                    frontmatter {
+                        path
+                        model
+                        name
+                        brand
+                    }
+                    fields {
+                        collection
+                    }
+                }
+                previous {
+                    frontmatter {
+                        path
+                        model
+                        name
+                        brand
+                    }
+                    fields {
+                        collection
+                    }
+                }
+            }
+        }
+        cabsPages: allMarkdownRemark(filter: {fields: {collection: {eq: "cabs"}}}, sort: {fields: frontmatter___name}) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        path
+                    }
+                }
+                next {
+                    frontmatter {
+                        path
+                        model
+                        name
+                        brand
+                    }
+                    fields {
+                        collection
+                    }
+                }
+                previous {
+                    frontmatter {
+                        path
+                        model
+                        name
+                        brand
+                    }
+                    fields {
+                        collection
+                    }
+                }
+            }
+        }
+        effectsPages: allMarkdownRemark(filter: {fields: {collection: {eq: "effects"}}}, sort: {fields: frontmatter___name}) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        path
+                    }
+                }
+                next {
+                    frontmatter {
+                        path
+                        model
+                        name
+                        brand
+                    }
+                    fields {
+                        collection
+                    }
+                }
+                previous {
+                    frontmatter {
+                        path
+                        model
+                        name
+                        brand
+                    }
+                    fields {
+                        collection
+                    }
+                }
+            }
+        }
+        micsPages: allMarkdownRemark(filter: {fields: {collection: {eq: "mics"}}}, sort: {fields: frontmatter___name}) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        path
+                    }
+                }
+                next {
+                    frontmatter {
+                        path
+                        model
+                        name
+                        brand
+                    }
+                    fields {
+                        collection
+                    }
+                }
+                previous {
+                    frontmatter {
+                        path
+                        model
+                        name
+                        brand
+                    }
+                    fields {
+                        collection
                     }
                 }
             }
@@ -51,30 +157,80 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                         path
                     }
                 }
+                next {
+                    frontmatter {
+                        path
+                        title
+                    }
+                }
+                previous {
+                    frontmatter {
+                        path
+                        title
+                    }
+                }
             }
         }
     }
     `)
-    // Handle errors
+    
     if (result.errors) {
         reporter.panicOnBuild(`Error while running GraphQL query.`)
         return
     }
-
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    
+    result.data.ampsPages.edges.forEach(({ node, previous, next }) => {
         createPage({
             path: node.frontmatter.path,
             component: modelTemplate,
-            context: {}, // additional data can be passed via context
+            context: {
+                previous,
+                next
+            },
         })
     })
 
-    result.data.allMdx.edges.forEach(({ node }) => {
+    result.data.cabsPages.edges.forEach(({ node, previous, next }) => {
+        createPage({
+            path: node.frontmatter.path,
+            component: modelTemplate,
+            context: {
+                previous,
+                next
+            },
+        })
+    })
+
+    result.data.effectsPages.edges.forEach(({ node, previous, next }) => {
+        createPage({
+            path: node.frontmatter.path,
+            component: modelTemplate,
+            context: {
+                previous,
+                next
+            },
+        })
+    })
+
+    result.data.micsPages.edges.forEach(({ node, previous, next }) => {
+        createPage({
+            path: node.frontmatter.path,
+            component: modelTemplate,
+            context: {
+                previous,
+                next
+            },
+        })
+    })
+    
+    result.data.allMdx.edges.forEach(({ node, previous, next }) => {
         createPage({
             path: node.frontmatter.path,
             component: require.resolve('./src/templates/releaseNoteTemplate.js'),
             context: {
                 pathSlug: node.frontmatter.path,
+                previous,
+                next
             },
         });
     });

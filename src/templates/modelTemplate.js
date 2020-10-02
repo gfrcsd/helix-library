@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Section from "../components/section"
 import Hero from "../components/hero"
@@ -9,9 +9,11 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLink, faFile } from '@fortawesome/pro-duotone-svg-icons'
 
-export default function ModelTemplate({data}) {
+export default function ModelTemplate({data, pageContext}) {
     const { markdownRemark } = data
     const { frontmatter, html, excerpt, fields } = markdownRemark
+    const { next, previous } = pageContext
+
     return (
         <Layout>
             <SEO title={frontmatter.name} description={excerpt}/>
@@ -89,6 +91,30 @@ export default function ModelTemplate({data}) {
                     }
                     </div>
                 </div>
+                <div className="columns is-centered">
+                    <div className="column is-10">
+                        <hr/>
+                        <div className="level">
+                            {previous &&
+                                <div className="level-item level-left">
+                                    <Link to={previous.frontmatter.path}>
+                                        <span>Next {fields.collection.slice(0, -1)} model</span><br/>
+                                        <p className="is-size-7">{previous.frontmatter.name}</p>
+                                    </Link>
+                                </div>
+                            }
+                            {next &&
+                                <div className="level-item level-right">
+                                    <Link to={next.frontmatter.path}>
+                                        <span>Next {fields.collection.slice(0, -1)} model</span><br/>
+                                        <p className="is-size-7" style={{textAlign: "end"}}>{next.frontmatter.name}</p>
+                                    </Link>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
             </Section>
             <Disclaimer/>
         </Layout>
