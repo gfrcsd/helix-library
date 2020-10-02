@@ -40,12 +40,13 @@ export default function Footer() {
                     <div className="column">
                         <p className="has-text-dark">Manuals</p>
                         <ul className="footer-list">
-                            <li><Link to="/manuals">Helix</Link></li>
-                            <li><Link to="/manuals">Helix Rack</Link></li>
-                            <li><Link to="/manuals">Helix Native</Link></li>
-                            <li><Link to="/manuals">Helix LT</Link></li>
-                            <li><Link to="/manuals">HX Effects</Link></li>
-                            <li><Link to="/manuals">HX Stomp</Link></li>
+                            <li><Link to="/manuals#helix">Helix</Link></li>
+                            <li><Link to="/manuals#helix-rack">Helix Rack</Link></li>
+                            <li><Link to="/manuals#helix-native">Helix Native</Link></li>
+                            <li><Link to="/manuals#helix-lt">Helix LT</Link></li>
+                            <li><Link to="/manuals#hx-effects">HX Effects</Link></li>
+                            <li><Link to="/manuals#hx-stomp">HX Stomp</Link></li>
+                            <li><Link className="has-text-grey" to="/manuals">View all</Link></li>
                         </ul>
                     </div>
                     <div className="column">
