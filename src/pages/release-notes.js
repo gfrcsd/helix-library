@@ -29,16 +29,16 @@ export default ({data}) => {
                     {data.allMdx.edges.map(({ node }) => (
                         <div className="columns is-centered">
                             <div id={node.frontmatter.title} className="column is-10 content headings">
-                                <h3 className="title is-size-4 is-size-5-mobile">Version {node.frontmatter.title}</h3>
+                                <h3 className="title is-size-4">Version {node.frontmatter.title}</h3>
                                 <h4 className="subtitle is-size-6 has-text-weight-normal has-text-grey">released on {node.frontmatter.date}</h4>
-                                <ul className="is-size-7-mobile">
+                                <ul>
                                 {node.headings.map(({ value }) => (
                                     <li>{value}</li>
                                 ))}
                                 </ul>
                                 <p className="is-hidden-mobile">{node.excerpt}</p>
                                 <Link className="button is-info is-outlined is-hidden-mobile mt-2" to={node.frontmatter.path}>Read more</Link>
-                                <Link className="button is-small is-fullwidth is-info is-outlined is-hidden-desktop mt-5" to={node.frontmatter.path}>Read more</Link>
+                                <Link className="button is-fullwidth is-info is-outlined is-hidden-desktop mt-5" to={node.frontmatter.path}>Read more</Link>
                                 <hr/>
                             </div>
                         </div>
