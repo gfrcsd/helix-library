@@ -22,8 +22,10 @@ export default function Footer() {
             <div className="container">
                 <div className="columns">
                     <div className="column is-3 has-text-grey">
-                        <p><b className="has-text-grey-dark has-text-weight-semibold">Helix Library</b> by <a href="https://github.com/gfrcsd">gfrcsd <FontAwesomeIcon size="sm" icon={faExternalLink} fixedWidth /></a></p>
-                        <p>Source code licensed <a href="https://opensource.org/licenses/gpl-3.0.html">GPL-3.0 <FontAwesomeIcon size="sm" icon={faExternalLink} fixedWidth /></a></p>
+                        <p><b className="has-text-grey-dark has-text-weight-semibold">Helix Library</b> hby <a href="https://github.com/gfrcsd">gfrcsd</a></p>
+                        <p>Source code licensed <a href="https://opensource.org/licenses/gpl-3.0.html">GPL-3.0</a></p>
+                        <p>Made with <a href="https://gatsbyjs.com/">Gatsby</a> & <a href="https://bulma.io">Bulma</a></p>
+                        <p>Hosted on <a href="https://www.netlify.com/">Netlify</a></p>
                     </div>
                     <div className="column is-1">
                         <Link className="has-text-dark" to="/">Home</Link>
