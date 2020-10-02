@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Section from "../../components/section"
@@ -21,9 +22,10 @@ export default ({data}) => {
                     <FilterButton toggleItem={"dynamic"} buttonName={"Dynamic"} />
                     <FilterButton toggleItem={"ribbon"} buttonName={"Ribbon"} />
                 </FilterButtonContainer>
-                <Table>
+                <Table narrow="true">
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Name</th>
                             <th>Based on</th>
                             <th>Type</th>
@@ -34,6 +36,7 @@ export default ({data}) => {
                     <tbody>
                     {data.allMarkdownRemark.edges.map(({ node }) => (
                         <tr className={'table-row ' + node.frontmatter.type.toString().toLowerCase()}>
+                            <td><Img fixed={node.frontmatter.image.childImageSharp.fixed}/></td>
                             <td>{node.frontmatter.name}</td>
                             <td>{node.frontmatter.brand}&#174; {node.frontmatter.model}</td>
                             <td>{node.frontmatter.type}</td>
@@ -65,6 +68,13 @@ export const query = graphql` {
                     type
                     url
                     update
+                    image {
+                        childImageSharp {
+                            fixed(width: 45) {
+                            ...GatsbyImageSharpFixed_tracedSVG
+                            }
+                        }
+                    }
                 }
             }
         }
