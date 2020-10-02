@@ -20,10 +20,10 @@ export default ({data}) => {
           <div className="column is-10">
             <div className="columns is-centered is-multiline">
               {data.allMarkdownRemark.edges.map(({ node }) => (
-                <div className="column is-4 has-text-centered">
+                <div className="column is-4 has-text-centered mb-6">
                   <Img fluid={node.frontmatter.image.childImageSharp.fluid}/>
-                  <h2 className="is-size-4">{node.frontmatter.name}</h2>
-                  <a href={node.frontmatter.url}>Line 6 Official <FontAwesomeIcon icon={faExternalLink} fixedWidth /></a>
+                  <h2 className="mb-1 mt-2 is-size-4">{node.frontmatter.name}</h2>
+                  <a href={node.frontmatter.url}>Line 6 Official <FontAwesomeIcon size="sm" icon={faExternalLink} fixedWidth /></a>
                 </div>
               ))}
             </div>
