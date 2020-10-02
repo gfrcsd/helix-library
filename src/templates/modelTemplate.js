@@ -80,7 +80,7 @@ export default function ModelTemplate({data}) {
                         </div>
                     </div>
                 </div>
-                <div className="columns is-centered">
+                <div className="columns is-centered mt-3">
                     <div className="column is-10">
                     {html != null &&
                         <div className="content">

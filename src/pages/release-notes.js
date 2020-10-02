@@ -38,7 +38,7 @@ export default ({data}) => {
                                 </ul>
                                 <p className="is-hidden-mobile">{node.excerpt}</p>
                                 <Link className="button is-info is-outlined is-hidden-mobile mt-2" to={node.frontmatter.path}>Read more</Link>
-                                <Link className="button is-small is-info is-outlined is-hidden-desktop mt-2" to={node.frontmatter.path}>Read more</Link>
+                                <Link className="button is-small is-fullwidth is-info is-outlined is-hidden-desktop mt-5" to={node.frontmatter.path}>Read more</Link>
                                 <hr/>
                             </div>
                         </div>
