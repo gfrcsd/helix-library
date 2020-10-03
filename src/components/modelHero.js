@@ -7,28 +7,28 @@ export default function ModelHero({title, subtitle, size, color}) {
         query ModelHeroQuery {
             ampsBanner: file(relativePath: {eq: "amps.jpg"}){
                 childImageSharp{
-                    fluid(jpegQuality: 100) {
+                    fluid(maxWidth: 3500, jpegQuality: 100) {
                         ...GatsbyImageSharpFluid
                     }
                 }
             }
             cabsBanner: file(relativePath: {eq: "cabs.jpg"}){
                 childImageSharp{
-                    fluid(jpegQuality: 100) {
+                    fluid(maxWidth: 3500, jpegQuality: 100) {
                         ...GatsbyImageSharpFluid
                     }
                 }
             }
             effectsBanner: file(relativePath: {eq: "effects.jpg"}){
                 childImageSharp{
-                    fluid(jpegQuality: 100) {
+                    fluid(maxWidth: 3500, jpegQuality: 100) {
                         ...GatsbyImageSharpFluid
                     }
                 }
             }
             micsBanner: file(relativePath: {eq: "mics.jpg"}){
                 childImageSharp{
-                    fluid(jpegQuality: 100) {
+                    fluid(maxWidth: 3500, jpegQuality: 100) {
                         ...GatsbyImageSharpFluid
                     }
                 }
@@ -49,7 +49,7 @@ export default function ModelHero({title, subtitle, size, color}) {
     }
 
     return (
-        <BackgroundImage fluid={bannerImage} className={title + '-hero model-hero hero is-' + size +' is-' + color + ' is-bold'}>
+        <BackgroundImage fluid={bannerImage} className={'hero is-' + size +' is-' + color + ' is-bold'}>
             <div className="hero-body">
                 <div className="container">
                     <div className="columns is-centered">
