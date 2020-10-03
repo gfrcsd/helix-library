@@ -41,7 +41,7 @@ export default ({data}) => {
                             <td>{node.frontmatter.brand}&#174; <span className="has-text-weight-light">{node.frontmatter.model}</span></td>
                             <td>{node.frontmatter.instrument}</td>
                             <td>{node.frontmatter.update}</td>
-                            <td><Link className="button" to={node.frontmatter.path}>Details</Link></td>
+                            <td><Link className="button is-dark is-outlined" to={node.frontmatter.path}>Details</Link></td>
                         </tr>
                     ))}
                     </tbody>

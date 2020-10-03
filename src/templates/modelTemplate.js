@@ -64,7 +64,7 @@ export default function ModelTemplate({data, pageContext}) {
                         </div>
                         <div className="buttons">
                         {frontmatter.url.length > 0 &&
-                            <a href={frontmatter.url} className="button item-url">
+                            <a href={frontmatter.url} className="button is-dark is-outlined item-url">
                                 <span>More Info</span>
                                 <span className="icon is-small">
                                     <FontAwesomeIcon icon={faExternalLink} fixedWidth />
@@ -72,7 +72,7 @@ export default function ModelTemplate({data, pageContext}) {
                             </a>
                         }
                         {frontmatter.manual != null && frontmatter.manual.length > 0 && 
-                            <a href={frontmatter.manual} className="button item-url">
+                            <a href={frontmatter.manual} className="button is-dark is-outlined item-url">
                                 <span>Manual</span>
                                 <span className="icon is-small">
                                     <FontAwesomeIcon icon={faFile} fixedWidth />

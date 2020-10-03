@@ -42,7 +42,7 @@ export default ({data}) => {
                             <td>{node.frontmatter.instrument}</td>
                             <td>{node.frontmatter.config}</td>
                             <td>{node.frontmatter.update}</td>
-                            <td><Link className="button" to={node.frontmatter.path}>Details</Link></td>
+                            <td><Link className="button is-dark is-outlined" to={node.frontmatter.path}>Details</Link></td>
                         </tr>
                     ))}
                     </tbody>
