@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
-export default function ModelHero({title, subtitle, size, color}) {
+export default function ModelHero({title, subtitle}) {
     const data = useStaticQuery(graphql`
         query ModelHeroQuery {
             ampsBanner: file(relativePath: {eq: "amps.jpg"}){
@@ -49,7 +49,7 @@ export default function ModelHero({title, subtitle, size, color}) {
     }
 
     return (
-        <BackgroundImage fluid={bannerImage} className={'hero is-' + size +' is-' + color + ' is-bold'}>
+        <BackgroundImage fluid={bannerImage} className="hero is-medium is-dark" style={{backgroundColor: 'black !important'}}>
             <div className="hero-body">
                 <div className="container">
                     <div className="columns is-centered">

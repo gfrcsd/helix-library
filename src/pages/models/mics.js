@@ -14,7 +14,7 @@ export default ({data}) => {
     return (
         <Layout>
             <SEO title="Mics" description="Find all the informations you need about the mics available in the Helix products by Line 6&#174;"/>
-            <ModelHero title="Mics" subtitle={ data.allMarkdownRemark.totalCount + " available"} color="dark" size="medium"/>
+            <ModelHero title="Mics" subtitle={ data.allMarkdownRemark.totalCount + " available"} />
             <Section>
                 <FilterButtonContainer filterName="Type">
                     <FilterButton toggleItem={"table-row"} buttonName={"All"} />
