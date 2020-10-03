@@ -34,10 +34,12 @@ body
 .table 
     thead tr th
         font-weight: 600
-    tbody tr td
-        vertical-align: middle
-        &:last-child
-            text-align: end
+    tbody tr 
+        transition: 150ms ease-out background-color
+        td
+            vertical-align: middle
+            &:last-child
+                text-align: end
 
 .model-image-container
     max-width: 100%
