@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Section from "../components/section"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEdit } from '@fortawesome/pro-duotone-svg-icons'
 
 export const query = graphql`
     query($pathSlug: String!) {
@@ -23,7 +25,7 @@ export const query = graphql`
 `;
 
 const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
-    const { title, date, target } = post.frontmatter;
+    const { title, date, target, path} = post.frontmatter;
     const { body, excerpt } = post;
     return (
         <Layout>
@@ -43,7 +45,16 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
                         <MDXRenderer>{body}</MDXRenderer>
                     </div>
                 </div>
-                
+                <div className="columns is-centered">
+                    <div className="column is-10">
+                        <a href={'https://github.com/gfrcsd/helix-library/tree/master/src/markdown' + path + '.mdx'} className="button is-small is-dark is-inverted is-pulled-right">
+                            <span class="icon">
+                                <FontAwesomeIcon icon={faEdit} size="md" fixedWidth />
+                            </span>
+                            <span>Edit this page</span>
+                        </a>
+                    </div>
+                </div>
             </Section>
         </Layout>
     )

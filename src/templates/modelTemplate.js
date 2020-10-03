@@ -7,7 +7,7 @@ import Disclaimer from "../components/disclaimer"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLink, faFile } from '@fortawesome/pro-duotone-svg-icons'
+import { faExternalLink, faFile, faEdit } from '@fortawesome/pro-duotone-svg-icons'
 
 export default function ModelTemplate({data, pageContext}) {
     const { markdownRemark } = data
@@ -89,6 +89,16 @@ export default function ModelTemplate({data, pageContext}) {
                             <div dangerouslySetInnerHTML={{ __html: html }}></div>
                         </div>
                     }
+                    </div>
+                </div>
+                <div className="columns is-centered">
+                    <div className="column is-10">
+                        <a href={'https://github.com/gfrcsd/helix-library/tree/master/src/markdown' + frontmatter.path + '.md'} className="button is-small is-dark is-inverted is-pulled-right">
+                            <span class="icon">
+                                <FontAwesomeIcon icon={faEdit} size="md" fixedWidth />
+                            </span>
+                            <span>Edit this page</span>
+                        </a>
                     </div>
                 </div>
                 <div className="columns is-centered">

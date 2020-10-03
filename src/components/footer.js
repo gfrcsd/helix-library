@@ -1,9 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLink } from '@fortawesome/pro-duotone-svg-icons'
-
 export default function Footer() {
     const data = useStaticQuery(graphql`
         query footerQuery {
