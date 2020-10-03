@@ -25,7 +25,7 @@ export default function ModelTemplate({data, pageContext}) {
                     </div>
                     <div className="column is-5">
                         <p className="has-text-weight-light">Based on</p>
-                        <h2 className="title is-size-5-mobile has-text-weight-normal">{frontmatter.config != null && frontmatter.config} {frontmatter.brand}&#174; {frontmatter.model != null && <span className="has-text-weight-light">{frontmatter.model}</span>}</h2>
+                        <h2 className="title is-size-4-mobile has-text-weight-normal">{frontmatter.config != null && frontmatter.config} {frontmatter.brand}&#174; {frontmatter.model != null && <span className="has-text-weight-light">{frontmatter.model}</span>}</h2>
                         <div className="field is-grouped is-grouped-multiline">
                             {frontmatter.instrument != null &&
                                 <div className="control">
