@@ -63,7 +63,7 @@ body
     transition: 200ms ease-out all
     &:hover
         transform: scale(1.05)
-        filter: drop-shadow(0 0 8px #c7c7c7)
+        filter: drop-shadow(0 0 .5em rgba(10, 10, 10, 0.1))
 
 .footer-list li a 
     font-size: 1rem
@@ -73,4 +73,11 @@ body
         color: #3273dc
 
 .button 
-    transition: 150ms ease-out background-color, color, border-color
+    transition: 150ms ease-out background-color, 150ms ease-out color, 150ms ease-out border-color
+
+.card 
+    box-shadow: none
+    transition: .25s ease-out box-shadow, .25s ease-out transform
+    &:hover
+        transform: scale(1.05)
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02)

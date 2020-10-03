@@ -2,8 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Section from "../components/section"
 import Disclaimer from "../components/disclaimer"
 import Numbers from "../components/numbers"
+import Latest from "../components/latest"
 import "../sass/style.sass"
 
 const IndexPage = () => (
@@ -26,6 +28,9 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <Section>
+      <Latest />
+    </Section>
     <Disclaimer/>
   </Layout>
 )
