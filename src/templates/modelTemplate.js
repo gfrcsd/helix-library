@@ -108,7 +108,7 @@ export default function ModelTemplate({data, pageContext}) {
                             {previous &&
                                 <div className="level-item level-left">
                                     <Link to={previous.frontmatter.path}>
-                                        <span>Next {fields.collection.slice(0, -1)} model</span><br/>
+                                        <span>Previous {fields.collection.slice(0, -1)} model</span><br/>
                                         <p className="is-size-7">{previous.frontmatter.name}</p>
                                     </Link>
                                 </div>
