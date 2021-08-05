@@ -40,8 +40,12 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
           <div className="column is-10 content">
             <div className="tags has-addons">
               <span className="tag is-dark">Update for:</span>
-              {target.map((item) => {
-                return <span className="tag is-success">{item}</span>
+              {target.map((item, index) => {
+                return (
+                  <span key={index} className="tag is-success">
+                    {item}
+                  </span>
+                )
               })}
             </div>
             <MDXRenderer>{body}</MDXRenderer>

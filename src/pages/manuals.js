@@ -28,6 +28,7 @@ export default ({ data }) => {
             <div className="columns is-centered is-multiline">
               {data.allMarkdownRemark.edges.map(({ node }) => (
                 <div
+                  key={node.frontmatter.name}
                   id={node.frontmatter.name.toLowerCase().replace(/ /g, "-")}
                   className="column manual-container is-4 has-text-centered mb-6"
                 >

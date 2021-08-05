@@ -75,7 +75,7 @@ export default function Footer() {
             <p className="has-text-dark">Manuals</p>
             <ul className="footer-list">
               {data.footerManuals.nodes.map(({ frontmatter }) => (
-                <li>
+                <li key={frontmatter.name}>
                   <Link
                     to={
                       "/manuals#" +
@@ -102,7 +102,7 @@ export default function Footer() {
             </p>
             <ul className="footer-list">
               {data.footerReleasenotes.nodes.map(({ frontmatter }) => (
-                <li>
+                <li key={frontmatter.title}>
                   <Link to={frontmatter.path}>
                     {"Version " + frontmatter.title}
                   </Link>

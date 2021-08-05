@@ -73,8 +73,12 @@ export default function ModelTemplate({ data, pageContext }) {
                   <div className="tags has-addons">
                     <span className="tag is-dark">Channel</span>
                     {frontmatter.channel != null &&
-                      frontmatter.channel.map((channel) => {
-                        return <span className="tag is-danger">{channel}</span>
+                      frontmatter.channel.map((channel, index) => {
+                        return (
+                          <span key={index} className="tag is-danger">
+                            {channel}
+                          </span>
+                        )
                       })}
                   </div>
                 </div>
@@ -175,7 +179,7 @@ export default function ModelTemplate({ data, pageContext }) {
   )
 }
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       excerpt(pruneLength: 158, truncate: true, format: PLAIN)
