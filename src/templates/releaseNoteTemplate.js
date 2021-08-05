@@ -9,7 +9,7 @@ import Section from "../components/section"
 import { HiOutlinePencilAlt } from "react-icons/hi"
 
 export const query = graphql`
-  query($pathSlug: String!) {
+  query ($pathSlug: String!) {
     mdx(frontmatter: { path: { eq: $pathSlug } }) {
       frontmatter {
         title
@@ -57,7 +57,7 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
               }
               className="button is-small is-white is-pulled-right"
             >
-              <span class="icon">
+              <span className="icon">
                 <HiOutlinePencilAlt style={{ width: "75%", height: "75%" }} />
               </span>
               <span>Edit this page</span>

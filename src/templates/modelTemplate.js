@@ -135,7 +135,7 @@ export default function ModelTemplate({ data, pageContext }) {
               }
               className="button is-small is-white is-pulled-right"
             >
-              <span class="icon">
+              <span className="icon">
                 <HiOutlinePencilAlt style={{ width: "75%", height: "75%" }} />
               </span>
               <span>Edit this page</span>
