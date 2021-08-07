@@ -31,10 +31,10 @@ export default ({ data }) => {
           <FilterButton toggleItem={"filter"} buttonName={"Filter"} />
           <FilterButton toggleItem={"looper"} buttonName={"Looper"} />
           <FilterButton toggleItem={"modulation"} buttonName={"Modulation"} />
-          <FilterButton toggleItem={"pitch/synth"} buttonName={"Pitch/Synth"} />
+          <FilterButton toggleItem={"pitch-synth"} buttonName={"Pitch/Synth"} />
           <FilterButton toggleItem={"reverb"} buttonName={"Reverb"} />
           <FilterButton toggleItem={"split"} buttonName={"Split"} />
-          <FilterButton toggleItem={"volume/pan"} buttonName={"Volume/Pan"} />
+          <FilterButton toggleItem={"volume-pan"} buttonName={"Volume/Pan"} />
           <FilterButton toggleItem={"wah"} buttonName={"Wah"} />
         </FilterButtonContainer>
         <Table narrow="true">
@@ -53,9 +53,11 @@ export default ({ data }) => {
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <tr
                 key={node.frontmatter.name}
-                className={
-                  "table-row " + node.frontmatter.type.toString().toLowerCase()
-                }
+                className={`table-row ${node.frontmatter.type
+                  .toString()
+                  .toLowerCase()
+                  .replace(/\//g, "-")}
+                `}
               >
                 <td>
                   <Img fixed={node.frontmatter.icon.childImageSharp.fixed} />
@@ -67,7 +69,16 @@ export default ({ data }) => {
                     {node.frontmatter.model}
                   </span>
                 </td>
-                <td>{node.frontmatter.type}</td>
+                <td>
+                  <span
+                    className={`tag has-text-white has-background-${node.frontmatter.type
+                      .toString()
+                      .toLowerCase()
+                      .replace(/\//g, "-")}`}
+                  >
+                    {node.frontmatter.type}
+                  </span>
+                </td>
                 <td>{node.frontmatter.channel.join(", ")}</td>
                 <td>{node.frontmatter.update}</td>
                 <td>
