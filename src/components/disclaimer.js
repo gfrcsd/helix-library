@@ -1,5 +1,5 @@
 import React from "react"
-import { AiTwotoneWarning } from "react-icons/ai"
+import { IoWarning } from "react-icons/io5"
 import { HiOutlineExternalLink } from "react-icons/hi"
 
 const Disclaimer = () => {
@@ -7,11 +7,11 @@ const Disclaimer = () => {
     <div className="hero is-small is-warning">
       <div className="hero-body has-text-centered is-size-7-mobile">
         <p>
-          <b className="has-text-weight-semibold has-text-black">
+          <b className="icon-text has-text-weight-semibold has-text-black mr-1">
             <span className="icon">
-              <AiTwotoneWarning />
+              <IoWarning style={{ fontSize: "1.3rem" }} />
             </span>
-            Disclaimer:{" "}
+            <span>Disclaimer: </span>
           </b>
           this website has no affiliation with Line 6® or any of the companies
           mentioned. For official documentation and support, visit{" "}
