@@ -61,14 +61,17 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       option: {
         defaultLayouts: {
-          releaseNotes: require.resolve('./src/templates/releaseNoteTemplate.js'),
-          default: require.resolve('./src/templates/releaseNoteTemplate.js'),
+          releaseNotes: require.resolve(
+            "./src/templates/releaseNoteTemplate.js"
+          ),
+          default: require.resolve("./src/templates/releaseNoteTemplate.js"),
           gatsbyRemarkPlugins: [`gatsby-remark-autolink-headers`],
-        }
-      }
+        },
+      },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

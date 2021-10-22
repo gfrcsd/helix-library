@@ -5,7 +5,7 @@ import Section from "../components/section"
 import Hero from "../components/hero"
 import Disclaimer from "../components/disclaimer"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import {
   HiOutlineExternalLink,
   HiOutlineDocumentDuplicate,
@@ -31,11 +31,10 @@ export default function ModelTemplate({ data, pageContext }) {
       />
       <Section>
         <div className="columns is-centered">
-          <div className="column is-5 model-image-container">
-            <Img
-              style={{ maxHeight: "100%" }}
-              imgStyle={{ objectFit: "contain" }}
-              fluid={frontmatter.image.childImageSharp.fluid}
+          <div className="column is-5 has-text-centered">
+            <GatsbyImage
+              image={frontmatter.image.childImageSharp.gatsbyImageData}
+              alt={`${frontmatter.brand} ${frontmatter.model}`}
             />
           </div>
           <div className="column is-5">
@@ -197,9 +196,11 @@ export const pageQuery = graphql`
         update
         image {
           childImageSharp {
-            fluid(maxHeight: 450) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            gatsbyImageData(
+              layout: CONSTRAINED
+              height: 450
+              placeholder: TRACED_SVG
+            )
           }
         }
       }

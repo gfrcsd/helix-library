@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/section"
@@ -32,7 +32,12 @@ export default ({ data }) => {
                   id={node.frontmatter.name.toLowerCase().replace(/ /g, "-")}
                   className="column manual-container is-4 has-text-centered mb-6"
                 >
-                  <Img fluid={node.frontmatter.image.childImageSharp.fluid} />
+                  <GatsbyImage
+                    image={
+                      node.frontmatter.image.childImageSharp.gatsbyImageData
+                    }
+                    alt={node.frontmatter.name}
+                  />
                   <h2 className="mb-1 mt-2 is-size-4 is-size-5-mobile">
                     {node.frontmatter.name}
                   </h2>
@@ -64,9 +69,7 @@ export const query = graphql`
             url
             image {
               childImageSharp {
-                fluid(maxWidth: 400) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
               }
             }
           }

@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Latest() {
   const data = useStaticQuery(graphql`
@@ -12,9 +12,11 @@ export default function Latest() {
               brand
               icon {
                 childImageSharp {
-                  fluid(maxWidth: 100) {
-                    ...GatsbyImageSharpFluid_tracedSVG
-                  }
+                  gatsbyImageData(
+                    layout: CONSTRAINED
+                    width: 100
+                    placeholder: TRACED_SVG
+                  )
                 }
               }
               name
@@ -56,8 +58,12 @@ export default function Latest() {
                   <div className="card-content">
                     <div className="columns is-mobile">
                       <div className="column is-3">
-                        <Img
-                          fluid={node.frontmatter.icon.childImageSharp.fluid}
+                        <GatsbyImage
+                          image={
+                            node.frontmatter.icon.childImageSharp
+                              .gatsbyImageData
+                          }
+                          alt={`${node.frontmatter.name}'s icon`}
                         />
                       </div>
                       <div className="column">

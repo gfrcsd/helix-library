@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Section from "../../components/section"
 import ModelHero from "../../components/modelHero"
 import Disclaimer from "../../components/disclaimer"
@@ -119,7 +119,12 @@ export default ({ data }) => {
                 }
               >
                 <td>
-                  <Img fixed={node.frontmatter.icon.childImageSharp.fixed} />
+                  <GatsbyImage
+                    image={
+                      node.frontmatter.icon.childImageSharp.gatsbyImageData
+                    }
+                    alt={`${node.frontmatter.name}'s icon`}
+                  />
                 </td>
                 <td>{node.frontmatter.name}</td>
                 <td>
@@ -165,9 +170,11 @@ export const query = graphql`
             model
             icon {
               childImageSharp {
-                fixed(height: 45) {
-                  ...GatsbyImageSharpFixed_tracedSVG
-                }
+                gatsbyImageData(
+                  layout: FIXED
+                  height: 45
+                  placeholder: TRACED_SVG
+                )
               }
             }
             url

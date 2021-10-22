@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Section from "../../components/section"
@@ -119,7 +119,12 @@ export default ({ data }) => {
                 }
               >
                 <td>
-                  <Img fixed={node.frontmatter.image.childImageSharp.fixed} />
+                  <GatsbyImage
+                    image={
+                      node.frontmatter.image.childImageSharp.gatsbyImageData
+                    }
+                    alt={`${node.frontmatter.name}'s icon`}
+                  />
                 </td>
                 <td>{node.frontmatter.name}</td>
                 <td>
@@ -168,9 +173,11 @@ export const query = graphql`
             update
             image {
               childImageSharp {
-                fixed(width: 45) {
-                  ...GatsbyImageSharpFixed_tracedSVG
-                }
+                gatsbyImageData(
+                  layout: FIXED
+                  width: 45
+                  placeholder: TRACED_SVG
+                )
               }
             }
           }
