@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../../components/layout"
@@ -7,10 +7,26 @@ import Section from "../../components/section"
 import ModelHero from "../../components/modelHero"
 import Disclaimer from "../../components/disclaimer"
 import Table from "../../components/table"
-import FilterButtonContainer from "../../components/filterButtonContainer"
-import FilterButton from "../../components/filterButton"
+import { FaFilter } from "react-icons/fa"
 
 export default ({ data }) => {
+  const [mics, setMics] = useState(data.allMarkdownRemark.edges)
+  const [activeFilter, setActiveFilter] = useState("all")
+
+  function filterBy(type) {
+    if (type === "all") {
+      setMics(data.allMarkdownRemark.edges)
+      setActiveFilter("all")
+    } else {
+      setMics(
+        data.allMarkdownRemark.edges.filter(
+          (effect) => effect.node.frontmatter.type == type
+        )
+      )
+      setActiveFilter(type)
+    }
+  }
+
   return (
     <Layout>
       <SEO
@@ -22,12 +38,67 @@ export default ({ data }) => {
         subtitle={data.allMarkdownRemark.totalCount + " available"}
       />
       <Section>
-        <FilterButtonContainer filterName="Type">
-          <FilterButton toggleItem={"table-row"} buttonName={"All"} />
-          <FilterButton toggleItem={"condenser"} buttonName={"Condenser"} />
-          <FilterButton toggleItem={"dynamic"} buttonName={"Dynamic"} />
-          <FilterButton toggleItem={"ribbon"} buttonName={"Ribbon"} />
-        </FilterButtonContainer>
+        <div className="columns">
+          <div className="column is-10 is-offset-1 is-hidden-mobile">
+            <div className="buttons">
+              <p className="filter-tag">
+                <FaFilter style={{ paddingTop: "3px" }} /> Types
+              </p>
+              <div className="buttons has-addons">
+                <button
+                  onClick={() => filterBy("all")}
+                  className={`button is-small is-light ${
+                    activeFilter === "all" ? "is-active" : ""
+                  }`}
+                >
+                  All
+                </button>
+                {data.allMarkdownRemark.types.map((type) => (
+                  <button
+                    key={type}
+                    onClick={() => filterBy(type)}
+                    className={`button is-small is-light ${
+                      activeFilter === type ? "is-active" : ""
+                    }`}
+                  >
+                    {type}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="column is-hidden-desktop">
+            <div className="columns">
+              <div className="column is-fullwidth is-narrow">
+                <p className="filter-tag">
+                  <FaFilter style={{ paddingTop: "3px" }} />
+                  Filter by Types
+                </p>
+              </div>
+              <div className="column">
+                <div className="buttons">
+                  <div className="buttons has-addons">
+                    <button
+                      onClick={() => filterBy("all")}
+                      className="button is-small is-light"
+                    >
+                      All
+                    </button>
+                    {data.allMarkdownRemark.types.map((type) => (
+                      <button
+                        key={type}
+                        onClick={() => filterBy(type)}
+                        className="button is-small is-light"
+                      >
+                        {type}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <Table narrow="true">
           <thead>
             <tr>
@@ -40,7 +111,7 @@ export default ({ data }) => {
             </tr>
           </thead>
           <tbody>
-            {data.allMarkdownRemark.edges.map(({ node }) => (
+            {mics.map(({ node }) => (
               <tr
                 key={node.frontmatter.name}
                 className={
@@ -105,6 +176,7 @@ export const query = graphql`
           }
         }
       }
+      types: distinct(field: frontmatter___type)
     }
   }
 `

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -7,10 +7,25 @@ import Section from "../../components/section"
 import ModelHero from "../../components/modelHero"
 import Disclaimer from "../../components/disclaimer"
 import Table from "../../components/table"
-import FilterButtonContainer from "../../components/filterButtonContainer"
-import FilterButton from "../../components/filterButton"
+import { FaFilter } from "react-icons/fa"
 
 export default ({ data }) => {
+  const [cabs, setCabs] = useState(data.allMarkdownRemark.edges)
+  const [activeFilter, setActiveFilter] = useState("all")
+
+  function filterBy(instrument) {
+    if (instrument === "all") {
+      setCabs(data.allMarkdownRemark.edges)
+      setActiveFilter("all")
+    } else {
+      setCabs(
+        data.allMarkdownRemark.edges.filter(
+          (cab) => cab.node.frontmatter.instrument == instrument
+        )
+      )
+      setActiveFilter(instrument)
+    }
+  }
   return (
     <Layout>
       <SEO
@@ -22,11 +37,67 @@ export default ({ data }) => {
         subtitle={data.allMarkdownRemark.totalCount + " available"}
       />
       <Section>
-        <FilterButtonContainer filterName="Instrument">
-          <FilterButton toggleItem={"table-row"} buttonName={"All"} />
-          <FilterButton toggleItem={"guitar"} buttonName={"Guitar"} />
-          <FilterButton toggleItem={"bass"} buttonName={"Bass"} />
-        </FilterButtonContainer>
+        <div className="columns">
+          <div className="column is-10 is-offset-1 is-hidden-mobile">
+            <div className="buttons">
+              <p className="filter-tag">
+                <FaFilter style={{ paddingTop: "3px" }} /> Instruments
+              </p>
+              <div className="buttons has-addons">
+                <button
+                  onClick={() => filterBy("all")}
+                  className={`button is-small is-light ${
+                    activeFilter === "all" ? "is-active" : ""
+                  }`}
+                >
+                  All
+                </button>
+                {data.allMarkdownRemark.instruments.map((instrument) => (
+                  <button
+                    key={instrument}
+                    onClick={() => filterBy(instrument)}
+                    className={`button is-small is-light ${
+                      activeFilter === instrument ? "is-active" : ""
+                    }`}
+                  >
+                    {instrument}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="column is-hidden-desktop">
+            <div className="columns">
+              <div className="column is-fullwidth is-narrow">
+                <p className="filter-tag">
+                  <FaFilter style={{ paddingTop: "3px" }} />
+                  Filter by Instrument
+                </p>
+              </div>
+              <div className="column">
+                <div className="buttons">
+                  <div className="buttons has-addons">
+                    <button
+                      onClick={() => filterBy("all")}
+                      className="button is-small is-light"
+                    >
+                      All
+                    </button>
+                    {data.allMarkdownRemark.instruments.map((instrument) => (
+                      <button
+                        key={instrument}
+                        onClick={() => filterBy(instrument)}
+                        className="button is-small is-light"
+                      >
+                        {instrument}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <Table narrow="true">
           <thead>
             <tr>
@@ -40,7 +111,7 @@ export default ({ data }) => {
             </tr>
           </thead>
           <tbody>
-            {data.allMarkdownRemark.edges.map(({ node }) => (
+            {cabs.map(({ node }) => (
               <tr
                 key={node.frontmatter.name}
                 className={
@@ -108,6 +179,7 @@ export const query = graphql`
           }
         }
       }
+      instruments: distinct(field: frontmatter___instrument)
     }
   }
 `
