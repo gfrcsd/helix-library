@@ -115,9 +115,11 @@ export default ({ data }) => {
             {effects.map(({ node }) => (
               <tr
                 key={node.frontmatter.name}
-                className={
-                  "table-row " + node.frontmatter.type.toString().toLowerCase()
-                }
+                className={`table-row ${node.frontmatter.type
+                  .toString()
+                  .toLowerCase()
+                  .replace(/\//g, "-")}
+                `}
               >
                 <td>
                   <GatsbyImage
@@ -134,7 +136,16 @@ export default ({ data }) => {
                     {node.frontmatter.model}
                   </span>
                 </td>
-                <td>{node.frontmatter.type}</td>
+                <td>
+                  <span
+                    className={`tag has-text-white has-background-${node.frontmatter.type
+                      .toString()
+                      .toLowerCase()
+                      .replace(/\//g, "-")}`}
+                  >
+                    {node.frontmatter.type}
+                  </span>
+                </td>
                 <td>{node.frontmatter.channel.join(", ")}</td>
                 <td>{node.frontmatter.update}</td>
                 <td>

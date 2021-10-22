@@ -63,7 +63,14 @@ export default function ModelTemplate({ data, pageContext }) {
                 <div className="control">
                   <div className="tags has-addons">
                     <span className="tag is-dark">Type</span>
-                    <span className="tag is-info">{frontmatter.type}</span>
+                    <span
+                      className={`tag is-info has-background-${frontmatter.type
+                        .toString()
+                        .toLowerCase()
+                        .replace(/\//g, "-")}`}
+                    >
+                      {frontmatter.type}
+                    </span>
                   </div>
                 </div>
               )}
