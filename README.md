@@ -1,12 +1,12 @@
 <h1 align="center">Helix Library</h1>
 <p align="center">
 <a href="https://github.com/gfrcsd/helix-library/blob/main/LICENSE.txt"><img alt="License" src="https://img.shields.io/github/license/gfrcsd/helix-library?color=blue&label=License"></a>
-<a href="https://helix-library.netlify.app"><img alt="Netlify" src="https://img.shields.io/netlify/e7d0b5b5-f6bc-484a-a13a-316fa2168e68?label=Netlify&logo=netlify&logoColor=%23ffffff"></a>
-<a href="https://helix-library.netlify.app"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=down&label=Website&up_color=brightgreen&up_message=up&url=https%3A%2F%2Fhelix-library.netlify.app%2F"></a>
+<a href="https://helix-library.netlify.app"><img alt="Netlify build" src="https://img.shields.io/netlify/e7d0b5b5-f6bc-484a-a13a-316fa2168e68?label=Netlify&logo=netlify&logoColor=%23ffffff"></a>
+<a href="https://helix-library.netlify.app"><img alt="Website status" src="https://img.shields.io/website?down_color=red&down_message=down&label=Website&up_color=brightgreen&up_message=up&url=https%3A%2F%2Fhelix-library.netlify.app%2F"></a>
 </p>
 <p align="center">
-<img alt="Gatsby" src="https://img.shields.io/badge/Gatsby-4.0.0-%23663399?logo=gatsby&logoColor=%23ffffff">
-<img alt="Gatsby" src="https://img.shields.io/badge/Bulma-9.3-%2300d1b2?logo=bulma&logoColor=%23ffffff">
+<a href="https://www.gatsbyjs.com/"><img alt="Gatsby version" src="https://img.shields.io/badge/Gatsby-4.0.0-%23663399?logo=gatsby&logoColor=%23ffffff"></a>
+<a href="https://bulma.io/"><img alt="Bulma version" src="https://img.shields.io/badge/Bulma-9.3-%2300d1b2?logo=bulma&logoColor=%23ffffff"></a>
 
 </p>
 
