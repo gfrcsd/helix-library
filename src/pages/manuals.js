@@ -9,7 +9,7 @@ import Disclaimer from "../components/disclaimer"
 import "../sass/style.sass"
 import { HiOutlineExternalLink } from "react-icons/hi"
 
-export default ({ data }) => {
+const ManualsPage = ({ data }) => {
   return (
     <Layout>
       <SEO
@@ -78,3 +78,5 @@ export const query = graphql`
     }
   }
 `
+
+export default ManualsPage

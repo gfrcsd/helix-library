@@ -6,7 +6,7 @@ import Disclaimer from "../components/disclaimer"
 import Section from "../components/section"
 import Hero from "../components/hero"
 
-export default ({ data }) => {
+const ReleaseNotesPage = ({ data }) => {
   return (
     <Layout>
       <SEO
@@ -100,3 +100,5 @@ export const query = graphql`
     }
   }
 `
+
+export default ReleaseNotesPage
