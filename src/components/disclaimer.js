@@ -6,7 +6,7 @@ const Disclaimer = () => {
   return (
     <div className="hero is-small is-warning">
       <div className="hero-body has-text-centered is-size-7-mobile">
-        <p>
+        <p style={{ lineHeight: "1.5rem" }}>
           <b className="icon-text has-text-weight-semibold has-text-black mr-1">
             <span className="icon">
               <IoWarning style={{ fontSize: "1.3rem" }} />
