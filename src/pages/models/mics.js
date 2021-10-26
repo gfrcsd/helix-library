@@ -9,7 +9,7 @@ import Disclaimer from "../../components/disclaimer"
 import Table from "../../components/table"
 import { FaFilter } from "react-icons/fa"
 
-export default ({ data }) => {
+const MicsPage = ({ data }) => {
   const [mics, setMics] = useState(data.allMarkdownRemark.edges)
   const [activeFilter, setActiveFilter] = useState("all")
 
@@ -80,7 +80,9 @@ export default ({ data }) => {
                   <div className="buttons has-addons">
                     <button
                       onClick={() => filterBy("all")}
-                      className="button is-small is-light"
+                      className={`button is-small is-light ${
+                        activeFilter === "all" ? "is-active" : ""
+                      }`}
                     >
                       All
                     </button>
@@ -88,7 +90,9 @@ export default ({ data }) => {
                       <button
                         key={type}
                         onClick={() => filterBy(type)}
-                        className="button is-small is-light"
+                        className={`button is-small is-light ${
+                          activeFilter === type ? "is-active" : ""
+                        }`}
                       >
                         {type}
                       </button>
@@ -187,3 +191,4 @@ export const query = graphql`
     }
   }
 `
+export default MicsPage
