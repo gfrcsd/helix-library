@@ -1,0 +1,446 @@
+---
+title: "3.00"
+path: "/release-notes/3.00"
+date: 2020-11-19 00:00:00
+target:
+  ["Helix", "Helix Rack", "Helix LT", "Helix Native", "HX Effects", "HX Stomp"]
+---
+
+Helix 3.0 includes new amps, cabs, effects, features, bug fixes, and other changes and improvements and is strongly recommended for all Helix and HX owners.
+
+# New Amps
+
+_Helix Floor, Helix Rack, Helix LT, Helix Native, HX Stomp_
+
+- <span className="has-text-amp has-text-weight-bold">US Princess</span>, based
+  on\* the Fender® Princeton Reverb
+- <span className="has-text-amp has-text-weight-bold">Das Benzin Mega</span>,
+  based on\* the Mega channel of the Diezel VH4
+- <span className="has-text-amp has-text-weight-bold">Das Benzin Lead</span>,
+  based on\* the Lead channel of the Diezel VH4
+
+# New Cabs
+
+_Helix Floor, Helix Rack, Helix LT, Helix Native, HX Stomp_
+
+- <span className="has-text-amp has-text-weight-bold">1x10 US Princess</span>,
+  based on\* the Fender® Princeton Reverb cab
+- <span className="has-text-amp has-text-weight-bold">1x12 US Princess</span>,
+  based on\* the Fender® Princeton Reverb with a 12" Alnico Blue driver
+
+# New Effects
+
+_Helix Floor, Helix Rack, Helix LT, Helix Native, HX Effects, HX Stomp_
+
+- <span className="has-text-distortion">
+    Distortion > <strong className="has-text-distortion">Horizon Drive</strong>
+  </span> (Mono, Stereo), based on\* the Horizon Devices Precision Drive. Includes
+  an extra Gate Range parameter that, when set to "Extended," drops the gate's threshold
+  down to -90dB
+- <span className="has-text-distortion">
+    Distortion >{" "}
+    <strong className="has-text-distortion">Swedish Chainsaw</strong>
+  </span> (Mono, Stereo), based on\* the BOSS® HM-2 Heavy Metal Distortion (Made
+  in Japan black label)
+- <span className="has-text-distortion">
+    Distortion > <strong className="has-text-distortion">Pocket Fuzz</strong>
+  </span> (Mono, Stereo), inspired by\* the Jordan Boss Tone fuzz
+- <span className="has-text-distortion">
+    Distortion > <strong className="has-text-distortion">Bighorn Fuzz</strong>
+  </span> (Mono, Stereo), based on\* the 1973 Electro-Harmonix® Ram's Head Big Muff
+  Pi
+- <span className="has-text-distortion">
+    Distortion > <strong className="has-text-distortion">Ballistic Fuzz</strong>
+  </span> (Mono, Stereo), based on\* the Euthymia ICBM fuzz
+- <span className="has-text-dynamics">
+    Dynamics > <strong className="has-text-dynamics">Horizon Gate</strong>
+  </span> (Mono, Stereo), based on\* the Horizon Devices Precision Drive's gate circuit.
+  Includes an extra Gate Range parameter that, when set to "Extended," drops the
+  gate's threshold down to -90dB. Works best before an amp
+- <span className="has-text-eq">
+    EQ > <strong className="has-text-eq">Acoustic Sim</strong>
+  </span> (Mono, Stereo), based on\* the BOSS® AC-2 Acoustic Simulator. Can be used
+  alone or in conjunction with an acoustic IR
+- <span className="has-text-modulation">
+    Modulation > <strong className="has-text-modulation">Poly Detune</strong>
+  </span> (Mono), Line 6 Original
+- <span className="has-text-delay">
+    Delay > <strong className="has-text-delay">Poly Sustain</strong>
+  </span> (Mono), Line 6 Original
+
+  1. **Assign Poly Sustain to a stomp footswitch. By default, Poly Sustain appears bypassed.**
+  2. **First play the note or chord you wish to sustain, and then press the footswitch (on) to sustain it indefinitely. Keep playing while the note or chord loops.**
+
+     _**TIP:** Some players may find it easier to change the footswitch mode to Momentary; that way, the note or chord sustains only while you hold the switch on, much like the sustain pedal on a piano._
+
+  3. **Press the switch again (off) and the sustained note or chord fades out.**
+
+  - **Interval** — Sets the pitch of the sustained note or chord. TIP: This parameter is especially cool for creating massive drones to play over
+  - **Attack** — Sets the speed at which the sustained note or chord fades in
+  - **Decay** — Sets the speed at which the sustained note or chord fades out after bypassing the effect
+  - **Mod Freq** — Sets the speed of the built in modulation
+  - **Mod Depth** — Sets the depth of the built in modulation
+  - **FX Level** — Sets the level of the sustained signal
+  - **RandDpth** — Higher values increase the randomization of the section of audio being sustained, resulting in a more natural, but less predictable drone
+  - **RandSpeed** — Controls how fast the randomization wanders. Setting both RndDpth and RndSpd to high values will result in a glitch fest (not that there's anything wrong with that)
+  - **Level** — Controls the overall output level of the block
+
+- <span className="has-text-delay">
+    Delay > <strong className="has-text-delay">Glitch Delay</strong>
+  </span> (Mono, Stereo), Line 6 Original performance delay that lets you freely
+  manipulate the repeats' behavior in real time
+
+  - **Time** — Sets the delay time; press the knob to toggle between ms/sec and note values
+  - **Delay Div** — Divides the delay time into smaller increments
+  - **Mix** — Controls the wet/dry mix of the delay. When set to 0%, no delay is heard; when set to 100%, no dry signal is heard
+  - **Feedback** — Controls the overall number of repeats heard for the entire sequence
+  - **SliceFdbk** — Controls the number of repeats heard for individual slices. At higher values, you could call this "Super Chaotic Feedback"
+  - **Shuffle** — Determines the likelihood of repeats shuffling/reordering
+  - **Octaves** — Determines the likelihood of repeats playing back an octave higher or lower
+  - **Reverse** — Determines the likelihood of repeats playing backwards
+  - **Seq Drift** — Determines the likelihood of the entire sequence changing every time it loops around. When set to 0%, the same sequence loops forever.
+
+    _**TIP:** Assign this parameter to a footswitch set to toggle between a higher number and 0%. If you hear a random sequence you want to maintain, press the switch to set Seq Drift to 0%, and it'll repeat that way indefinitely_
+
+  - **Smoothing** — Higher values apply smoothing between slices and can give a synth-pad type quality, lower values maintain transients. Or set it just high enough to avoid pops and clicks
+  - **Trails** — When on, delay repeats continue to ring out after the block is bypassed
+
+- <span className="has-text-pitch-synth">
+    Pitch/Synth > <strong className="has-text-pitch-synth">Poly Pitch</strong>
+  </span> (Mono), Line 6 Original
+
+  <div className="notification is-warning is-light mt-3">
+    <strong>NOTE:</strong> Polyphonic pitch engines are designed for shifting
+    complex chords with minimal artifacts, at the expense of latency (and our
+    algorithms have lower latency than leading standalone poly pitch pedals). If
+    you're looking to pitch individual notes (such as in a solo), monophonic
+    pitchshifting is often preferred. See the Tracking parameter below for more
+    information
+  </div>
+
+  <div className="notification is-danger is-light">
+    <strong>IMPORTANT!</strong> 3.0's new poly models are extremely
+    DSP-intensive. Some effects can eat up roughly a quarter of all available
+    DSP on a Helix Floor, Rack, or LT or half (!!!) of all available DSP on HX
+    Stomp or HX Effects. You also can't run more than one on the same path/DSP.
+    Don't say we didn't warn you...
+  </div>
+
+  - **Interval** — Sets the pitch of the effect in semitones
+  - **Cents** — Sets the pitch of the effect in cents
+  - **ShiftTime** — Determines how long it takes for the signal to ramp up or down to the set pitch when the block is enabled. Press the knob to toggle between ms/Sec and note/beat values.
+
+    _**TIP:** Want to hit the switch and have Poly Pitch dive bomb and land on the selected interval exactly one bar later? Press the knob to select note values and set ShiftTime to "1/1"_
+
+  - **ShiftCurve** — Determines the trajectory curve of the pitch shift over time. StartSlow values are concave (slower changes to start, speeding up toward the end); StartFast values are convex (the opposite). The default is "Linear"
+  - **ReturnTime** — Determines how long it takes for the signal to return to normal pitch when the block is bypassed. Press the knob to toggle between ms/Sec and note/beat values
+  - **ReturnCurv** — Determines the trajectory curve when returning to the original pitch. StartSlow values are concave (slower changes to start, speeding up toward the end); StartFast values are convex (the opposite)
+  - **Tracking** — Determines how the poly pitch engine behaves. "X Fast" results in lower latency, ideal for faster lead lines. "X Stable" (the default) results in fewer artifacts when pitch shifting complex, sustained chords. "Fast" and "Stable" are somewhere in between.
+
+    _**TIP:** If you find yourself changing playing styles—say from fast lead lines to clean, open chords—you can assign this parameter to a footswitch (or snapshots) to optimize the balance between transparency and low latency_
+
+  - **Auto EQ** — Determines how much compensation EQ is applied to the shifted signal. If the effected signal sounds too harsh when pitched up (or dull when pitched down), adjust this setting to taste. When set to 0.0, no compensation is applied
+  - **Mix** — Controls the wet/dry mix of the pitchshift
+  - **Level** — Controls the overall output level of the block
+
+- <span className="has-text-pitch-synth">
+    Pitch/Synth > <strong className="has-text-pitch-synth">Poly Wham</strong>
+  </span> (Mono), Line 6 Original. Works equally well on guitar and bass, although
+  you might want to tweak the Auto EQ parameter for your particular instrument. See
+  Poly Pitch notes above for additional information
+- <span className="has-text-pitch-synth">
+    Pitch/Synth > <strong className="has-text-pitch-synth">Poly Capo</strong>
+  </span> (Mono), Line 6 Original. Simpler version of Poly Pitch when you just want
+  to change keys. Works equally well on guitar and bass, although you might want
+  to tweak the Auto EQ parameter for your particular instrument. See Poly Pitch notes
+  above for additional information
+- <span className="has-text-pitch-synth">
+    Pitch/Synth > <strong className="has-text-pitch-synth">12 String</strong>
+  </span> (Mono), Line 6 Original 12-string guitar emulation
+- <span className="has-text-volume-pan">
+    Volume/Pan > <strong className="has-text-volume-pan">Stereo Imager</strong>
+  </span> (Stereo), Line 6 Original
+- <span className="has-text-looper">
+    Looper > <strong className="has-text-looper">Shuffling Looper</strong>
+  </span> (Mono, Stereo), Line 6 Original. Part looper, part sampler, part inspiration
+  generator, part performance instrument, the Shuffling Looper intelligently chops
+  up your playing and gives you realtime control over reordering, octave shifting,
+  reversing, and repeating. It's all immense fun (even on vocals, drums, and percussion),
+  but you'll want to familiarize yourself with its controls.
+
+  <div className="notification is-danger is-light">
+    <strong>IMPORTANT!</strong> The Shuffling Looper does not currently respond
+    to Command Center > HX Commands or per-function MIDI commands
+  </div>
+
+1. **Add Looper > Shuffling Looper to a preset and assign it to a footswitch.**
+2. **Turn Knob 1 (Slices) to set the number of slices your loop will be chopped into.** 8 slices is the default.
+3. **Press the switch to begin recording.** The LED lights red, indicating the loop is recording.
+4. **At the end of your loop, press the switch.** The LED lights green and the sliced loop sequence immediately plays.
+5. **During playback, adjust the following knobs (or assign them to controllers, like expression pedals or snapshots):**
+
+   - **Slices** — Changes the number of slices your loop will be chopped into
+   - **SeqLength** — Determines the number of slices in the sequence. This can be changed even after recording a loop
+   - **Shuffle** — Determines the likelihood of slices shuffling/reordering. At 0%, the slices never shuffle; at 100%, they're constantly reshuffling
+   - **Octave** — Determines the likelihood of slices playing back an octave higher or lower
+   - **Reverse** — Determines the likelihood of slices playing backwards
+   - **Repeat** — Determines the likelihood of slices repeating
+   - **Smoothing** — Higher values apply smoothing between slices and can give a synth-pad type quality, lower values maintain transients. Or set it just high enough to avoid pops and clicks
+   - **Seq Drift** — Determines the likelihood of the entire slice sequence changing every time it loops around. When set to 0.0, the same sequence repeats forever; when set to 10.0, the sequence changes completely every time it loops
+
+     _**TIP:** Assign this parameter to a footswitch set to toggle between a higher number and 0%. If you hear a random sequence you want to maintain, press the switch to set Seq Drift to 0%, and it'll repeat that way indefinitely_
+
+   - **Playback** — Sets the looper's playback level
+   - **Low Cut** — Applies a low cut (or high pass) filter to the loop, letting you remove looper signal below a certain frequency
+   - **High Cut** — Applies a high cut (or low pass) filter to the loop, letting you remove looper signal above a certain frequency
+
+6. Want to change it up? **While the loop is playing, press the switch to randomize its slice sequence.**
+7. **Quickly double-press the switch.** Playback/recording stops and the LED lights white, indicating a loop is in memory. **Press again to restart.**
+8. **While the loop is playing or stopped, press and hold the switch.** The recording is deleted and the LED lights dim white.
+
+<div className="notification is-warning is-light">
+  <strong>NOTE:</strong> All product names used in this document are trademarks
+  of their respective owners and neither Yamaha Guitar Group nor Line 6 are
+  associated or affiliated with them. These trademarks appear solely to identify
+  products whose tones and sounds were studied by Line 6 during sound model
+  development.
+</div>
+
+# New Features
+
+## True Preset Spillover
+
+_Helix Floor, Helix Rack/Control, Helix LT_
+
+Despite what some might have you believe, the only digital multieffects units with true preset spillover were the DigiTech GSP1101, 2112, and 2120, and they accomplished this by dedicating one of their two DSPs to spillover and only spillover. (Basically, to hear two dynamically allocated presets with absolutely zero gap—not a global reverb smeared to cover the gap—you need enough DSP to run both of them simultaneously.) So... if you're willing to sacrifice half your DSP—that is, COMPLETELY DISABLE PATH 2—you too can have true preset spillover.
+
+<div className="notification is-danger is-light">
+  <strong>IMPORTANT!</strong> Unfortunately, Looper recording or playback will
+  not currently spill over from one preset to another. Also, note that there may
+  be a slight hiccup when switching between two presets with different impedance
+  values for the Guitar Input.
+</div>
+
+1. **In the Global Settings > Preferences menu, set Preset Spillover to "On." (SHORTCUT: Hold ACTION and press HOME.)** A dialog appears, reading "Remove Path 2 to enable preset spillover?"
+2. **Press Knob 6 (OK)**.
+3. **Press HOME.** Path 2 has disappeared! You may now switch presets to your heart's delight with true spillover but note that if Preset A is still spilling over into Preset B (say one of its delay blocks' feedback is making it self-oscillate), switching to Preset C will abruptly cut off Preset A.
+4. **To return to normal operation with two paths, turn Preset Spillover back to "Off". (SHORTCUT: Hold ACTION and press HOME again.)** A dialog appears, reading "The preset must be reloaded. All unsaved changes will be lost!" So if you've made changes to the preset, be sure to save it before turning Spillover off.
+5. **Press Knob 6 (OK).**
+
+**_But but but... I don't wanna lose Path 2 just for spillover!_**
+
+Then keep using snapshots.
+
+## Favorites
+
+_Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp_
+
+If you've dialed in an amp or effects block exactly the way you like it, you can now save its settings as a favorite so it can be added very quickly, complete with bypass state and footswitch assignment. Favorites appear in a new "Favorites" category and can be renamed, reordered, and cleared.
+
+_**TIP:** If you don't want a favorite to be recalled with its footswitch assignment, add the block before you assign a switch._
+
+1. **Choose one of your favorite amps or effects and tweak it exactly how you like it, with or without footswitch assignment.**
+2. **Press ACTION and then press Add to Favorites.** The Favorites list appears.
+3. If you wish to replace an existing favorite (you get 128 total), **select it and press Replace Favorite.** If you wish to add a new favorite, **select the location where you want to place it and press Add New Favorite.**
+4. OPTIONAL: While the Favorites list is open, **press ACTION.**
+   - To reorder the selected favorite up or down the list, **turn Reorder Favorite** (on HX Effects, **press Reorder Up or Reorder Down**)
+   - To rename the selected favorite, **press Rename Favorite**
+   - To clear the selected favorite, **press Clear Favorite**
+   - To clear all favorites, press **Clear All** Favorites. A dialog appears. **Press OK to confirm.**
+
+_**All right, so what?**_
+
+Here's what:
+
+1. **At any time, select an empty block and turn the joystick (Big Knob on HX Effects or Lower Knob on HX Stomp).** All your perfectly-tweaked favorite amps and effects instantly appear, without having to open the model list at all. If you typically keep model categories on the same stomp footswitches, you could conceivably create a brand new preset with all of your favorite stuff—including all footswitch assignments—in less than 10 seconds. Creating tones has never been faster or easier.
+
+_**TIP:** If you keep one or more external pedals connected to Helix's FX Loops, add the FX Loop blocks as favorites and then rename them after the real thing._
+
+## User Model Defaults
+
+_Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp_
+
+3.0 lets you save any amp, cab, or effect block's settings as default so every time you call that model up, it sounds exactly the way you want it. Or, if you want to revert it to factory default, you can do that too.
+
+<div className="notification is-warning is-light">
+  <strong>Note:</strong> Unlike Favorites, user model defaults do not store any
+  footswitch assignments.
+</div>
+
+1. **Choose any model and tweak it exactly how you like it.**
+2. **Press ACTION and then User Default.** From Helix Native or HX Edit, right-click (Mac: control-click) the block icon and select "User Default"
+
+## Global Settings > Preferences > Auto Impedance
+
+_Helix Floor, Helix Rack/Control, Helix LT, HX Stomp_
+
+A new Global Settings > Preference parameter determines how the Guitar In's impedance circuit behaves when Input > In-Z is set to "Auto." When set to "First Block" (the default), the impedance circuit reflects the impedance of the first block on Path 1A, regardless of whether it's enabled or bypassed. When set to "First Enabled", the impedance circuit reflects the impedance of the first enabled block on Path 1A. Called "Auto Impedance" because "Sorry-this-took-so-long-we-love-you-Tito83" wouldn't fit.
+
+## Min/Max Value Indicators
+
+_Helix Floor, Helix Rack/Control, Helix LT, HX Stomp [Feature already in HX Effects]_
+
+Parameters assigned to controllers or snapshots now display small Min Value (below) and Max Value (above) indicators. You can now see the range of continuous controllers from the Home screen.
+
+## 8 Blocks in HX Stomp
+
+_HX Stomp_
+
+HX Stomp's simultaneous block count has been increased from six to eight.
+
+<div className="notification is-danger is-light">
+  <strong>IMPORTANT!</strong> Although HX Stomp now has two additional block
+  locations, this doesn't mean it magically has more DSP horsepower to
+  accommodate those blocks. Don't be surprised if you're not able to fill all
+  eight blocks with exactly what you want, especially considering the new
+  polyphonic pitch models take up a lot more DSP. We've taken note of those
+  who've bemoaned HX Stomp's 6 block limit, and if the same person now complains
+  about running out of DSP with 8 blocks, we're sending hooligans to their home
+  to administer an atomic wedgie.
+</div>
+
+<div className="notification is-warning is-light">
+  <strong>NOTE:</strong> It shouldn't come as any surprise, but any presets you
+  make in 3.0 will not be compatible with 2.92 or earlier firmware. wedgie.
+</div>
+
+## Command Center in HX Stomp
+
+_HX Stomp [Feature already in Helix Floor, Helix Rack/Control, Helix LT, and HX Effects]_
+
+Why would people expect a stompbox with only three footswitches to also act as a master MIDI controller? Yeah, we don't know either, but enough of you asked for it and it wasn't exceedingly difficult to add.
+
+1. **Press together to open the Menu and then press Knob 3 (Command Center).**
+2. **Turn the Upper Knob to select the command source (Instant 1-6, Footswitch 1-5, or EXP 1-2).**
+3. **Turn Knob 1 (Command) to select the type of command you wish to transmit.** For information on the types of commands HX Stomp transmits, see the HX Stomp 3.0 Owner's Manual.
+
+_**Wait, does this mean I can use HX Stomp as both an audio interface AND a remote control for YouTube lesson videos by sending QWERTY hotkeys?**_
+
+Yes.
+
+## Tuner in Helix Native
+
+_Helix Native [Feature already in Helix and HX hardware]_
+
+Helix Native now has the same needle and strobe tuner from Helix.
+
+1. **Click the tuner icon.**
+2. **Choose the tuner type by selecting Coarse, Fine, or Strobe.**
+
+## Gain Reduction Meters in Helix Native
+
+_Helix Native [Feature already in Helix hardware]_
+
+The following block types display a gain reduction meter in the inspector when selected:
+
+- Dynamics > Compressor
+- Dynamics > Gate
+
+## Artist Presets
+
+<div className="notification is-danger is-light">
+  <strong>IMPORTANT!</strong> Because we never want to overwrite your own
+  presets, upgrading to 3.0 does NOT automatically make these presets visible;
+  you will need to manually restore them. Restoring factory setlists and presets
+  will completely overwrite your own, so make sure they're backed up first!
+</div>
+
+_**TIP:** With Helix Floor/Rack/LT/Native, if you want to keep both your presets and the latest factory presets, back up your custom presets as setlists and after the procedure below, drag your setlists onto unused setlist locations._
+
+1. **Make sure you've backed up your presets and turn off Helix/HX.**
+2. **Perform the following procedure:**
+   - Helix Floor/LT: **While holding footswitches 7 and 8 (two leftmost switches on the bottom row), turn on Helix Floor/LT. Wait for "Will restore..." to appear and let go**
+   - Helix Rack/Control: **While holding knobs 3 and 4 (two middle knobs below the screen), turn on Helix Rack. Wait for "Will restore..." to appear and let go**
+   - Helix Native: **Click the gear icon in the lower left corner, click the Presets/IRs tab, and click "Restore Factory Setlists"**
+
+Helix 3.0 includes factory presets created by the following artists:
+
+_Helix Floor, Helix Rack/Control, Helix LT, Helix Native [FACTORY 1 setlist]_
+
+- **13B-14C** — Fish (Christina Aguilera)
+- **14D** — Jeff Waters (Annihilator)
+- **15A, 15B** — Richie Castellano (Blue Öyster Cult)
+- **15C** — Robbie Calvo
+- **15D** — Ryan "Fluff" Bruce (Dragged Under)
+- **16A-16D** — Felix Martin
+- **17A** — Mario Quintaro (Spotlights)
+- **17B, 17C** — Bumblefoot (Sons of Apollo)
+- **17D, 18A** — Billy Sheehan (Sons of Apollo, Winery Dogs)
+- **18B** — Andy Abad (Jennifer Lopez)
+- **18C-19B** — Misha Mansoor (Periphery)
+- **19C** — Duke Erikson (Garbage)
+- **19D** — Steve Marker (Garbage)
+- **20A** — Eric Avery (Garbage)
+- **20B** — Bill Kelliher (Mastodon)
+- **20C** — John Browne (Monuments)
+- **20D** — Olly Steele (Monuments)
+- **21A** — Jon Button (The Who)
+- **21B** — Trev Lukather (Levara)
+- **21C** — Steve Howe (Yes)
+- **21D** — Dustin Kensrue (Thrice)
+- **22A** — Pete Thorn
+- **22B** — Rhett Shull
+- **22C** — Jade Puget (A.F.I.)
+- **22D, 23A** — Jeff Schroeder (The Smashing Pumpkins)
+- **23B** — Graham Coxon (Blur)
+- **23C, 23D** — Chris Buck
+- **24A** — Lewis Allen (Sam Smith)
+- **24B-25A** — Rabea Massaad
+- **25B** — Soren Andersen
+- **25C** — Devin Townsend
+- **25D** — Nathan Navarro
+- Vernon Reid
+- **27B** — Philip Bynoe
+- **27C, 27D** — Markus Reuter
+
+_HX Effects_
+
+- **12A-12D** — Julien Baker
+- **13A** — Sarah "Noveller" Lipstate
+- **13B, 13C** — Steve Stevens
+
+## 3.0 Owner's Manuals
+
+_Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp, HX Edit_
+
+As it's immensely expensive and complicated to translate Owner's Manuals into the many languages we're required by law to provide, Helix and HX Owner's Manuals have not been updated since 2.X. They've now been updated for 3.0:
+
+- Helix Floor: Link available soon—watch this space
+- Helix Rack/Control: Link available soon—watch this space
+- Helix LT: Link available soon—watch this space
+- Helix Native: Link available soon—watch this space
+- HX Effects: Link available soon—watch this space
+- HX Stomp: Link available soon—watch this space
+- HX Edit: Link available soon—watch this space
+
+# Other Changes and Improvements
+
+- On HX Stomp, Global Settings > Footswitches > Stomp Select now has an "Off" value. When set this way, neither touching nor pressing will change which block is in focus [value is already in Helix Floor, Rack, and LT]
+- Favorites can now be restored from a backup, independently of setlists, presets, IRs, and Global Settings
+- User Model Defaults can now be restored from a backup, independently of setlists, presets, IRs, and Global Settings
+- Gain reduction meters now also appear for the Input block's noise gate
+- Gain reduction meters and signal present indicators are now more responsive
+- Parameter knob ballistics have been improved
+- New splash screens for Helix Floor/Rack/LT and HX Stomp
+- Parameter slider handles are thinner to accommodate new min/max value indicators
+- Press-turning a knob to assign Snapshot control now requires a bit more turning to minimize accidental assignments
+- Pitch/Synth > 4 OSC Generator OscFreq parameters now display single Hz resolution between 100 and 1000 Hz
+
+# Bug Fixes
+
+- When synced to external MIDI clock or retriggering via TAP, certain models with tremolo circuits' LFO set to square wave would invert the waveform–FIXED
+- If Helix had been left powered on for 24 hours with the same preset active (What? Why?), its reverb blocks could become disabled until selecting another preset—FIXED
+- Many other minor fixes and improvements
+
+# Known Issues
+
+- Distortion > Vermin Dist's resonant filter was mapped incorrectly, and is especially apparent at higher gain settings. This will be fixed in 3.10
+- In the Poly Pitch models, very fast playing may exhibit some minor onset smearing. Additional improvements to the poly pitch engine are forthcoming
+- The Shuffling Looper does not currently respond to Command Center > HX Commands or per-function MIDI commands
+- Variax Model min and max sliders do not automatically update when a Variax is connected
+- When Tuner View is active while Spillover is engaged, changing presets can sometimes cause audio output to stop
+- After importing a .WAV file into the current 'Empty' slot of an Impulse Response block, all audio output can stop
+- After exiting a menu, HX Stomp’s TAP LED can occasionally appear to blink erratically
+- Clearing a Split block on Path 2 does not automatically remove its bypass assignment
+
+**Compatible OS:** _Windows 7, Windows 8, Windows 10_
