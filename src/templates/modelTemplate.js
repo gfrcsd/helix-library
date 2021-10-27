@@ -157,7 +157,7 @@ export default function ModelTemplate({ data, pageContext }) {
           {previous && (
             <Link
               to={previous.frontmatter.path}
-              className="column is-narrow-tablet is-6-mobile mr-auto-tablet"
+              className="column is-narrow-tablet is-6-mobile mr-auto"
             >
               <div className="columns">
                 <div className="column is-narrow is-flex is-align-items-center">
@@ -190,7 +190,7 @@ export default function ModelTemplate({ data, pageContext }) {
           {next && (
             <Link
               to={next.frontmatter.path}
-              className="column is-narrow-tablet is-6-mobile ml-auto-tablet"
+              className="column is-narrow-tablet is-6-mobile ml-auto"
             >
               <div className="columns is-flex-touch next-nav is-justify-content-flex-end">
                 <div className="column is-narrow has-text-right">
