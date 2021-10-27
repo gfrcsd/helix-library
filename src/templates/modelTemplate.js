@@ -152,78 +152,72 @@ export default function ModelTemplate({ data, pageContext }) {
             </a>
           </div>
         </div>
-        <div className="columns is-centered">
-          <div className="column is-10">
-            <hr />
-            <div className="columns is-vcentered is-justify-content-space-between">
-              {previous && (
-                <div className="column is-narrow mr-auto">
-                  <Link to={previous.frontmatter.path} className="columns">
-                    <div className="column is-narrow is-flex is-align-items-center">
-                      {previous.frontmatter?.icon && (
-                        <GatsbyImage
-                          image={
-                            previous.frontmatter.icon.childImageSharp
-                              .gatsbyImageData
-                          }
-                          alt={`${previous.frontmatter.name}'s icon`}
-                        />
-                      )}
-                      {previous.frontmatter?.image && (
-                        <GatsbyImage
-                          image={
-                            previous.frontmatter.image.childImageSharp
-                              .gatsbyImageData
-                          }
-                          alt={`${previous.frontmatter.name}'s icon`}
-                        />
-                      )}
-                    </div>
-                    <div className="column is-narrow">
-                      <span>
-                        Previous {fields.collection.slice(0, -1)} model
-                      </span>
-                      <br />
-                      <p className="is-size-7">{previous.frontmatter.name}</p>
-                    </div>
-                  </Link>
+        <hr />
+        <div className="columns is-mobile is-vcentered is-justify-content-space-between">
+          {previous && (
+            <Link
+              to={previous.frontmatter.path}
+              className="column is-narrow-tablet is-6-mobile mr-auto-tablet"
+            >
+              <div className="columns">
+                <div className="column is-narrow is-flex is-align-items-center">
+                  {previous.frontmatter?.icon && (
+                    <GatsbyImage
+                      image={
+                        previous.frontmatter.icon.childImageSharp
+                          .gatsbyImageData
+                      }
+                      alt={`${previous.frontmatter.name}'s icon`}
+                    />
+                  )}
+                  {previous.frontmatter?.image && (
+                    <GatsbyImage
+                      image={
+                        previous.frontmatter.image.childImageSharp
+                          .gatsbyImageData
+                      }
+                      alt={`${previous.frontmatter.name}'s icon`}
+                    />
+                  )}
                 </div>
-              )}
-              {next && (
-                <div className="column is-narrow ml-auto">
-                  <Link to={next.frontmatter.path} className="columns">
-                    <div className="column is-narrow">
-                      <span>Next {fields.collection.slice(0, -1)} model</span>
-                      <br />
-                      <p className="is-size-7" style={{ textAlign: "end" }}>
-                        {next.frontmatter.name}
-                      </p>
-                    </div>
-                    <div className="column is-narrow is-flex is-align-items-center">
-                      {next.frontmatter?.icon && (
-                        <GatsbyImage
-                          image={
-                            next.frontmatter.icon.childImageSharp
-                              .gatsbyImageData
-                          }
-                          alt={`${next.frontmatter.name}'s icon`}
-                        />
-                      )}
-                      {next.frontmatter?.image && (
-                        <GatsbyImage
-                          image={
-                            next.frontmatter.image.childImageSharp
-                              .gatsbyImageData
-                          }
-                          alt={`${next.frontmatter.name}'s icon`}
-                        />
-                      )}
-                    </div>
-                  </Link>
+                <div className="column is-narrow">
+                  <p>Previous {fields.collection.slice(0, -1)} model</p>
+                  <p className="is-size-7">{previous.frontmatter.name}</p>
                 </div>
-              )}
-            </div>
-          </div>
+              </div>
+            </Link>
+          )}
+          {next && (
+            <Link
+              to={next.frontmatter.path}
+              className="column is-narrow-tablet is-6-mobile ml-auto-tablet"
+            >
+              <div className="columns is-flex-touch next-nav is-justify-content-flex-end">
+                <div className="column is-narrow has-text-right">
+                  <p>Next {fields.collection.slice(0, -1)} model</p>
+                  <p className="is-size-7">{next.frontmatter.name}</p>
+                </div>
+                <div className="column is-narrow is-flex-touch is-align-items-center is-justify-content-flex-end">
+                  {next.frontmatter?.icon && (
+                    <GatsbyImage
+                      image={
+                        next.frontmatter.icon.childImageSharp.gatsbyImageData
+                      }
+                      alt={`${next.frontmatter.name}'s icon`}
+                    />
+                  )}
+                  {next.frontmatter?.image && (
+                    <GatsbyImage
+                      image={
+                        next.frontmatter.image.childImageSharp.gatsbyImageData
+                      }
+                      alt={`${next.frontmatter.name}'s icon`}
+                    />
+                  )}
+                </div>
+              </div>
+            </Link>
+          )}
         </div>
       </Section>
       <Disclaimer />

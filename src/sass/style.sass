@@ -30,7 +30,7 @@ body
         filter: invert(1)
 
 .navbar-menu
-    @media(max-width: 1023px)
+    @media screen and (max-width: 1023px)
         background: #131313
         a, .navbar-link
             filter: invert(1)
@@ -60,7 +60,7 @@ body
     &:hover
         transform: scale(1.05)
         filter: drop-shadow(0 0 .5em rgba(10, 10, 10, 0.1))
-    @media(max-width: 768px)
+    @media screen and (max-width: 768px)
         svg 
             max-height: 40px
 
@@ -86,3 +86,8 @@ body
         position: relative
         background: rgb(255,255,255)
         background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%)
+
+.next-nav
+    flex-direction: column-reverse
+    @media screen and (min-width: 769px)
+        flex-direction: row
