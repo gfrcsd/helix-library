@@ -17,6 +17,8 @@ export default function Footer() {
       }
       footerManuals: allMarkdownRemark(
         filter: { fields: { collection: { eq: "manuals" } } }
+        limit: 6
+        sort: { fields: frontmatter___date, order: ASC }
       ) {
         nodes {
           frontmatter {
