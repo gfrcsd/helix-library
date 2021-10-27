@@ -197,7 +197,7 @@ export default function ModelTemplate({ data, pageContext }) {
                   <p>Next {fields.collection.slice(0, -1)} model</p>
                   <p className="is-size-7">{next.frontmatter.name}</p>
                 </div>
-                <div className="column is-narrow is-flex-touch is-align-items-center is-justify-content-flex-end">
+                <div className="column is-narrow is-flex is-align-items-center is-justify-content-flex-end">
                   {next.frontmatter?.icon && (
                     <GatsbyImage
                       image={
