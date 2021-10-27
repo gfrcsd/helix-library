@@ -148,7 +148,7 @@ export default function ModelTemplate({ data, pageContext }) {
               <span className="icon">
                 <HiOutlinePencilAlt style={{ width: "75%", height: "75%" }} />
               </span>
-              <span>Edit this page</span>
+              <span>Edit this page on GitHub</span>
             </a>
           </div>
         </div>
