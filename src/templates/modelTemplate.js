@@ -155,24 +155,70 @@ export default function ModelTemplate({ data, pageContext }) {
         <div className="columns is-centered">
           <div className="column is-10">
             <hr />
-            <div className="level">
+            <div className="columns is-vcentered is-justify-content-space-between">
               {previous && (
-                <div className="level-item level-left">
-                  <Link to={previous.frontmatter.path}>
-                    <span>Previous {fields.collection.slice(0, -1)} model</span>
-                    <br />
-                    <p className="is-size-7">{previous.frontmatter.name}</p>
+                <div className="column is-narrow mr-auto">
+                  <Link to={previous.frontmatter.path} className="columns">
+                    <div className="column is-narrow is-flex is-align-items-center">
+                      {previous.frontmatter?.icon && (
+                        <GatsbyImage
+                          image={
+                            previous.frontmatter.icon.childImageSharp
+                              .gatsbyImageData
+                          }
+                          alt={`${previous.frontmatter.name}'s icon`}
+                        />
+                      )}
+                      {previous.frontmatter?.image && (
+                        <GatsbyImage
+                          image={
+                            previous.frontmatter.image.childImageSharp
+                              .gatsbyImageData
+                          }
+                          alt={`${previous.frontmatter.name}'s icon`}
+                        />
+                      )}
+                    </div>
+                    <div className="column is-narrow">
+                      <span>
+                        Previous {fields.collection.slice(0, -1)} model
+                      </span>
+                      <br />
+                      <p className="is-size-7">{previous.frontmatter.name}</p>
+                    </div>
                   </Link>
                 </div>
               )}
               {next && (
-                <div className="level-item level-right">
-                  <Link to={next.frontmatter.path}>
-                    <span>Next {fields.collection.slice(0, -1)} model</span>
-                    <br />
-                    <p className="is-size-7" style={{ textAlign: "end" }}>
-                      {next.frontmatter.name}
-                    </p>
+                <div className="column is-narrow ml-auto">
+                  <Link to={next.frontmatter.path} className="columns">
+                    <div className="column is-narrow">
+                      <span>Next {fields.collection.slice(0, -1)} model</span>
+                      <br />
+                      <p className="is-size-7" style={{ textAlign: "end" }}>
+                        {next.frontmatter.name}
+                      </p>
+                    </div>
+                    <div className="column is-narrow is-flex is-align-items-center">
+                      {next.frontmatter?.icon && (
+                        <GatsbyImage
+                          image={
+                            next.frontmatter.icon.childImageSharp
+                              .gatsbyImageData
+                          }
+                          alt={`${next.frontmatter.name}'s icon`}
+                        />
+                      )}
+                      {next.frontmatter?.image && (
+                        <GatsbyImage
+                          image={
+                            next.frontmatter.image.childImageSharp
+                              .gatsbyImageData
+                          }
+                          alt={`${next.frontmatter.name}'s icon`}
+                        />
+                      )}
+                    </div>
                   </Link>
                 </div>
               )}
