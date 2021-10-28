@@ -1,0 +1,25 @@
+---
+title: "3.01"
+path: "/release-notes/3.01"
+date: 2020-12-04 00:00:00
+target:
+  ["Helix", "Helix Rack", "Helix LT", "Helix Native", "HX Effects", "HX Stomp"]
+---
+
+# Bug Fixes in 3.01
+
+- In extremely rare cases with specific blocks in a specific order, audio could become severely corrupted–FIXED
+- In certain cases, the Delay > Glitch Delay can exhibit minor pops and clicks when placed on Path 2, regardless of where its Smoothing parameter is set (that is, not the good type of glitchiness)—FIXED
+- Many other minor fixes and improvements
+
+# Known Issues in 3.01
+
+- Distortion > Vermin Dist's resonant filter was mapped incorrectly, and is especially apparent at higher gain settings. This will be fixed in 3.10
+- In the Poly Pitch models, very fast playing may exhibit some minor onset smearing. Additional improvements to the poly pitch engine are forthcoming
+- The Shuffling Looper does not currently respond to Command Center > HX Commands or per-function MIDI commands
+- Variax Model min and max sliders do not automatically update when a Variax is connected
+- When Tuner View is active while Spillover is engaged, changing presets can sometimes cause audio output to stop
+- After importing a .WAV file into the current 'Empty' slot of an Impulse Response block, all audio output can stop
+- Clearing a Split block on Path 2 does not automatically remove its bypass assignment
+
+**Compatible OS:** _Mac OS X, Windows 7, Windows 8, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave, macOS Catalina, macOS Big Sur_
