@@ -1,0 +1,53 @@
+---
+title: "3.11"
+path: "/release-notes/3.11"
+date: 2021-04-27 00:00:00
+target:
+  ["Helix", "Helix Rack", "Helix LT", "Helix Native", "HX Effects", "HX Stomp"]
+---
+
+# Bug Fixes
+
+## Helix/HX Firmware 3.11
+
+- HX Stomp, HX Stomp XL only—If a custom label is not assigned, tapping a stomp switch with multiple assignments would display "MULTIPLE [X]" instead of displaying its assignments—FIXED
+- HX Stomp, HX Stomp XL only—Stomp mode footswitches would not follow the Global Settings > Displays > LED Ring Brightness value—FIXED
+- HX Stomp XL only—The colors for Distortion and Reverb boxes on Play view were reversed—FIXED
+- Receiving a MIDI CC67 could cause Helix LT to freeze—FIXED
+- In some cases, a MIDI snapshot (CC69) message could fail to be recognized if sent immediately after a PC message—FIXED
+
+## Helix Native/HX Edit 3.11
+
+- Full support for macOS 11 Big Sur
+- HX Stomp/HX Stomp XL only—Renamed snapshots would not appear in HX Edit's Command Center window—FIXED
+- HX Stomp only—On rare occasions after restoring from a backup, HX Stomp's Input block could appear as "None"—FIXED
+
+### How do I update to 3.11?
+
+Any chance you've already updated HX Edit to 3.01 (released on Feb 2, 2021) or 3.10 (released on April 15, 2021)? **If so, just connect Helix/HX to your computer via USB and launch HX Edit.** The software will walk you through the entire procedure, including backing everything up to your computer.
+
+### I updated but why don't I see [Model X]?
+
+HX Edit can't magically see new models added to your Helix/HX hardware; you must update HX Edit at well. Here's a link:
+
+- _**macOS:**_ https://line6.com/software/readeula.html?rid=10574
+- _**Windows:**_ https://line6.com/software/readeula.html?rid=10576
+
+### My Helix/HX is at version X.XX. Can I go straight to 3.11?
+
+Absolutely, but note that if you're starting with a version lower than **2.80**, the update will appear to happen twice. This is normal.
+
+### Anything else I should know?
+
+Yes. <span className="has-text-danger">We <strong className="has-text-danger">STRONGLY</strong> recommend performing a factory reset <strong className="has-text-danger">AFTER UPDATING</strong> your Helix/HX firmware to 3.11 and <strong className="has-text-danger">THEN RESTORING YOUR BACKUP.</strong></span> (Backing up is part of the update process). Here's how to perform a factory reset.
+
+<div className="notification is-danger is-light">
+  <strong>IMPORTANT:</strong> MAKE SURE YOU HAVE A BACKUP FIRST, AS A FACTORY
+  RESET WILL ERASE ALL YOUR WORK!
+</div>
+
+- Helix Floor/LT: While holding footswitches 9 & 10 (bottom row, 2 middle switches), turn on Helix Floor/LT
+- Helix Rack: While holding knobs 5 & 6 (2 furthest right knobs below the screen), turn on Helix Rack
+- HX Effects: While holding footswitches 6 & TAP (2 farthest right switches on the bottom row), turn on HX Effects
+- HX Stomp: While holding footswitches 2 & 3, turn on HX Stomp
+- HX Stomp XL: While holding footswitches C & D, turn on HX Stomp
