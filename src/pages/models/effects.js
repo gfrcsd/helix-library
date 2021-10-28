@@ -133,7 +133,14 @@ const EffectsPage = ({ data }) => {
                     alt={`${node.frontmatter.name}'s icon`}
                   />
                 </td>
-                <td>{node.frontmatter.name}</td>
+                <td>
+                  <Link
+                    className="has-text-dark is-underlined"
+                    to={node.frontmatter.path}
+                  >
+                    {node.frontmatter.name}
+                  </Link>
+                </td>
                 <td>
                   {node.frontmatter.brand}&#174;{" "}
                   <span className="has-text-weight-light">
