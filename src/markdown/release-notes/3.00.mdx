@@ -71,7 +71,11 @@ _Helix Floor, Helix Rack, Helix LT, Helix Native, HX Effects, HX Stomp_
   1. **Assign Poly Sustain to a stomp footswitch. By default, Poly Sustain appears bypassed.**
   2. **First play the note or chord you wish to sustain, and then press the footswitch (on) to sustain it indefinitely. Keep playing while the note or chord loops.**
 
-     _**TIP:** Some players may find it easier to change the footswitch mode to Momentary; that way, the note or chord sustains only while you hold the switch on, much like the sustain pedal on a piano._
+     <div className="notification is-success is-light">
+       <strong>TIP:</strong> Some players may find it easier to change the
+       footswitch mode to Momentary; that way, the note or chord sustains only
+       while you hold the switch on, much like the sustain pedal on a piano.
+     </div>
 
   3. **Press the switch again (off) and the sustained note or chord fades out.**
 
@@ -100,7 +104,12 @@ _Helix Floor, Helix Rack, Helix LT, Helix Native, HX Effects, HX Stomp_
   - **Reverse** — Determines the likelihood of repeats playing backwards
   - **Seq Drift** — Determines the likelihood of the entire sequence changing every time it loops around. When set to 0%, the same sequence loops forever.
 
-    _**TIP:** Assign this parameter to a footswitch set to toggle between a higher number and 0%. If you hear a random sequence you want to maintain, press the switch to set Seq Drift to 0%, and it'll repeat that way indefinitely_
+    <div className="notification is-success is-light mb-3">
+      <strong>TIP:</strong> Assign this parameter to a footswitch set to toggle
+      between a higher number and 0%. If you hear a random sequence you want to
+      maintain, press the switch to set Seq Drift to 0%, and it'll repeat that
+      way indefinitely
+    </div>
 
   - **Smoothing** — Higher values apply smoothing between slices and can give a synth-pad type quality, lower values maintain transients. Or set it just high enough to avoid pops and clicks
   - **Trails** — When on, delay repeats continue to ring out after the block is bypassed
@@ -137,7 +146,12 @@ _Helix Floor, Helix Rack, Helix LT, Helix Native, HX Effects, HX Stomp_
   - **ReturnCurv** — Determines the trajectory curve when returning to the original pitch. StartSlow values are concave (slower changes to start, speeding up toward the end); StartFast values are convex (the opposite)
   - **Tracking** — Determines how the poly pitch engine behaves. "X Fast" results in lower latency, ideal for faster lead lines. "X Stable" (the default) results in fewer artifacts when pitch shifting complex, sustained chords. "Fast" and "Stable" are somewhere in between.
 
-    _**TIP:** If you find yourself changing playing styles—say from fast lead lines to clean, open chords—you can assign this parameter to a footswitch (or snapshots) to optimize the balance between transparency and low latency_
+    <div className="notification is-success is-light mb-3">
+      <strong>TIP:</strong> If you find yourself changing playing styles—say
+      from fast lead lines to clean, open chords—you can assign this parameter
+      to a footswitch (or snapshots) to optimize the balance between
+      transparency and low latency
+    </div>
 
   - **Auto EQ** — Determines how much compensation EQ is applied to the shifted signal. If the effected signal sounds too harsh when pitched up (or dull when pitched down), adjust this setting to taste. When set to 0.0, no compensation is applied
   - **Mix** — Controls the wet/dry mix of the pitchshift
@@ -168,35 +182,40 @@ _Helix Floor, Helix Rack, Helix LT, Helix Native, HX Effects, HX Stomp_
   reversing, and repeating. It's all immense fun (even on vocals, drums, and percussion),
   but you'll want to familiarize yourself with its controls.
 
-  <div className="notification is-danger is-light">
+  <div className="notification is-danger is-light mt-3">
     <strong>IMPORTANT!</strong> The Shuffling Looper does not currently respond
     to Command Center > HX Commands or per-function MIDI commands
   </div>
 
-1. **Add Looper > Shuffling Looper to a preset and assign it to a footswitch.**
-2. **Turn Knob 1 (Slices) to set the number of slices your loop will be chopped into.** 8 slices is the default.
-3. **Press the switch to begin recording.** The LED lights red, indicating the loop is recording.
-4. **At the end of your loop, press the switch.** The LED lights green and the sliced loop sequence immediately plays.
-5. **During playback, adjust the following knobs (or assign them to controllers, like expression pedals or snapshots):**
+1.  **Add Looper > Shuffling Looper to a preset and assign it to a footswitch.**
+2.  **Turn Knob 1 (Slices) to set the number of slices your loop will be chopped into.** 8 slices is the default.
+3.  **Press the switch to begin recording.** The LED lights red, indicating the loop is recording.
+4.  **At the end of your loop, press the switch.** The LED lights green and the sliced loop sequence immediately plays.
+5.  **During playback, adjust the following knobs (or assign them to controllers, like expression pedals or snapshots):**
 
-   - **Slices** — Changes the number of slices your loop will be chopped into
-   - **SeqLength** — Determines the number of slices in the sequence. This can be changed even after recording a loop
-   - **Shuffle** — Determines the likelihood of slices shuffling/reordering. At 0%, the slices never shuffle; at 100%, they're constantly reshuffling
-   - **Octave** — Determines the likelihood of slices playing back an octave higher or lower
-   - **Reverse** — Determines the likelihood of slices playing backwards
-   - **Repeat** — Determines the likelihood of slices repeating
-   - **Smoothing** — Higher values apply smoothing between slices and can give a synth-pad type quality, lower values maintain transients. Or set it just high enough to avoid pops and clicks
-   - **Seq Drift** — Determines the likelihood of the entire slice sequence changing every time it loops around. When set to 0.0, the same sequence repeats forever; when set to 10.0, the sequence changes completely every time it loops
+    - **Slices** — Changes the number of slices your loop will be chopped into
+    - **SeqLength** — Determines the number of slices in the sequence. This can be changed even after recording a loop
+    - **Shuffle** — Determines the likelihood of slices shuffling/reordering. At 0%, the slices never shuffle; at 100%, they're constantly reshuffling
+    - **Octave** — Determines the likelihood of slices playing back an octave higher or lower
+    - **Reverse** — Determines the likelihood of slices playing backwards
+    - **Repeat** — Determines the likelihood of slices repeating
+    - **Smoothing** — Higher values apply smoothing between slices and can give a synth-pad type quality, lower values maintain transients. Or set it just high enough to avoid pops and clicks
+    - **Seq Drift** — Determines the likelihood of the entire slice sequence changing every time it loops around. When set to 0.0, the same sequence repeats forever; when set to 10.0, the sequence changes completely every time it loops
 
-     _**TIP:** Assign this parameter to a footswitch set to toggle between a higher number and 0%. If you hear a random sequence you want to maintain, press the switch to set Seq Drift to 0%, and it'll repeat that way indefinitely_
+      <div className="notification is-success is-light mb-3">
+        <strong>TIP:</strong> Assign this parameter to a footswitch set to
+        toggle between a higher number and 0%. If you hear a random sequence you
+        want to maintain, press the switch to set Seq Drift to 0%, and it'll
+        repeat that way indefinitely_
+      </div>
 
-   - **Playback** — Sets the looper's playback level
-   - **Low Cut** — Applies a low cut (or high pass) filter to the loop, letting you remove looper signal below a certain frequency
-   - **High Cut** — Applies a high cut (or low pass) filter to the loop, letting you remove looper signal above a certain frequency
+    - **Playback** — Sets the looper's playback level
+    - **Low Cut** — Applies a low cut (or high pass) filter to the loop, letting you remove looper signal below a certain frequency
+    - **High Cut** — Applies a high cut (or low pass) filter to the loop, letting you remove looper signal above a certain frequency
 
-6. Want to change it up? **While the loop is playing, press the switch to randomize its slice sequence.**
-7. **Quickly double-press the switch.** Playback/recording stops and the LED lights white, indicating a loop is in memory. **Press again to restart.**
-8. **While the loop is playing or stopped, press and hold the switch.** The recording is deleted and the LED lights dim white.
+6.  Want to change it up? **While the loop is playing, press the switch to randomize its slice sequence.**
+7.  **Quickly double-press the switch.** Playback/recording stops and the LED lights white, indicating a loop is in memory. **Press again to restart.**
+8.  **While the loop is playing or stopped, press and hold the switch.** The recording is deleted and the LED lights dim white.
 
 <div className="notification is-warning is-light">
   <strong>NOTE:</strong> All product names used in this document are trademarks
@@ -237,7 +256,10 @@ _Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp_
 
 If you've dialed in an amp or effects block exactly the way you like it, you can now save its settings as a favorite so it can be added very quickly, complete with bypass state and footswitch assignment. Favorites appear in a new "Favorites" category and can be renamed, reordered, and cleared.
 
-_**TIP:** If you don't want a favorite to be recalled with its footswitch assignment, add the block before you assign a switch._
+<div className="notification is-success is-light">
+  <strong>TIP:</strong> If you don't want a favorite to be recalled with its
+  footswitch assignment, add the block before you assign a switch.
+</div>
 
 1. **Choose one of your favorite amps or effects and tweak it exactly how you like it, with or without footswitch assignment.**
 2. **Press ACTION and then press Add to Favorites.** The Favorites list appears.
@@ -345,7 +367,12 @@ The following block types display a gain reduction meter in the inspector when s
   will completely overwrite your own, so make sure they're backed up first!
 </div>
 
-_**TIP:** With Helix Floor/Rack/LT/Native, if you want to keep both your presets and the latest factory presets, back up your custom presets as setlists and after the procedure below, drag your setlists onto unused setlist locations._
+<div className="notification is-success is-light">
+  <strong>TIP:</strong> With Helix Floor/Rack/LT/Native, if you want to keep
+  both your presets and the latest factory presets, back up your custom presets
+  as setlists and after the procedure below, drag your setlists onto unused
+  setlist locations.
+</div>
 
 1. **Make sure you've backed up your presets and turn off Helix/HX.**
 2. **Perform the following procedure:**
