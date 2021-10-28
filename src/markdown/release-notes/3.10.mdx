@@ -1,0 +1,286 @@
+---
+title: "3.10"
+path: "/release-notes/3.10"
+date: 2021-04-15 00:00:00
+target:
+  ["Helix", "Helix Rack", "Helix LT", "Helix Native", "HX Effects", "HX Stomp"]
+---
+
+Helix/HX 3.10 includes a new amp, new effects, new features, improvements, and bug fixes and is recommended for all users.
+
+### How do I update to 3.10?
+
+Did you happen to update HX Edit to 3.01 (released on Feb 2, 2021)? If so, **just connect Helix/HX to your computer via USB and launch HX Edit.** The software will walk you through the entire procedure, including updating HX Edit 3.01 to 3.10, and backing everything up to your computer.
+
+### What if I didn't update HX Edit to 3.01? What if I don't remember? What's going on? Where am I?
+
+That's fine, just make ABSOLUTELY SURE you install HX Edit 3.10 BEFORE you install 3.10 firmware and make ABSOLUTELY SURE you back everything up! Here's the link:
+
+- _**macOS:**_ https://line6.com/software/readeula.html?rid=10457
+- _**Windows:**_ https://line6.com/software/readeula.html?rid=10459
+
+### Anything else I should know?
+
+Yes. If you run into any odd behavior, before running to the internet to complain, perform a factory reset and restore your backup. (Backing up is part of the update process). This should solve any issues. Here's how to perform a factory reset.
+
+<div className="notification is-danger is-light">
+  <strong>IMPORTANT:</strong> MAKE SURE YOU HAVE A BACKUP FIRST, AS THIS WILL
+  ERASE ALL YOUR WORK!
+</div>
+
+- **Helix Floor/LT**: While holding footswitches 9 & 10 (bottom row, 2 middle switches), turn on Helix Floor/LT
+- **Helix Rack**: While holding knobs 5 & 6 (2 furthest right knobs below the screen), turn on Helix Rack
+- **HX Effects**: While holding footswitches 6 & TAP (2 furthest right switches on the bottom row), turn on HX Effects
+- **HX Stomp**: While holding footswitches 2 & 3, turn on HX Stomp
+- **HX Stomp XL**: While holding footswitches C & D, turn on HX Stomp
+
+# New Amp in 3.10
+
+_Helix Floor, Helix Rack, Helix LT, Helix Native, HX Stomp, HX Stomp XL_
+
+- <span className="has-text-amp has-text-weight-bold">Mandarin Rocker</span>,
+  based on* the Orange® Rockerverb 100 MKIII.
+
+<div className="notification is-warning is-light">
+  <strong>NOTE:</strong> We decided to slightly alter the model so that at lower
+  settings, the Drive knob's taper exhibits a smoother transition into
+  distortion
+</div>
+
+# New Effects in 3.10
+
+_Helix Floor, Helix Rack, Helix LT, Helix Native, HX Effects, HX Stomp, HX Stomp XL_
+
+- <span className="has-text-distortion">
+    Distortion >{" "}
+    <strong className="has-text-distortion">Ratatouille Dist</strong>
+  </span> (Mono, Stereo), based on\* the 1984 Pro Co RAT. Turns out our Vermin Dist
+  model was broken. Sorry! We were going to replace it completely but a bunch of
+  people had presets with the old version. On top of that, we found out our RAT's
+  LM308 chip had crapped out since we modeled it last so we decided to get it into
+  perfect working order and start from scratch
+
+  - **Gain** — Sets the amount of distortion
+  - **Filter** — Sets the amount of high cut (low pass) filter applied to the distortion; basically letting more treble through (lower values) or filtering it out (higher values)
+  - **Level** — Sets the overall level of the block
+
+- <span className="has-text-modulation">
+    Modulation > <strong className="has-text-modulation">Retro Reel</strong>
+  </span> (Mono), Line 6 Original effect that simulates playing a signal back from
+  an analog tape machine. This signal can be distorted, filtered to sound older or
+  more lo-fi, and modulated with wow and flutter.
+
+  <div className="notification is-success is-light mt-3">
+    <strong>TIP:</strong> Helix Native users should definitely try Retro Reel on
+    all sorts of tracks—vocals, drums, keyboards, strings, busses, you name it.
+  </div>
+
+  - **Wow Fluttr** — Determines how much warbly tape sound is heard
+  - **Saturation** — Adds analog tape saturation and at high enough settings, distortion. At lower settings, it's great for simply warming up a tone
+  - **Low Cut** — Determines the frequency of the Low Cut (High Pass) filter. At higher settings, can provide a lo-fi effect
+  - **High Cut** — Determines the frequency of the High Cut (Low Pass) filter. At lower settings, can provide the natural high-end roll-off of old tape
+  - **Tape Speed** — Changes both the rate of the modulation applied by the Wow Fluttr control and the filtering response of the analog tape emulation
+  - **Level** — Sets the overall level of the block
+  - **Texture** — Adjusts the amount of the NAB tape EQ in the simulated tape path. When Saturation is set to 0.0, the texture is invisible. When Saturation is turned up, the texture will affect the tightness (or looseness) of the distortion
+
+- <span className="has-text-delay">
+    Delay > <strong className="has-text-delay">Euclidean Delay</strong>
+  </span> (Mono, Stereo), Line 6 Original delay based on Euclidean algorithms. Creates
+  multitap patterns by setting the length of the pattern (Steps) and the number of
+  taps (Fill) in the pattern. The Euclidean algorithm spaces taps as evenly as possible
+  throughout the pattern, resulting in rhythms from traditional to highly complex.
+  Settle in because this one'll require diagrams and charts and whatnot.{" "}
+
+  <div className="notification is-success is-light mt-3">
+    <strong>TIP:</strong> Add two Euclidean Delays in parallel (with different
+    settings) for interesting polyrhythm patterns. When using a stereo playback
+    system, try panning Paths A and B in the Mixer to L100 and R100.
+  </div>
+
+  - **Step Time** — Sets the time between steps. The total delay time is Time x Steps, so [Time: 1/16 x Steps: 8] is a 1/2-note. Press the knob to toggle between ms/sec and note values
+  - **Feedback** — Controls the overall number of repeats heard for the entire sequence. If you want to hear all fills in the sequence only once, set to 0%
+  - **Steps** — Determines the number of steps in the sequence (1-16; see diagram below)
+  - **Fill** — The number of active taps, whose spacing is set by Euclidean algorithms (1-16, see diagram below). If Fill is higher than Steps, the extra taps are ignored
+  - **Rotate** — Rotates all fills forward by the same amount (0-15; see diagram below). Used If you like the sound of a repeat pattern but want the fills and gaps shifted forward
+  - **Mix** — Controls the wet/dry mix of the delay. When set to 0%, no delay is heard; when set to 100%, no dry signal is heard
+  - **Low Cut** — Applies a low cut (high pass) filter to the fills, letting you remove the effected signal below a certain frequency
+  - **High Cut** — Applies a high cut (low pass) filter to the fills, letting you remove the effected signal above a certain frequency
+  - **Level** — Controls the overall output level of the block
+  - **Trails** — When on, delay repeats continue to ring out after the block is bypassed
+
+I was told there'd be no math!
+
+Sorry. If you'd like to read more about Euclidean rhythms, check this out: https://splice.com/blog/euclidean-rhythms/ Or if you'd like to know more about Euclidean math, see ya' in a semester or two! https://en.wikipedia.org/wiki/Euclidean_algorithm
+
+- <span className="has-text-reverb">
+    Reverb > <strong className="has-text-reverb">Dynamic Hall</strong>
+  </span> (Mono, Stereo), Line 6 Original hall reverb
+
+  - **Decay** — Sets the decay of the reverb (0.1 sec ~ 45.0 sec, or Infinity)
+  - **Predelay** — Determines the amount of delay heard before the signal enters the hall. Can sometimes result in more definition between the dry and effected signals
+  - **Room Size** — Sets the size of the hall (10, 20, or 30 meters). NOTE: This parameter actually changes the algorithm so you'll hear a small bump when changing it. Therefore, we don't recommend assigning Room Size to snapshots or other controllers
+  - **Diffusion** — Sets the amount of smearing between discrete echoes, sometimes resulting in a softer effected signal
+  - **Damping** — Determines the frequency above which the reverb will be absorbed. For example, if your hall is full of people wearing fake ocelot jumpsuits, more high frequencies would be absorbed than if the room were empty
+  - **Mix** — Controls the wet/dry mix of the reverb. When set to 0%, no reverb is heard; when set to 100%, no dry signal is heard
+  - **Motion** — Sets the amount of randomization, which can be helpful to minimize any metallic artifacts common in extremely static reverbs. At higher values, can impart a bit of modulation to the effected signal
+  - **Low Freq** — Sets the frequency below which the Low Gain parameter is applied
+  - **Low Gain** — Sets the reverb time for frequencies below the Low Freq value. Values below 0.0dB mean the bass frequencies decay faster than the treble frequencies; values above 0.0dB mean the bass frequencies decay slower than the treble frequencies
+  - **Low Cut** — Applies a low cut (or high pass) filter to the reverb, letting you remove the effected signal below a certain frequency
+  - **High Cut** — Applies a high cut (or low pass) filter to the reverb, letting you remove the effected signal above a certain frequency
+  - **Level** — Controls the overall output level of the block
+  - **Trails** — When on, reverb decay continues to ring out after the block is bypassed
+
+- <span className="has-text-reverb">
+    Reverb > <strong className="has-text-reverb">Hot Springs</strong>
+  </span> (Mono, Stereo), Line 6 Original spring reverb
+
+  - **Dwell** — Adjusts the strength of the signal sent into the spring tank. Higher values result in a longer decay
+  - **Spring Count** — Sets how many springs are in the tank (1, 2, or 3, and numerous values in between)
+  - **Drip** — Adjusts the intensity of the spring reverb, or how much "ploink" you might hear
+  - **Low Cut** — Applies a low cut (or high pass) filter to the reverb, letting you remove the effected signal below a certain frequency
+  - **High Cut** — Applies a high cut (or low pass) filter to the reverb, letting you remove the effected signal above a certain frequency
+  - **Mix** — Controls the wet/dry mix of the reverb. When set to 0%, no reverb is heard; when set to 100%, no dry signal is heard
+  - **Level** — Controls the overall output level of the block
+  - **Trails** — When on, reverb decay continues to ring out after the block is bypassed
+
+  <div className="notification is-warning is-light">
+    <strong>NOTE:</strong> All product names used in this document are
+    trademarks of their respective owners and neither Yamaha Guitar Group nor
+    Line 6 are associated or affiliated with them. These trademarks appear
+    solely to identify products whose tones and sounds were studied by Line 6
+    during sound model development.
+  </div>
+
+# New Features in 3.10
+
+## Increased Oversampling Throughout
+
+_Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp, HX Stomp XL_
+
+Oversampling has been increased across the board, resulting in higher fidelity, fewer aliasing artifacts, and smoother decay trails, especially when running multiple distortion stages or with higher gain tones. Many people might not notice a difference, but those highly sensitive to aliasing will appreciate 3.0's smoother response. Amp and effects models have been optimized to accommodate these improvements without increasing DSP usage.
+
+## Customizable Stomp Switches
+
+_HX Stomp, HX Stomp XL [Feature already in Helix Floor, Helix Rack/Control, Helix LT, and HX Effects]_
+
+As long as something is assigned to a stomp switch (bypass one or more blocks, toggle parameter Min/Max, or Command Center command), switches in Stomp Footswitch Mode can now have custom labels and colors. This is especially helpful when multiple blocks, controls, or commands are assigned to the same switch; it doesn't have to read "MULTIPLE (X)" anymore.
+
+1. **Touch a stomp mode footswitch to select it and from either the Bypass Assign or Command Center menu, press PAGE> and then Customize.**
+2. **Use the Upper Knob and Knob 2 (Character) to name the stomp.**
+3. **Press PAGE> and turn Knob 3 (Switch LED) to choose a custom color.** When set to "Auto" (the default), the switch reflects its assignment (Delays are green, Filters are purple, Commands are white, etc.)
+4. **When finished, press < PAGE and Knob 3 (OK).**
+
+## Customizable Snapshot Switches
+
+_HX Stomp, HX Stomp XL [Feature already in Helix Floor, Helix Rack/Control, Helix LT, and HX Effects]_
+
+Switches in Snapshot Footswitch Mode can now have custom labels and colors.
+
+1. **From Play View, press the Upper Knob to open the Preset List.**
+2. **Turn Knob 2 (Snapshot) to select the snapshot you want to rename and press ACTION.**
+3. **Press Rename Snapshot.**
+4. **Use the Upper Knob and Knob 2 (Character) to name the stomp.**
+5. **Press PAGE> and turn Knob 3 (Switch LED) to choose a custom color.** When set to "Auto" (the default), the switch is white
+6. **When finished, press < PAGE and Knob 3 (OK).**
+
+## Tuner Trails
+
+_Helix Floor, Helix Rack/Control, Helix LT, HX Effects, HX Stomp, HX Stomp XL_
+
+The Tuner screen has a new "Trails" parameter. When set to "On," delay repeats and reverbs' decay continue to ring out and even the Looper keeps running when the tuner is engaged. No more awkward "everyone's staring at me because my B string went wonky."
+
+## Expanded 3.0 Models
+
+_Helix Floor, Helix Rack/Control, Helix LT, Helix Native, HX Effects, HX Stomp, HX Stomp XL_
+
+3.0 added a boatload of new creative effects and after collecting feedback from users, we've added new parameters to some of them to help expand their flexibility and fun factor.
+
+<div className="notification is-danger is-light">
+  <strong>IMPORTANT!</strong> These new parameters won't show up in your
+  existing presets; they'll only appear if you remove the block (or change the
+  model and reload it). Also, if you've saved any of the following models'
+  defaults, they will need to be re-tweaked and saved again.
+</div>
+
+- <span className="has-text-delay">
+    Delay > <strong className="has-text-delay">Poly Sustain</strong>
+  </span>
+
+  - **Auto EQ** — Determines how much compensation EQ is applied to the sustained signal. If the sustained signal sounds too harsh when pitched up (or dull when pitched down), adjust this setting to taste. The higher the value, the more EQ is applied at the shift end points; when set to 0.0, no compensation EQ is applied
+  - **Operation** — Determines what happens to your signal when Poly Sustain is turned on (remember, it's bypassed by default)
+    - "Mute All" — When Poly Sustain is on, <strong className="has-text-danger">THE ENTIRE PATH IS MUTED</strong>
+    - "Dry Kill" — When Poly Sustain is on, only the sustained signal is heard. TIP: With Poly Sustain on a parallel path, assign a second stomp switch to toggle between Mute All and Dry Kill. This lets you leave the block enabled and bring the sustained signal in and out by switching between the two values
+    - "Normal" (default) — When Poly Sustain is on, both the dry and sustained signals are heard. This is how Poly Sustain behaved in Firmware 3.0; that is, you're able to jam on top of the sustained drone
+
+- <span className="has-text-delay">
+    Delay > <strong className="has-text-delay">Glitch Delay</strong>
+  </span>
+
+  - **Pitch** — Determines the likelihood of repeats changing pitch, based on the new Interval 1 and Interval 2 settings (In 3.0, the repeats were fixed to an octave below and above). Was called "Octaves" in 3.0
+  - **Interval 1** — Sets the pitch of some repeats, the likelihood of which is determined by the Pitch parameter (from an octave down to an octave up)
+  - **Interval 2** — Sets the pitch of other repeats, the likelihood of which is determined by the Pitch parameter (from an octave down to an octave up)
+  - **Low Cut** — Applies a low cut (or high pass) filter to the slices, letting you remove the effected signal below a certain frequency
+  - **High Cut** — Applies a high cut (or low pass) filter to the slices, letting you remove the effected signal above a certain frequency
+  - **Level** — Controls the overall output level of the block
+
+- <span className="has-text-looper">
+    Looper > <strong className="has-text-looper">Shuffling Looper</strong>
+  </span>
+
+  - **Pitch** — Determines the likelihood of your slices changing pitch, based on the new Interval 1 and Interval 2 settings (In 3.0, the repeats were fixed to an octave below and above). Was called "Octaves" in 3.0
+  - **Interval 1** — Sets the pitch of some slices, the likelihood of which is determined by the Pitch parameter (from an octave down to an octave up)
+  - **Interval 2** — Sets the pitch of other slices, the likelihood of which is determined by the Pitch parameter (from an octave down to an octave up)
+
+- <span className="has-text-pitch-synth">
+    Pitch/Synth > <strong className="has-text-pitch-synth">12 String</strong>
+  </span>
+
+  - **PluckType** — Optimizes the 12 String emulation for specific types of playing styles. We've also improved the onset detection and 12 String now uses less DSP
+
+## Instant Command Wait Time
+
+_Helix Floor, Helix Rack/Control, Helix LT, HX Effects, HX Stomp, HX Stomp XL_
+
+On the Command Center page, Instant commands (lightning bolt icon) have a new "Wait Time" parameter, letting you delay certain events by up to 1000ms. This is to help Helix/HX control older MIDI gear that may behave incorrectly when receiving multiple commands very close together. Unless you specifically need to delay a message, leave this set to "0 ms."
+
+## New and Improved MIDI Implementation
+
+_Helix Floor, Helix Rack/Control, Helix LT, HX Effects, HX Stomp, HX Stomp XL_
+
+Switches in Snapshot Footswitch Mode can now have custom labels and colors.
+
+- MIDI Snapshot changes on CC69 that are received during preset loads will now be buffered and executed once the preset load is finished. This means that you can send a MIDI Snapshot change immediately after a PC message to effectively load a preset with a different Snapshot than it was saved with.
+- Bank/Preset/Snapshot Up and Down messages how properly work via incoming FS1/FS7 emulation MIDI messages
+- FS1/2/3 emulation MIDI messages can now be momentary for HX Stomp (values 64-127=footswitch press; values 0-63=footswitch release)
+- Also, footswitch emulation MIDI messages now work while in preset or snapshot footswitch mode
+- New MIDI message (Helix Floor/Rack/LT/HX Stomp XL): CC71 engages the MODE switch
+- New MIDI message: CC 72, value 64-127 increments preset, value 0-63 decrements preset
+- New MIDI message (Helix LT, HX Stomp, HX Stomp XL): CC 73 toggles between Play and Edit views
+
+# Other Changes and Improvements in 3.10
+
+- HX Edit now adds support for macOS 11 Big Sur
+- Helix Floor and Rack/Control only: The scribble strip above FS6 (MODE) now displays which mode is currently active—Preset or Stomp. You can still hold FS6 to engage hands-free Pedal Edit mode
+- On the Controller Assign page, turning Knob 2 (Controller) no longer resets the Min Value and Max Value
+
+# Bug Fixes in 3.10
+
+- Pressing the Bank Down switch would skip banks in certain situations–FIXED
+- When Tuner View is active while Spillover is engaged, changing presets can sometimes cause audio output to stop—FIXED
+- The tuner screen and gain reduction meters could sometimes appear laggy—FIXED
+- Many other minor fixes and improvements
+
+# Known Issues in 3.10
+
+- Helix Native's performance can be laggy in new M1-based Apple computers
+- As Delay > Poly Sustain, Delay > Glitch Delay, Pitch/Synth > 12 String, and Looper > Shuffling Looper models have been updated, any existing user defaults for these models will need to be re-tweaked and saved again
+- Variax Model min and max sliders do not automatically update when a Variax is connected
+- After importing a .WAV file into the current 'Empty' slot of an Impulse Response block, all audio output can stop
+- Helix Floor/Rack/LT and HX Stomp only—Sending more than one MIDI program change messages one after another can sometimes cause HX Edit to lose connection
+- Helix Floor/Rack/LT only—Clearing a Split block on Path 2 does not automatically remove its bypass assignment
+- Helix LT only—FS1 and FS7 do not transmit Command Center messages
+- HX Stomp and XL only—Quickly scrolling across the signal flow view immediately after booting can sometimes cause HX Stomp/XL to freeze
+- HX Stomp and XL only—In rare cases, after restoring a 3.01 backup, parallel presets' blocks may be shifted one position to the right
+- Impulse responses with names consisting of more than 54 characters cannot be copied or exported
+
+**Compatible OS:** _Mac OS X, Windows 7, Windows 8, Windows 10, Mac OS El Capitan, macOS Sierra, macOS High Sierra, macOS Mojave, macOS Catalina, macOS Big Sur_
