@@ -6,7 +6,7 @@ model: "Original"
 url: ""
 image: "../../../images/line6-logo.jpg"
 icon: "../../../images/icon-models/effects/placeholder.png"
-type: ["Pitch/Synth"]
+type: ["Dynamics", "Distortion", "Delay", "EQ", "Filter", "Modulation", "Pitch/Synth", "Reverb", "Volume/Pan", "Wah"]
 channel: ["Mono", "Stereo"]
 update: ["2.20"]
 ---
