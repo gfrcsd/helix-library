@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 export default function Latest() {
   const data = useStaticQuery(graphql`
     query Latest {
-      allMarkdownRemark(filter: { frontmatter: { update: { eq: "2.90" } } }) {
+      allMarkdownRemark(filter: { frontmatter: { update: { eq: "3.10" } } }) {
         edges {
           node {
             frontmatter {
@@ -45,7 +45,7 @@ export default function Latest() {
             Latest Models
           </h3>
           <h4 className="subtitle is-size-5-mobile has-text-weight-light">
-            Update 2.90
+            Update 3.10
           </h4>
         </div>
       </div>
