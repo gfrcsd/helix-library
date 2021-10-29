@@ -2,7 +2,7 @@
 name: "Das Benzin Lead"
 path: "/models/amps/das-benzin-lead"
 brand: "Diezel"
-model: "VH4"
+model: "VH4 (lead channel)"
 url: "https://www.diezelamplification.com/vh4/"
 manual: "https://www.diezelamplification.com/manuals/en/VH4&VH4S_Manual_26102016.pdf"
 image: "../../../images/amps/das-benzin.png"
