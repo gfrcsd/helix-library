@@ -14,7 +14,7 @@ export default function Latest() {
                 childImageSharp {
                   gatsbyImageData(
                     layout: CONSTRAINED
-                    width: 100
+                    width: 128
                     placeholder: TRACED_SVG
                   )
                 }
@@ -41,23 +41,27 @@ export default function Latest() {
     <div>
       <div className="columns is-centered">
         <div className="column is-10">
-          <h3 className="title is-size-4-mobile has-text-weight-normal">
+          <h3 className="title is-size-4-mobile has-text-weight-normal mb-3">
             Latest Models
           </h3>
-          <h4 className="subtitle is-size-5-mobile has-text-weight-light">
-            Update 3.10
-          </h4>
+          <div className="tags has-addons">
+            <span className="tag is-dark">Update</span>
+            <span className="tag is-success">3.10</span>
+          </div>
         </div>
       </div>
       <div className="columns is-centered">
         <div className="column is-10">
           <div className="columns is-multiline">
             {latestModel.map(({ node }) => (
-              <div key={node.frontmatter.name} className="column is-3">
+              <div
+                key={node.frontmatter.name}
+                className="column is-4-tablet is-3-desktop"
+              >
                 <div className="card">
                   <div className="card-content">
-                    <div className="columns is-mobile">
-                      <div className="column is-3">
+                    <div className="columns is-mobile is-multiline">
+                      <div className="column is-one-third-mobile is-12-tablet is-3-desktop">
                         <GatsbyImage
                           image={
                             node.frontmatter.icon.childImageSharp
@@ -66,7 +70,7 @@ export default function Latest() {
                           alt={`${node.frontmatter.name}'s icon`}
                         />
                       </div>
-                      <div className="column">
+                      <div className="column is-two-thirds-mobile">
                         <h5 className="title has-text-weight-normal is-5">
                           {node.frontmatter.name}
                         </h5>
@@ -80,7 +84,7 @@ export default function Latest() {
                       className="button is-dark is-fullwidth is-outlined"
                       to={node.frontmatter.path}
                     >
-                      More info
+                      Details
                     </Link>
                   </div>
                 </div>
