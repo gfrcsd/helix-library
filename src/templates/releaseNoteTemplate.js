@@ -45,12 +45,16 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
                 <ul className="menu-list">
                   {tableOfContents.items.map((item) => (
                     <li>
-                      <a href={item.url}>{item.title}</a>
+                      <a key={item.title} href={item.url}>
+                        {item.title}
+                      </a>
                       {item.items && (
                         <ul>
                           {item.items.map((item) => (
                             <li>
-                              <a href={item.url}>{item.title}</a>
+                              <a key={item.title} href={item.url}>
+                                {item.title}
+                              </a>
                             </li>
                           ))}
                         </ul>
