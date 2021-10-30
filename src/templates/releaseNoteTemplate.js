@@ -19,13 +19,14 @@ export const query = graphql`
       }
       body
       excerpt(truncate: true, pruneLength: 158)
+      tableOfContents
     }
   }
 `
 
 const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
   const { title, date, target, path } = post.frontmatter
-  const { body, excerpt } = post
+  const { body, excerpt, tableOfContents } = post
   return (
     <Layout>
       <SEO title={title + " Release Note"} description={excerpt} />
@@ -37,7 +38,30 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
       />
       <Section>
         <div className="columns is-centered">
-          <div className="column is-10 content">
+          <div className="column is-3-tablet is-2-desktop is-hidden-mobile">
+            <aside className="menu">
+              <ul className="menu-list">
+                <p className="menu-label">Table of contents</p>
+                <ul className="menu-list">
+                  {tableOfContents.items.map((item) => (
+                    <li>
+                      <a href={item.url}>{item.title}</a>
+                      {item.items && (
+                        <ul>
+                          {item.items.map((item) => (
+                            <li>
+                              <a href={item.url}>{item.title}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </ul>
+            </aside>
+          </div>
+          <div className="column is-9-tablet is-8-desktop content">
             <div className="tags has-addons">
               <span className="tag is-dark">Update for:</span>
               {target.map((item, index) => {

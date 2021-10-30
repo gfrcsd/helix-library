@@ -6,22 +6,44 @@ target: ["Helix", "Helix Rack", "Helix LT", "HX Effects", "HX Stomp"]
 ---
 
 <div className="message is-danger is-light">
-    <div className="message-body">
-        <p className="has-text-weight-bold has-text-danger is-size-4">IMPORTANT!</p>
-        <p>2.80 was the first firmware to utilize the new Helix Core engine, which unifies all Helix and HX products into the same ecosystem. Because there are tons of changes under the hood, presets created in 2.80 or 2.81 <strong>will not be compatible with earlier firmware</strong>, which means if you want to return to 2.71 for whatever reason, and you didn't back up before updating to 2.80 or 2.81, <strong>your presets will NO LONGER WORK</strong>. Therefore, <strong>we STRONGLY RECOMMEND everyone back up everything BEFORE updating.</strong></p>
-        <p><strong>Transitioning to Helix Core also forces us to reset your Global Settings, but restoring your backup (STEP 5 below) restores them.</strong> No way around that. <strong>Just back everything up, okay?</strong> Instructions for backing up begin... now.</p>
-    </div>
+  <div className="message-body">
+    <p className="has-text-weight-bold has-text-danger is-size-4">IMPORTANT!</p>
+    <p>
+      2.80 was the first firmware to utilize the new Helix Core engine, which
+      unifies all Helix and HX products into the same ecosystem. Because there
+      are tons of changes under the hood, presets created in 2.80 or 2.81{" "}
+      <strong>will not be compatible with earlier firmware</strong>, which means
+      if you want to return to 2.71 for whatever reason, and you didn't back up
+      before updating to 2.80 or 2.81,{" "}
+      <strong>your presets will NO LONGER WORK</strong>. Therefore,{" "}
+      <strong>
+        we STRONGLY RECOMMEND everyone back up everything BEFORE updating.
+      </strong>
+    </p>
+    <p>
+      <strong>
+        Transitioning to Helix Core also forces us to reset your Global
+        Settings, but restoring your backup (STEP 5 below) restores them.
+      </strong>{" "}
+      No way around that. <strong>Just back everything up, okay?</strong>{" "}
+      Instructions for backing up begin... now.
+    </p>
+  </div>
 </div>
 
 # Updating to 2.81 from 2.71 or Earlier (READ ME!)
 
 <div className="message is-danger">
-    <div className="message-header">
-        <p>IMPORTANT!</p>
-    </div>
-    <div className="message-body">
-        <p>The following instructions are only for those who have not yet updated their Helix/HX Hardware to 2.80. If you're already at 2.80, click here for instructions on how to update to 2.81 from 2.80.</p>
-    </div>
+  <div className="message-header">
+    <p>IMPORTANT!</p>
+  </div>
+  <div className="message-body">
+    <p>
+      The following instructions are only for those who have not yet updated
+      their Helix/HX Hardware to 2.80. If you're already at 2.80, click here for
+      instructions on how to update to 2.81 from 2.80.
+    </p>
+  </div>
 </div>
 
 ## STEP 1a - Backing Up Helix/HX Hardware
@@ -32,12 +54,21 @@ target: ["Helix", "Helix Rack", "Helix LT", "HX Effects", "HX Stomp"]
 4. **Click "Create Backup."**
 
 <div className="message is-success">
-    <div className="message-header">
-        <p>TIP</p>
-    </div>
-    <div className="message-body">
-        <p>If you want to load the 2.8X factory presets and hotkey templates, it's better to manually back up individual setlists, so you can later import them into empty setlists. To do this, <strong>from the preset library along the left side, select the setlist you want to back up and click "Export." Choose a destination folder and click "Save." Repeat for any other setlists you want to back up.</strong></p>
-    </div>
+  <div className="message-header">
+    <p>TIP</p>
+  </div>
+  <div className="message-body">
+    <p>
+      If you want to load the 2.8X factory presets and hotkey templates, it's
+      better to manually back up individual setlists, so you can later import
+      them into empty setlists. To do this,{" "}
+      <strong>
+        from the preset library along the left side, select the setlist you want
+        to back up and click "Export." Choose a destination folder and click
+        "Save." Repeat for any other setlists you want to back up.
+      </strong>
+    </p>
+  </div>
 </div>
 
 ## STEP 1b - Backing Up Helix Native
@@ -49,33 +80,54 @@ If you don't currently own Helix Native, skip this step.
 3. **Choose the destination folder and click "Save."**
 
 <div className="message is-success">
-    <div className="message-header">
-        <p>TIP</p>
-    </div>
-    <div className="message-body">
-        <p>If you want to load the 2.8X factory presets, it's better to manually back up individual setlists, so you can later import them into empty setlists. To do this, <strong>from the preset library along the left side, select the setlist you want to back up and click the small yellow "Export." Choose a destination folder and click "Save." Repeat for any other setlists you want to back up.</strong></p>
-    </div>
+  <div className="message-header">
+    <p>TIP</p>
+  </div>
+  <div className="message-body">
+    <p>
+      If you want to load the 2.8X factory presets, it's better to manually back
+      up individual setlists, so you can later import them into empty setlists.
+      To do this,{" "}
+      <strong>
+        from the preset library along the left side, select the setlist you want
+        to back up and click the small yellow "Export." Choose a destination
+        folder and click "Save." Repeat for any other setlists you want to back
+        up.
+      </strong>
+    </p>
+  </div>
 </div>
 
-## STEP 2 - Updating HX Edit to 2.81 <span className="has-text-danger">(YOU MUST DO THIS BEFORE UPDATING YOUR HELIX/HX FIRMWARE!)</span>
+## STEP 2 - Updating HX Edit to 2.81
+
+<span className="title is-size-5 has-text-danger">
+  (YOU MUST DO THIS BEFORE UPDATING YOUR HELIX/HX FIRMWARE!)
+</span>
 
 1. **Turn off or disconnect any connected Helix or HX hardware.**
 2. **Log onto line6.com. Once logged in, download the latest version of HX Edit, available here:**
-    - [HX Edit 2.81 for Max OS X](https://line6.com/software/readeula.html?rid=9240)
-    - [HX Edit 2.81 for Windows 7, 8, or 10](https://line6.com/software/readeula.html?rid=9241)
+   - [HX Edit 2.81 for Max OS X](https://line6.com/software/readeula.html?rid=9240)
+   - [HX Edit 2.81 for Windows 7, 8, or 10](https://line6.com/software/readeula.html?rid=9241)
 3. **Read the Software License Agreement (hahaahaaa!) and click "Accept and Download."**
 4. **Once the software has downloaded, double-click the installer and follow the prompts.**
 
 <div className="message is-warning">
-    <div className="message-header">
-        <p>NOTE</p>
-    </div>
-    <div className="message-body">
-        <p>Installing HX Edit 2.81 automatically installs the latest version of Line 6 Updater, which is required to update the firmware.</p>
-    </div>
+  <div className="message-header">
+    <p>NOTE</p>
+  </div>
+  <div className="message-body">
+    <p>
+      Installing HX Edit 2.81 automatically installs the latest version of Line
+      6 Updater, which is required to update the firmware.
+    </p>
+  </div>
 </div>
 
-## STEP 3a - Updating Helix Floor/Rack/LT to 2.81 <span className="has-text-danger">(DO NOT DO THIS UNTIL AFTER YOU'VE UPDATED HX EDIT TO 2.81!)</span>
+## STEP 3a - Updating Helix Floor/Rack/LT to 2.81
+
+<span className="title is-size-5 has-text-danger">
+  (DO NOT DO THIS UNTIL AFTER YOU'VE UPDATED HX EDIT TO 2.81!)
+</span>
 
 If you have HX Effects or HX Stomp, skip to STEP 3b below instead.
 
@@ -85,30 +137,47 @@ If you have HX Effects or HX Stomp, skip to STEP 3b below instead.
 4. **Enter your Line 6 Username and Password and click "Sign In."** A big green box appears with a picture of your Helix product. **Click the big green box and then click "Update" next to Version: 2.81.**
 5. **Carefully read the instructions (HEY! DID YOU BACK UP FIRST?), click "Continue," and then "Accept."** A warning dialog appears, telling you that Helix will be reset twice.
 6. **Think "Hmm, maybe I should've backed up first? Nah, I insist on subverting the dominant paradigm," and click "OK."** Helix begins updating. As wholly expected, because we warned you... because you always read the instructions... halfway through the update process, Line 6 Updater displays a second dialog and Helix's LCD reads "Boot Failure. Entered Update Mode!" **THIS IS NORMAL. DO NOT FREAK OUT, TAKE A PHOTO, AND THEN POST IT ONLINE BECAUSE EVERYONE WILL MAKE FUN OF YOU FOR NOT READING THESE INSTRUCTIONS.**
-    - ![Screenshot](https://line6.com/media/ips/uploads/monthly_2019_07/MoveAlong.jpg.178f5fc3b9e6bdeec47d4a5935e47444.jpg)
+   - ![Screenshot](https://line6.com/media/ips/uploads/monthly_2019_07/MoveAlong.jpg.178f5fc3b9e6bdeec47d4a5935e47444.jpg)
 7. **Click "OK" again.** When finished, Helix restarts automatically and begins rebuilding your presets. Let it finish.
-    - <p className="has-text-danger"><strong className="has-text-danger">IMPORTANT!</strong> This may take some time. If Helix appears to not respond for many minutes, see the message directly below step 8.</p>
+   - <p className="has-text-danger">
+       <strong className="has-text-danger">IMPORTANT!</strong> This may take
+       some time. If Helix appears to not respond for many minutes, see the
+       message directly below step 8.
+     </p>
 8. If you have Helix Rack/Control, **turn on Helix Control**. Helix Rack reads "Helix Control must be updated to work properly. Update now?" **Press Knob 6 (OK) to update Helix Control**.
 
 <div className="message is-danger">
-    <div className="message-header">
-        <p>IMPORTANT!</p>
-    </div>
-    <div className="message-body">
-        <p>If you run into an issue during the update process such as the update procedure not completing or if you receive an error message, we strongly recommend trying a different USB port and/or USB cable. USB 2.0 or greater ports and cables are highly recommended. For Windows computers, USB ports on the back of desktop PCs have proven to be the most reliable.</p>
-    </div>
+  <div className="message-header">
+    <p>IMPORTANT!</p>
+  </div>
+  <div className="message-body">
+    <p>
+      If you run into an issue during the update process such as the update
+      procedure not completing or if you receive an error message, we strongly
+      recommend trying a different USB port and/or USB cable. USB 2.0 or greater
+      ports and cables are highly recommended. For Windows computers, USB ports
+      on the back of desktop PCs have proven to be the most reliable.
+    </p>
+  </div>
 </div>
 
 <div className="message is-warning">
-    <div className="message-header">
-        <p>NOTE</p>
-    </div>
-    <div className="message-body">
-        <p>Updating the firmware does not automatically load any new presets. See "STEP 4—Loading the 2.8X Factory Presets/Templates" below.</p>
-    </div>
+  <div className="message-header">
+    <p>NOTE</p>
+  </div>
+  <div className="message-body">
+    <p>
+      Updating the firmware does not automatically load any new presets. See
+      "STEP 4—Loading the 2.8X Factory Presets/Templates" below.
+    </p>
+  </div>
 </div>
 
-## STEP 3b - Updating HX Effects/HX Stomp to 2.81 <span className="has-text-danger">(DO NOT DO THIS UNTIL AFTER YOU'VE UPDATED HX EDIT TO 2.81!)</span>
+## STEP 3b - Updating HX Effects/HX Stomp to 2.81
+
+<span className="title is-size-5 has-text-danger">
+  (DO NOT DO THIS UNTIL AFTER YOU'VE UPDATED HX EDIT TO 2.81!)
+</span>
 
 If you have Helix Floor, Helix Rack/Control, or Helix LT, follow STEP 3a above instead.
 
@@ -119,12 +188,15 @@ If you have Helix Floor, Helix Rack/Control, or Helix LT, follow STEP 3a above i
 5. **Carefully read the instructions (HEY! DID YOU BACK UP FIRST?), click "Continue," and then "Accept."** When finished, your HX device restarts automatically.
 
 <div className="message is-warning">
-    <div className="message-header">
-        <p>NOTE</p>
-    </div>
-    <div className="message-body">
-        <p>Updating the firmware does not automatically load any new presets. See "STEP 4—Loading the 2.8X Factory Presets/Templates" below.</p>
-    </div>
+  <div className="message-header">
+    <p>NOTE</p>
+  </div>
+  <div className="message-body">
+    <p>
+      Updating the firmware does not automatically load any new presets. See
+      "STEP 4—Loading the 2.8X Factory Presets/Templates" below.
+    </p>
+  </div>
 </div>
 
 ## STEP 4 - OPTIONAL: Loading the 2.8X Factory Presets/Templates
@@ -133,11 +205,11 @@ IMPORTANT! The following procedure will COMPLETELY ERASE ALL OF YOUR CUSTOM PRES
 
 1. **Turn off your Helix/HX processor.**
 2. **Depending on your type of Helix/HX product, follow the procedure below:**
-    - Helix Floor/LT—**While holding footswitches 7 and 8 (two left-most switches on the bottom row), turn on Helix/Helix LT. Wait for "Will restore stock Presets and Setlists..." and let go**
-    - Helix Rack/Control—**While holding knobs 3 and 4 below the screen, turn on Helix Rack. Wait for "Will reset Presets..." and let go**
-    - HX Effects—**While holding footswitches 5 and 6 (middle two switches on the bottom row), turn on HX Effects. Wait for "Will reset Presets..." and let go**
-    - HX Stomp—**While holding footswitches 1 and 2, turn on HX Stomp. Wait for "Will reset Presets..." to appear on the screen and let go**
-    - Helix Native—**Click the gear icon in the lower left corner to open the Preferences window. From the Presets/IRs tab, click "Restore Factory Setlists"**
+   - Helix Floor/LT—**While holding footswitches 7 and 8 (two left-most switches on the bottom row), turn on Helix/Helix LT. Wait for "Will restore stock Presets and Setlists..." and let go**
+   - Helix Rack/Control—**While holding knobs 3 and 4 below the screen, turn on Helix Rack. Wait for "Will reset Presets..." and let go**
+   - HX Effects—**While holding footswitches 5 and 6 (middle two switches on the bottom row), turn on HX Effects. Wait for "Will reset Presets..." and let go**
+   - HX Stomp—**While holding footswitches 1 and 2, turn on HX Stomp. Wait for "Will reset Presets..." to appear on the screen and let go**
+   - Helix Native—**Click the gear icon in the lower left corner to open the Preferences window. From the Presets/IRs tab, click "Restore Factory Setlists"**
 
 ## STEP 5a - OPTIONAL: Restoring Helix/HX Presets, IRs, and Global Settings from a Backup
 
@@ -147,20 +219,31 @@ IMPORTANT! The following procedure will COMPLETELY ERASE ALL OF YOUR CUSTOM PRES
 4. **Browse to the backup file and click "Open**
 
 <div className="message is-success">
-    <div className="message-header">
-        <p>TIP!</p>
-    </div>
-    <div className="message-body">
-        <p>If you instead exported individual setlists and loaded the 2.8X factory presets/templates (and want to keep them), from the preset list along the left side, select an empty User setlist and then drag the saved setlist file (from the tip in STEP 1) into the preset list</p>
-    </div>
+  <div className="message-header">
+    <p>TIP!</p>
+  </div>
+  <div className="message-body">
+    <p>
+      If you instead exported individual setlists and loaded the 2.8X factory
+      presets/templates (and want to keep them), from the preset list along the
+      left side, select an empty User setlist and then drag the saved setlist
+      file (from the tip in STEP 1) into the preset list
+    </p>
+  </div>
 </div>
 <div className="message is-danger">
-    <div className="message-header">
-        <p>IMPORTANT!</p>
-    </div>
-    <div className="message-body">
-        <p>You may notice that after restoring from a backup (or loading in previously stored setlists or individual presets) that preset switching times are slower than normal. Restart Helix/HX, and you'll see the display read "Rebuilding preset [XXX]". Wait for it to rebuild your presets, and they will load faster.</p>
-    </div>
+  <div className="message-header">
+    <p>IMPORTANT!</p>
+  </div>
+  <div className="message-body">
+    <p>
+      You may notice that after restoring from a backup (or loading in
+      previously stored setlists or individual presets) that preset switching
+      times are slower than normal. Restart Helix/HX, and you'll see the display
+      read "Rebuilding preset [XXX]". Wait for it to rebuild your presets, and
+      they will load faster.
+    </p>
+  </div>
 </div>
 
 ## STEP 5b - OPTIONAL: Restoring Helix Native from a Backup
@@ -176,12 +259,17 @@ If you don't currently own Helix Native, skip this step.
 # Updating to 2.81 from 2.80 (READ ME!)
 
 <div className="message is-danger">
-    <div className="message-header">
-        <p>IMPORTANT!</p>
-    </div>
-    <div className="message-body">
-        <p>The following instructions are only for those who've already successfully updated their Helix/HX Hardware to 2.80. If you're currently running an older version, click here for instructions on how to update to 2.81 from 2.71 or Earlier.</p>
-    </div>
+  <div className="message-header">
+    <p>IMPORTANT!</p>
+  </div>
+  <div className="message-body">
+    <p>
+      The following instructions are only for those who've already successfully
+      updated their Helix/HX Hardware to 2.80. If you're currently running an
+      older version, click here for instructions on how to update to 2.81 from
+      2.71 or Earlier.
+    </p>
+  </div>
 </div>
 
 ## STEP 1a - Backing Up Helix/HX Hardware
@@ -199,69 +287,83 @@ If you don't currently own Helix Native, skip this step.
 2. **From the General tab, click "Export Bundle."**
 3. **Choose the destination folder and click "Save."**
 
-## STEP 2 - Updating HX Edit to 2.81 <span className="has-text-danger">(YOU MUST DO THIS BEFORE UPDATING YOUR HELIX/HX FIRMWARE!)</span>
+## STEP 2 - Updating HX Edit to 2.81
+
+<span className="title is-size-5 has-text-danger">
+  (YOU MUST DO THIS BEFORE UPDATING YOUR HELIX/HX FIRMWARE!)
+</span>
 
 1. **Turn off or disconnect any connected Helix or HX hardware.**
 2. **Log onto line6.com. Once logged in, download HX Edit 2.81, available here:**
-    - [HX Edit 2.81 for Max OS X](https://line6.com/software/readeula.html?rid=9240)
-    - [HX Edit 2.81 for Windows 7, 8, or 10](https://line6.com/software/readeula.html?rid=9241)
+   - [HX Edit 2.81 for Max OS X](https://line6.com/software/readeula.html?rid=9240)
+   - [HX Edit 2.81 for Windows 7, 8, or 10](https://line6.com/software/readeula.html?rid=9241)
 3. **Read the Software License Agreement (hahaahaaa!) and click "Accept and Download."**
 4. **Once the software has downloaded, double-click the installer and follow the prompts.**
 
+## STEP 3 - Updating Helix/HX Firmware to 2.81
 
-## STEP 3 - Updating Helix/HX Firmware to 2.81 (DO NOT DO THIS UNTIL AFTER YOU'VE UPDATED HX EDIT TO 2.81!)
+<span className="title is-size-5 has-text-danger">
+  (DO NOT DO THIS UNTIL AFTER YOU'VE UPDATED HX EDIT TO 2.81!)
+</span>
 
 1. If you have Helix Rack/Control, **turn off Helix Control. Also, shut down all Line 6 software or any programs that use audio, like DAWs, iTunes, Spotify, video games, etc.**
 2. **Connect Helix/HX to a Mac or PC via USB (do not use any sort of USB hub) and turn it on.**
 3. **Launch Line 6 Updater, enter your Line 6 Username and Password, and click "Sign In."** A big green box appears with a picture of your Helix/HX product. **Click the big green box and then click "Update" next to Version: 2.81.**
 4. **Carefully read the instructions, click "Continue," and then "Accept."** When finished, your Helix/HX device restarts automatically and may begin rebuilding your presets. If so, let it finish.
 
-
 <div className="message is-danger">
-    <div className="message-header">
-        <p>IMPORTANT!</p>
-    </div>
-    <div className="message-body">
-        <p>If you run into an issue during the update process such as the update procedure not completing or if you receive an error message, we strongly recommend trying a different USB port and/or USB cable. USB 2.0 or greater ports and cables are highly recommended. For Windows computers, USB ports on the back of desktop PCs have proven to be the most reliable.</p>
-    </div>
+  <div className="message-header">
+    <p>IMPORTANT!</p>
+  </div>
+  <div className="message-body">
+    <p>
+      If you run into an issue during the update process such as the update
+      procedure not completing or if you receive an error message, we strongly
+      recommend trying a different USB port and/or USB cable. USB 2.0 or greater
+      ports and cables are highly recommended. For Windows computers, USB ports
+      on the back of desktop PCs have proven to be the most reliable.
+    </p>
+  </div>
 </div>
 
 ## STEP 4—OPTIONAL: Loading the 2.8X Factory Presets/Templates
 
 <div className="message is-danger">
-    <div className="message-header">
-        <p>IMPORTANT!</p>
-    </div>
-    <div className="message-body">
-        <p>The following procedure will <strong>COMPLETELY ERASE ALL OF YOUR CUSTOM PRESETS!</strong> If you want to keep them, make sure you back them up first! (See "STEP 1a—Backing Up Helix/HX Hardware" above.)</p>
-    </div>
+  <div className="message-header">
+    <p>IMPORTANT!</p>
+  </div>
+  <div className="message-body">
+    <p>
+      The following procedure will{" "}
+      <strong>COMPLETELY ERASE ALL OF YOUR CUSTOM PRESETS!</strong> If you want
+      to keep them, make sure you back them up first! (See "STEP 1a—Backing Up
+      Helix/HX Hardware" above.)
+    </p>
+  </div>
 </div>
 
 1. **Turn off your Helix/HX processor.**
 2. **Depending on your type of Helix/HX product, follow the procedure below:**
-    - Helix Floor/LT—**While holding footswitches 7 and 8 (two left-most switches on the bottom row), turn on Helix/Helix LT. Wait for "Will restore stock Presets and Setlists..." and let go**
-    - Helix Rack/Control—**While holding knobs 3 and 4 below the screen, turn on Helix Rack. Wait for "Will reset Presets..." and let go**
-    - HX Effects—**While holding footswitches 5 and 6 (middle two switches on the bottom row), turn on HX Effects. Wait for "Will reset Presets..." and let go**
-    - HX Stomp—**While holding footswitches 1 and 2, turn on HX Stomp. Wait for "Will reset Presets..." to appear on the screen and let go**
-    - Helix Native—**Click the gear icon in the lower left corner to open the Preferences window. From the Presets/IRs tab, click "Restore Factory Setlists"**
+   - Helix Floor/LT—**While holding footswitches 7 and 8 (two left-most switches on the bottom row), turn on Helix/Helix LT. Wait for "Will restore stock Presets and Setlists..." and let go**
+   - Helix Rack/Control—**While holding knobs 3 and 4 below the screen, turn on Helix Rack. Wait for "Will reset Presets..." and let go**
+   - HX Effects—**While holding footswitches 5 and 6 (middle two switches on the bottom row), turn on HX Effects. Wait for "Will reset Presets..." and let go**
+   - HX Stomp—**While holding footswitches 1 and 2, turn on HX Stomp. Wait for "Will reset Presets..." to appear on the screen and let go**
+   - Helix Native—**Click the gear icon in the lower left corner to open the Preferences window. From the Presets/IRs tab, click "Restore Factory Setlists"**
 
-
-## STEP 5a—OPTIONAL: Restoring Helix/HX Presets, IRs, and Global Settings from a Backup
+## STEP 5a - OPTIONAL: Restoring Helix/HX Presets, IRs, and Global Settings from a Backup
 
 1. **Connect your Helix/HX processor to a Mac or PC via USB (do not use any sort of USB hub) and turn it on.**
 2. **Open the NEW VERSION OF HX Edit 2.81 you installed in "STEP 2—Updating HX Edit to 2.81" above.**
 3. **From the top File menu, select "Restore from Backup."**
 4. **Browse to the backup file and click "Open."**
 
-## STEP 5b—OPTIONAL: Restoring Helix Native from a Backup
+## STEP 5b - OPTIONAL: Restoring Helix Native from a Backup
 
 If you don't currently own Helix Native, skip this step.
 
 1. **Open any instance of Helix Native within your DAW and click the gear icon in the lower left corner to open the Preferences window.**
 2. **From the Presets/IRs tab, click "Import Bundle."**
 3. **Browse to the location chosen in STEP 2 above and click "Open."**
-
-
 
 # Bug Fixes in 2.81
 
@@ -275,7 +377,7 @@ If you don't currently own Helix Native, skip this step.
 - When Global Settings > Preferences > Snapshot Edits is set to "Discard," tempo would not reflect this setting when set to "Per Snapshot"
 - Command Center > MMC > Record, Punch In, and Punch Out commands could not transmit correctly
 - In rare cases on Helix Floor, Helix Rack, and Helix LT, FS6 (MODE) could fail to toggle between footswitch modes
-- Adjusting certain Frequency parameters (typically those below 1kHz) could change at different increments between hardware and HX Edit 
+- Adjusting certain Frequency parameters (typically those below 1kHz) could change at different increments between hardware and HX Edit
 - In HX Edit, assigning both a block and Command Center command to the same footswitch could result in erratic behavior when attempting to change the LED color
 - Snapshot-controlled Command Center > CC Toggle or CV Toggle values could sometimes not import correctly from older presets
 - In rare cases, undoing a footswitch assignment remotely from HX Edit could result in a firmware crash

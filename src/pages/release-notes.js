@@ -40,7 +40,7 @@ const ReleaseNotesPage = ({ data }) => {
               <div key={node.frontmatter.title} className="columns is-centered">
                 <div
                   id={node.frontmatter.title}
-                  className="column is-10 content headings"
+                  className="column content headings"
                 >
                   <h3 className="title is-size-4">
                     Version {node.frontmatter.title}
