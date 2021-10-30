@@ -37,20 +37,24 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
         size="normal"
       />
       <Section>
-        <div className="columns is-centered">
+        <div className="columns is-centered is-variable is-4">
           <div className="column is-3-tablet is-2-desktop is-hidden-mobile">
-            <aside className="menu">
+            <aside className="menu sticky-navigation">
               <ul className="menu-list">
                 <p className="menu-label">Table of contents</p>
                 <ul className="menu-list">
                   {tableOfContents.items.map((item) => (
                     <li>
-                      <a href={item.url}>{item.title}</a>
+                      <a key={item.title} href={item.url}>
+                        {item.title}
+                      </a>
                       {item.items && (
                         <ul>
                           {item.items.map((item) => (
                             <li>
-                              <a href={item.url}>{item.title}</a>
+                              <a key={item.title} href={item.url}>
+                                {item.title}
+                              </a>
                             </li>
                           ))}
                         </ul>
@@ -58,6 +62,7 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
                     </li>
                   ))}
                 </ul>
+                <div className="bottom-gradient"></div>
               </ul>
             </aside>
           </div>
