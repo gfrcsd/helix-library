@@ -94,14 +94,14 @@ body
 
 .content
     h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]
-        scroll-margin-top: 4rem
+        scroll-margin-top: 5rem
 
 .menu
     &.sticky-navigation
         position: sticky
-        top: 6rem
+        top: 5rem
         overflow: auto
-        max-height: calc(100vh - 8rem)
+        max-height: calc(100vh - 7rem)
         &::-webkit-scrollbar 
             width: 3px
         &
@@ -112,3 +112,12 @@ body
         &::-webkit-scrollbar-thumb 
             background-color: #e3e3e3 
             border: 0px solid #fafafa
+        & .menu-list
+            position: relative
+        & .bottom-gradient
+            position: sticky
+            bottom: 0
+            height: 25px
+            width: 100%
+            z-index: 10
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)

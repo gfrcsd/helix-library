@@ -32,6 +32,7 @@ const ReleaseNotesPage = ({ data }) => {
                     </a>
                   </li>
                 ))}
+                <div className="bottom-gradient"></div>
               </ul>
             </aside>
           </div>

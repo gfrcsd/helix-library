@@ -62,6 +62,7 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
                     </li>
                   ))}
                 </ul>
+                <div className="bottom-gradient"></div>
               </ul>
             </aside>
           </div>
