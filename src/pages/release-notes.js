@@ -22,7 +22,7 @@ const ReleaseNotesPage = ({ data }) => {
       <Section>
         <div className="release-note columns is-centered">
           <div className="column is-2 is-hidden-mobile">
-            <aside className="menu">
+            <aside className="menu navigation">
               <ul className="menu-list">
                 <p className="menu-label">Navigation</p>
                 {data.allMdx.edges.map(({ node }) => (
