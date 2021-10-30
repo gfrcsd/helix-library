@@ -20,9 +20,9 @@ const ReleaseNotesPage = ({ data }) => {
         size="normal"
       />
       <Section>
-        <div className="release-note columns is-centered">
+        <div className="release-note columns is-centered is-variable is-4">
           <div className="column is-2 is-hidden-mobile">
-            <aside className="menu navigation">
+            <aside className="menu sticky-navigation">
               <ul className="menu-list">
                 <p className="menu-label">Navigation</p>
                 {data.allMdx.edges.map(({ node }) => (
@@ -66,7 +66,7 @@ const ReleaseNotesPage = ({ data }) => {
                   >
                     Read more
                   </Link>
-                  <hr />
+                  <hr className="mb-0 mt-5" />
                 </div>
               </div>
             ))}

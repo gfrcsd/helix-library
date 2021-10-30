@@ -37,9 +37,9 @@ const ReleaseNoteTemplate = ({ data: { mdx: post } }) => {
         size="normal"
       />
       <Section>
-        <div className="columns is-centered">
-          <div className="column is-3-tablet is-2-desktop is-hidden-mobile toc">
-            <aside className="menu navigation">
+        <div className="columns is-centered is-variable is-4">
+          <div className="column is-3-tablet is-2-desktop is-hidden-mobile">
+            <aside className="menu sticky-navigation">
               <ul className="menu-list">
                 <p className="menu-label">Table of contents</p>
                 <ul className="menu-list">
