@@ -84,8 +84,7 @@ const IndexPage = () => {
                   Welcome to Helix library
                 </h1>
                 <h2 className="subtitle has-text-weight-light is-size-5-mobile">
-                  A trove of informations about the Helix product line by Line
-                  6®
+                  A trove of information about the Helix product line by Line 6®
                 </h2>
               </div>
             </div>

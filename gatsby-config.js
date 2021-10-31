@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Helix Library`,
-    description: `A trove of informations about the Helix product line by Line 6®`,
+    description: `A trove of information about the Helix product line by Line 6®`,
     author: ``,
   },
   plugins: [
