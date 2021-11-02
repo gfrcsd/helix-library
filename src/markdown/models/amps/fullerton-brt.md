@@ -5,7 +5,7 @@ brand: "Fender"
 model: "1953 5c3 Tweed Deluxe (bright channel)"
 url: "https://en.wikipedia.org/wiki/Fender_Deluxe#Tweed_Deluxe"
 manual: ""
-image: "../../../images/amps/fullerton.jpg"
+image: "../../../images/amps/fullerton.png"
 icon: "../../../images/icon-models/amps/fullerton.png"
 instrument: ["Guitar"]
 update: ["2.80"]
